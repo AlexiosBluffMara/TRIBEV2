@@ -126,7 +126,8 @@ async def on_message(message: discord.Message) -> None:
         )
         return
 
-    dest = config.UPLOAD_DIR / f"{int(time.time())}_{attachment.filename}"
+    safe_name = attachment.filename.replace(" ", "_")
+    dest = config.UPLOAD_DIR / f"{int(time.time())}_{safe_name}"
     await attachment.save(dest)
     try:
         await message.add_reaction(REACT_ACK)

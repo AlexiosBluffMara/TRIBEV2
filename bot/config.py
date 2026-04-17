@@ -41,11 +41,11 @@ OLLAMA_MODEL_QUALITY = os.environ.get("OLLAMA_MODEL_QUALITY", "gemma4:e4b-it-q8_
 # Back-compat alias used by older modules.
 OLLAMA_MODEL = OLLAMA_MODEL_QUALITY
 
-# TRIBE inference-time overrides. `duration_trs` bounds how many TR segments
-# TRIBE iterates when predicting; the default config is 100, clips here are
-# <= 20 s (40 TRs @ 2 Hz) so 50 is plenty and saves dataloader cycles.
+# TRIBE inference-time overrides.
+# duration_trs must match the model's internal keep-mask length (100).
+# Setting it lower causes an IndexError in demo_utils.predict().
 TRIBE_CONFIG_UPDATE = {
-    "data.duration_trs": int(os.environ.get("TRIBE_DURATION_TRS", "50")),
+    "data.duration_trs": int(os.environ.get("TRIBE_DURATION_TRS", "100")),
 }
 
 DISCORD_TOKEN = os.environ.get("DISCORD_TOKEN")

@@ -53,19 +53,23 @@ def extract_keyframes(video_path: Path, n: int = 4, out_dir: Path | None = None)
     for i in range(n):
         t = step * (i + 1)
         out = out_dir / f"frame_{i:02d}.jpg"
-        subprocess.check_call(
+        result = subprocess.run(
             [
                 ffmpeg, "-y",
                 "-ss", f"{t:.2f}",
                 "-i", str(video_path),
                 "-frames:v", "1",
                 "-q:v", "3",
-                "-vf", "scale=512:-2",
+                "-vf", "scale=512:trunc(ow/a/2)*2",
                 str(out),
             ],
             stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL,
+            stderr=subprocess.PIPE,
             creationflags=_NOWWIN,
         )
+        if result.returncode != 0 or not out.exists():
+            print(f"[ffmpeg] frame {i} failed (rc={result.returncode}):\n"
+                  + result.stderr.decode(errors="replace")[-400:])
+            continue
         frames.append(out)
     return frames
