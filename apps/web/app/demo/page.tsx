@@ -12,25 +12,48 @@ export default function DemoPage() {
     setIsProcessing(true)
     setProgress(0)
 
-    // TODO: Integrate with FastAPI backend
-    // For now, simulate progress
-    const interval = setInterval(() => {
-      setProgress(p => {
-        if (p >= 90) {
-          clearInterval(interval)
-          return p
-        }
-        return p + Math.random() * 20
+    try {
+      // Submit demo job to backend
+      const submitResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/jobs/demo`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({}),
       })
-    }, 500)
 
-    // Simulate job submission
-    setTimeout(() => {
-      setJobId('demo-cat-video-1')
-      setProgress(100)
+      if (!submitResponse.ok) throw new Error('Failed to submit demo job')
+
+      const { job_id } = await submitResponse.json()
+      setJobId(job_id)
+
+      // Poll job status
+      const maxAttempts = 60
+      let attempts = 0
+      const pollInterval = setInterval(async () => {
+        attempts++
+        setProgress(Math.min(50 + (attempts / maxAttempts) * 40, 90))
+
+        const statusResponse = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/jobs/${job_id}`
+        )
+        const status = await statusResponse.json()
+
+        if (status.status === 'success' || status.status === 'error') {
+          clearInterval(pollInterval)
+          setProgress(100)
+          setIsProcessing(false)
+        }
+
+        if (attempts >= maxAttempts) {
+          clearInterval(pollInterval)
+          setProgress(100)
+          setIsProcessing(false)
+        }
+      }, 500)
+    } catch (error) {
+      console.error('Demo submission failed:', error)
       setIsProcessing(false)
-      clearInterval(interval)
-    }, 3000)
+      setProgress(0)
+    }
   }
 
   return (

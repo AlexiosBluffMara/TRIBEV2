@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
+from mindscope_api.routers import jobs
+
 app = FastAPI(
     title="MindScope API",
     description="TRIBE v2 × Gemma 4 E4B brain-response prediction API",
@@ -32,5 +34,5 @@ async def root():
     }
 
 
-# Import routers here as they are created
-# from mindscope_api.routers import jobs, predictions, chat
+# Include routers
+app.include_router(jobs.router)
