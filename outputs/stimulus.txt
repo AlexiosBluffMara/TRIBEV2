@@ -1,0 +1,1 @@
+Welcome to introductory neuroscience. Today we will discuss how the brain encodes visual information in the occipital cortex and how attention modulates activity in the parietal regions. Seizures can be modeled as transient synchrony bursts between coupled cortical populations.
