@@ -1,4 +1,4 @@
-"""Central config for the MindScope Discord bot.
+"""Central config for the Jemma Discord bot.
 
 Paths are resolved relative to the project root (D:\\TRIBEV2).
 Secrets come from environment variables, never from disk.

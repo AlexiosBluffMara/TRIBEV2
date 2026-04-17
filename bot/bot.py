@@ -1,6 +1,6 @@
-"""MindCat — the cat-loving MindScope Discord bot.
+"""Jemma — the cat-loving brain-response Discord bot.
 
-Flow on every video attachment (or /mindcat-demo):
+Flow on every video attachment (or /jemma-demo):
 
 1. React :cat: on the user's message (acknowledged).
 2. Post progress comment #1. Progressively edit it as each stage finishes.
@@ -64,10 +64,10 @@ async def on_ready() -> None:
         print("[bot] synced global commands (may take up to 1 h to appear)")
     # Pre-warm TRIBE so the first request is not a cold start.
     await asyncio.to_thread(load_model)
-    print("[bot] TRIBE v2 pre-warmed; ready for cat videos.")
+    print("[bot] TRIBE v2 pre-warmed; Jemma is ready for cat videos.")
 
 
-@tree.command(name="mindcat-demo", description="Run MindCat on the packaged cat clip.")
+@tree.command(name="jemma-demo", description="Run Jemma on the packaged cat clip.")
 async def cmd_demo(interaction: discord.Interaction) -> None:
     await interaction.response.defer(thinking=True)
     try:
@@ -86,7 +86,7 @@ async def cmd_demo(interaction: discord.Interaction) -> None:
         await interaction.followup.send(f"Pipeline failed: `{e}`")
 
 
-@tree.command(name="mindcat-status", description="GPU and model health.")
+@tree.command(name="jemma-status", description="GPU and model health.")
 async def cmd_status(interaction: discord.Interaction) -> None:
     gpu = _query_nvidia_smi()
     if gpu is None:
@@ -94,7 +94,7 @@ async def cmd_status(interaction: discord.Interaction) -> None:
     else:
         vram, util, temp, power = gpu
         msg = (
-            f"\N{Cat Face} MindCat is purring.\n"
+            f"\N{Cat Face} Jemma is purring.\n"
             f"GPU VRAM used: {vram:.1f} GB | util {util}% | temp {temp}C | {power:.0f} W\n"
             f"Ollama: `{config.OLLAMA_URL}` (fast: `{config.OLLAMA_MODEL_FAST}`, "
             f"quality: `{config.OLLAMA_MODEL_QUALITY}`)\n"
@@ -229,7 +229,7 @@ async def _run_pipeline(
     state.quick = f"{quick_text}\n_(text-only pass, {quick_secs:.0f} s)_"
     state.full_status = (
         "Running **full multimodal** TRIBE v2 (V-JEPA2 + wav2vec-BERT + "
-        "Llama-3.2-3B). This takes ~4-7 min on the 5090. Standing by..."
+        "Llama-3.2-3B). This takes ~4-7 min on the 5090. Jemma is thinking..."
     )
     await _edit(progress_msg, state)
     await _react(progress_msg, REACT_QUICK)
@@ -282,7 +282,7 @@ async def _run_pipeline(
         value=_truncate(narr.researcher, 1020),
         inline=False,
     )
-    embed.set_footer(text="TRIBE v2 (CC-BY-NC 4.0) x Gemma 4 E4B x Ollama. Offline, local, no cloud.")
+    embed.set_footer(text="Jemma — TRIBE v2 (CC-BY-NC 4.0) × Gemma 4 E4B × Ollama. Offline, local, no cloud.")
 
     with peak_png.open("rb") as f:
         file = discord.File(io.BytesIO(f.read()), filename=peak_png.name)
