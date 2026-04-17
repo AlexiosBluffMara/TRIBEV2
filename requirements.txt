@@ -1,0 +1,49 @@
+# ── Discord bot ─────────────────────────────────────────────────────────────
+discord.py==2.7.1
+
+# ── PyTorch (RTX 5090 / Blackwell needs cu128 wheel) ────────────────────────
+# Install with: pip install --index-url https://download.pytorch.org/whl/cu128 \
+#               torch==2.11.0+cu128 torchvision==0.26.0+cu128
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
+
+# ── TRIBE v2 source (installed as editable from tribev2_src/) ────────────────
+# pip install --no-deps -e tribev2_src
+# Direct TRIBE deps that pip won't pull automatically:
+exca==0.5.22
+neuralset==0.0.2
+neuraltrain==0.0.2
+x-transformers==1.27.20
+einops==0.8.2
+pyyaml==6.0.3
+transformers==5.5.4
+huggingface_hub==1.11.0
+safetensors==0.7.0
+tokenizers==0.22.2
+soundfile==0.13.1
+julius==0.2.7
+langdetect==1.0.9
+spacy==3.8.13
+
+# ── Brain / science stack ────────────────────────────────────────────────────
+nilearn==0.13.1
+nibabel==5.4.2
+numpy==2.4.4
+scipy==1.17.1
+scikit-learn==1.8.0
+scikit-image==0.26.0
+pandas==3.0.2
+pyarrow==23.0.1
+matplotlib==3.10.8
+seaborn==0.13.2
+pillow==11.3.0
+
+# ── Video / media ────────────────────────────────────────────────────────────
+moviepy==2.2.1
+imageio-ffmpeg==0.6.0
+
+# ── Misc ─────────────────────────────────────────────────────────────────────
+requests==2.33.1
+psutil==7.2.2
+python-dotenv==1.2.2
+tqdm==4.67.3

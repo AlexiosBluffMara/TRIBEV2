@@ -1,8 +1,20 @@
-# TRIBE v2 on RTX 5090 — ISU Research Partnership Notebook
+# TRIBE v2 × Gemma 4 E4B on RTX 5090
+
+Two deliverables in this repo:
+
+1. **Discord bot — offline brain-response inference for medical offices.**
+   Drop a short video in a Discord channel, the bot runs Gemma 4 E4B
+   (multimodal, via Ollama) on keyframes, then TRIBE v2 on the 5090 to
+   predict cortical BOLD activity, then Gemma again to narrate the result
+   for a clinician. Nothing leaves the machine. Code under [`bot/`](bot/).
+   See [`bot/README.md`](bot/README.md) and [`DEMO_SCRIPT.md`](DEMO_SCRIPT.md).
+2. **Original ISU research notebook** — a slide-ready single-file TRIBE v2
+   demo, documented below. The bot reuses the same `tribev2.demo_utils`
+   pipeline as the notebook.
 
 Runs Meta's [TRIBE v2](https://huggingface.co/facebook/tribev2) brain-activity foundation model locally on an RTX 5090 (Blackwell, sm_120), produces a slide-ready cortex visualization and streaming ROI panel, and frames a joint research program with the **Follmann + Bhattacharya** group at Illinois State University (NIH R15 AREA / NSF CRCNS fit).
 
-The single deliverable is [`tribe_v2_5090_ISU_demo.ipynb`](tribe_v2_5090_ISU_demo.ipynb). It runs end-to-end and bakes its outputs into the notebook so the story is readable without re-executing.
+The notebook deliverable is [`tribe_v2_5090_ISU_demo.ipynb`](tribe_v2_5090_ISU_demo.ipynb). It runs end-to-end and bakes its outputs into the notebook so the story is readable without re-executing.
 
 ---
 
