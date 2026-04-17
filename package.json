@@ -1,0 +1,19 @@
+{
+  "name": "mindscope-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MindScope: TRIBE v2 × Gemma 4 E4B for brain-response prediction and multimodal narration",
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "type-check": "pnpm -r run type-check"
+  },
+  "devDependencies": {
+    "turbo": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
