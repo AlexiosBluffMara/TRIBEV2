@@ -30,6 +30,7 @@ if not HF_TOKEN:
     if tok.exists():
         HF_TOKEN = tok.read_text().strip()
 os.environ["HUGGING_FACE_HUB_TOKEN"] = HF_TOKEN or ""
+os.environ["HF_TOKEN"] = HF_TOKEN or ""
 os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
 
 OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://localhost:11434")
