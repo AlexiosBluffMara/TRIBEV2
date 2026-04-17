@@ -11,6 +11,9 @@ import subprocess
 import sys
 from pathlib import Path
 
+# Suppress console window popup when spawning subprocesses on Windows.
+_NOWWIN = subprocess.CREATE_NO_WINDOW if sys.platform == "win32" else 0
+
 from . import config
 
 
@@ -30,6 +33,7 @@ def _probe_duration(video_path: Path) -> float:
             [ffprobe, "-v", "error", "-show_entries", "format=duration",
              "-of", "default=noprint_wrappers=1:nokey=1", str(video_path)],
             text=True,
+            creationflags=_NOWWIN,
         ).strip()
         return float(out)
     except (subprocess.CalledProcessError, ValueError):
@@ -59,7 +63,9 @@ def extract_keyframes(video_path: Path, n: int = 4, out_dir: Path | None = None)
                 "-vf", "scale=512:-2",
                 str(out),
             ],
-            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            creationflags=_NOWWIN,
         )
         frames.append(out)
     return frames
