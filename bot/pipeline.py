@@ -37,15 +37,11 @@ def load_model():
     from tribev2.demo_utils import TribeModel
 
     assert torch.cuda.is_available(), "CUDA GPU required (expected RTX 5090)."
-    print(
-        f"[pipeline] Loading TRIBE v2 from {config.WEIGHTS_DIR} "
-        f"(config_update={config.TRIBE_CONFIG_UPDATE})..."
-    )
+    print(f"[pipeline] Loading TRIBE v2 from {config.WEIGHTS_DIR}...")
     t0 = time.time()
     _model = TribeModel.from_pretrained(
         checkpoint_dir=str(config.WEIGHTS_DIR),
         cache_folder=str(config.CACHE_DIR),
-        config_update=config.TRIBE_CONFIG_UPDATE,
     )
     print(f"[pipeline] TRIBE v2 loaded in {time.time()-t0:.1f}s")
     return _model
