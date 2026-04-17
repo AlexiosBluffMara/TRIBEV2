@@ -1,0 +1,51 @@
+text	start	duration	sequence_id	sentence
+A	0.131	0.04000000000000001	0	 A tabby cat sits on a sunny windowsill, slowly stretching its paws.
+tabby	0.231	0.42000000000000004	0	 A tabby cat sits on a sunny windowsill, slowly stretching its paws.
+cat	0.711	0.32100000000000006	0	 A tabby cat sits on a sunny windowsill, slowly stretching its paws.
+sits	1.112	0.21999999999999997	0	 A tabby cat sits on a sunny windowsill, slowly stretching its paws.
+on	1.432	0.08000000000000007	0	 A tabby cat sits on a sunny windowsill, slowly stretching its paws.
+a	1.572	0.040000000000000036	0	 A tabby cat sits on a sunny windowsill, slowly stretching its paws.
+sunny	1.672	0.32000000000000006	0	 A tabby cat sits on a sunny windowsill, slowly stretching its paws.
+windowsill,	2.052	0.7210000000000001	0	 A tabby cat sits on a sunny windowsill, slowly stretching its paws.
+slowly	3.333	0.46099999999999985	0	 A tabby cat sits on a sunny windowsill, slowly stretching its paws.
+stretching	3.854	0.5	0	 A tabby cat sits on a sunny windowsill, slowly stretching its paws.
+its	4.414	0.1200000000000001	0	 A tabby cat sits on a sunny windowsill, slowly stretching its paws.
+paws.	4.634	0.4399999999999995	0	 A tabby cat sits on a sunny windowsill, slowly stretching its paws.
+It	5.615	0.05999999999999961	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+blinks	5.755	0.3200000000000003	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+at	6.175	0.08000000000000007	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+a	6.295	0.040000000000000036	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+bird	6.395	0.2810000000000006	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+flitting	6.736	0.3799999999999999	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+past	7.176	0.2999999999999998	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+the	7.516	0.08000000000000007	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+glass,	7.636	0.4400000000000004	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+then	8.757	0.20000000000000107	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+lets	9.057	0.1999999999999993	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+out	9.357	0.14000000000000057	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+a	9.537	0.03999999999999915	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+soft	9.658	0.3200000000000003	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+purr.	10.078	0.33999999999999986	1	It blinks at a bird flitting past the glass, then lets out a soft purr.
+The	10.938	0.11999999999999922	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+rhythmic	11.139	0.41999999999999993	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+sound	11.659	0.3999999999999986	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+fills	12.179	0.2400000000000002	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+the	12.499	0.08099999999999952	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+quiet	12.64	0.35999999999999943	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+room	13.06	0.2599999999999998	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+as	13.4	0.08000000000000007	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+the	13.54	0.08000000000000007	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+cat	13.68	0.28000000000000114	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+curls	14.0	0.32099999999999973	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+back	14.401	0.2400000000000002	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+into	14.721	0.22000000000000064	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+a	15.001	0.040000000000000924	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+warm	15.101	0.2599999999999998	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+patch	15.421	0.30100000000000016	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+of	15.782	0.08000000000000007	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+afternoon	15.962	0.5	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+light	16.542	0.2799999999999976	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+and	17.703	0.10000000000000142	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+closes	17.863	0.4800000000000004	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+its	18.443	0.12099999999999866	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
+eyes.	18.784	0.22000000000000242	2	The rhythmic sound fills the quiet room as the cat curls back into a warm patch of afternoon light and closes its eyes.
