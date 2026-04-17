@@ -11,7 +11,7 @@ Get-Content .env | Where-Object { $_ -match '=' -and $_ -notmatch '^\s*#' -and $
 
 $env:PYTHONUNBUFFERED = "1"
 
-$python = "$PSScriptRoot\.venv\Scripts\python.exe"
+$python = "C:\Users\soumi\TRIBEV2\.venv\Scripts\python.exe"
 
 Write-Host "[start_bot] Env loaded. Starting MindCat (Jemma#1566)..." -ForegroundColor Cyan
 Write-Host "[start_bot] TRIBE v2 pre-warms in ~10 s. Press Ctrl+C to stop." -ForegroundColor Yellow
