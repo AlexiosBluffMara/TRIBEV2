@@ -45,8 +45,15 @@ outputs/*.mp4
 outputs/*.parquet
 outputs/gemma_*.txt
 outputs/report.json
+outputs/.public_url
+outputs/results/
 logs/
 uploads/
+
+# --- webapp build + deps ---
+webapp/node_modules/
+webapp/dist/
+webapp/__pycache__/
 
 # --- large test clips (not committed; use make_demo_asset) ---
 assets/test_*.mp4

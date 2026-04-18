@@ -23,7 +23,8 @@ def narrate(top_rois: list[str], roi_means: dict[str, float], stimulus_label: st
     system = (
         f"{PERSONA}\n\n"
         "You are writing a single clinician-facing paragraph. Be concise, "
-        "avoid hype, no bullet lists."
+        "avoid hype, no bullet lists. End with a one-clause reminder that "
+        "this is a group-averaged TRIBE v2 prediction, not a diagnostic result."
     )
     return ollama_client.generate(user, system, num_predict=400)
 

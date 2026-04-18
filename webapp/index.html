@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JemmaBrain — Red Team Kitchen × ISU | TRIBE v2 Brain Visualizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #070b12;
+      --panel-bg:  rgba(10, 15, 26, 0.88);
+      --border:    rgba(88, 101, 242, 0.22);
+      --accent:    #5865f2;
+      --accent2:   #eb459e;
+      --accent3:   #57f287;
+      --text:      #e2e8f0;
+      --text-dim:  #94a3b8;
+      --mono:      'JetBrains Mono', monospace;
+      --sans:      'Inter', sans-serif;
+      --panel-r:   14px;
+      --blur:      18px;
+    }
+
+    html, body { width:100%; height:100%; overflow:hidden; background:var(--bg); color:var(--text); font-family:var(--sans); }
+    #canvas-container { position:fixed; inset:0; z-index:0; }
+
+    /* ── Glassmorphism panel base ──────────────────────────────────────────── */
+    .glass {
+      background: var(--panel-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--panel-r);
+      backdrop-filter: blur(var(--blur));
+      -webkit-backdrop-filter: blur(var(--blur));
+    }
+
+    /* ── Top bar ─────────────────────────────────────────────────────────────*/
+    #topbar {
+      position:fixed; top:0; left:0; right:0; height:52px;
+      background: rgba(7,11,18,0.95);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(20px);
+      display:flex; align-items:center; padding:0 20px; gap:14px;
+      z-index:100;
+    }
+    #status-dot { width:8px;height:8px;border-radius:50%;background:#57f287;box-shadow:0 0 8px #57f287; animation:pdot 2s infinite; flex-shrink:0; }
+    @keyframes pdot { 0%,100%{opacity:1} 50%{opacity:0.35} }
+    .logo { font-size:17px;font-weight:600;letter-spacing:-0.5px; }
+    .logo span { color:var(--accent2); }
+    .subtitle { font-size:11px;color:var(--text-dim);flex:1; }
+    .badge {
+      font-size:10px;font-family:var(--mono);padding:3px 10px;border-radius:100px;
+      background:rgba(88,101,242,0.12);border:1px solid var(--border);color:var(--accent);
+    }
+    #topbar-actions { display:flex;gap:6px; }
+    .top-btn {
+      font-size:10px;font-family:var(--mono);padding:4px 10px;border-radius:8px;cursor:pointer;
+      border:1px solid var(--border);background:transparent;color:var(--text-dim);transition:all 0.2s;
+    }
+    .top-btn:hover, .top-btn.active { background:rgba(88,101,242,0.18);color:var(--accent);border-color:var(--accent); }
+
+    /* ── Left panel ──────────────────────────────────────────────────────────*/
+    #left-panel {
+      position:fixed; top:60px; left:14px; bottom:102px; width:300px;
+      display:flex; flex-direction:column; overflow:hidden; z-index:10;
+    }
+    .panel-header {
+      padding:12px 14px 8px;
+      border-bottom:1px solid var(--border);
+      font-size:10px;font-family:var(--mono);color:var(--text-dim);
+      letter-spacing:1px;text-transform:uppercase;
+      display:flex;align-items:center;gap:6px;
+    }
+    .panel-header .ph-icon { font-size:13px; }
+    .panel-header .ph-actions { margin-left:auto;display:flex;gap:4px; }
+
+    #stimulus-info { padding:10px 14px;border-bottom:1px solid var(--border); }
+    #stimulus-title { font-size:13px;font-weight:500;margin-bottom:3px;line-height:1.3; }
+    #stimulus-meta { font-size:10px;color:var(--text-dim);font-family:var(--mono); }
+
+    #tier-tabs {
+      display:flex;padding:7px 12px;gap:3px;
+      border-bottom:1px solid var(--border);flex-wrap:wrap;flex-shrink:0;
+    }
+    .tier-btn {
+      font-size:9px;padding:3px 7px;border-radius:6px;cursor:pointer;
+      border:1px solid var(--border);background:transparent;color:var(--text-dim);
+      font-family:var(--mono);transition:all 0.18s;
+    }
+    .tier-btn:hover { color:var(--text);border-color:var(--accent); }
+    .tier-btn.active { background:var(--accent);border-color:var(--accent);color:#fff; }
+
+    #narration-text {
+      flex:1;overflow-y:auto;padding:12px 14px;
+      font-size:12.5px;line-height:1.7;color:var(--text);
+    }
+    #narration-text::-webkit-scrollbar { width:3px; }
+    #narration-text::-webkit-scrollbar-thumb { background:var(--border);border-radius:2px; }
+
+    /* ── Segment breakdown (below narration, scrollable) ─────────────────── */
+    #seg-panel {
+      border-top:1px solid var(--border);flex-shrink:0;max-height:180px;
+      overflow-y:auto;
+    }
+    #seg-panel::-webkit-scrollbar { width:3px; }
+    #seg-panel::-webkit-scrollbar-thumb { background:var(--border);border-radius:2px; }
+    .seg-row {
+      display:flex;align-items:center;gap:8px;padding:6px 14px;
+      border-bottom:1px solid rgba(88,101,242,0.08);cursor:pointer;transition:background 0.15s;
+    }
+    .seg-row:hover { background:rgba(88,101,242,0.07); }
+    .seg-row.active { background:rgba(88,101,242,0.15); }
+    .seg-time { font-size:9px;font-family:var(--mono);color:var(--text-dim);width:44px;flex-shrink:0; }
+    .seg-bar-wrap { flex:1;height:6px;background:rgba(255,255,255,0.06);border-radius:3px;overflow:hidden; }
+    .seg-bar { height:100%;border-radius:3px;transition:width 0.4s ease; }
+    .seg-net { font-size:9px;font-family:var(--mono);color:var(--text-dim);width:62px;text-align:right; }
+    .seg-dot { width:6px;height:6px;border-radius:50%;flex-shrink:0; }
+
+    /* ── Right panel ────────────────────────────────────────────────────────*/
+    #right-panel {
+      position:fixed; top:60px; right:14px; bottom:102px; width:268px;
+      display:flex; flex-direction:column; overflow:hidden; z-index:10;
+    }
+    .metric-group { padding:10px 14px;border-bottom:1px solid var(--border); }
+    .metric-label { font-size:9px;color:var(--text-dim);font-family:var(--mono);letter-spacing:0.6px;text-transform:uppercase;margin-bottom:4px; }
+    .metric-value { font-size:17px;font-weight:600;font-family:var(--mono);color:var(--accent); }
+    .metric-unit { font-size:10px;color:var(--text-dim);margin-left:3px;font-weight:400; }
+    .metric-sub { font-size:10px;color:var(--text-dim);margin-top:2px; }
+
+    /* Sparkline canvas (network activity over time) */
+    #activity-canvas-wrap { padding:8px 14px 4px;border-bottom:1px solid var(--border); }
+    #activity-label { font-size:9px;color:var(--text-dim);font-family:var(--mono);letter-spacing:0.5px;text-transform:uppercase;margin-bottom:4px; }
+    #activity-canvas { width:100%;height:56px;display:block;border-radius:4px; }
+
+    /* Network list */
+    .network-list { padding:8px 14px;flex:1;overflow-y:auto; }
+    .network-list::-webkit-scrollbar { width:3px; }
+    .network-list::-webkit-scrollbar-thumb { background:var(--border);border-radius:2px; }
+    .network-row { display:flex;align-items:center;gap:6px;margin-bottom:7px;cursor:pointer;border-radius:6px;padding:3px 4px;transition:background 0.15s; }
+    .network-row:hover { background:rgba(88,101,242,0.08); }
+    .net-swatch { width:9px;height:9px;border-radius:2px;flex-shrink:0; }
+    .net-name { font-size:10px;flex:1;color:var(--text-dim); }
+    .net-bar-bg { flex:1.4;height:4px;background:rgba(255,255,255,0.07);border-radius:2px;overflow:hidden; }
+    .net-bar { height:100%;border-radius:2px;transition:width 0.5s ease; }
+    .net-z { font-size:9px;font-family:var(--mono);color:var(--text-dim);width:38px;text-align:right; }
+
+    /* ROI detail list */
+    #roi-detail { padding:8px 14px;border-top:1px solid var(--border);flex-shrink:0; }
+    .roi-detail-header { font-size:9px;color:var(--text-dim);font-family:var(--mono);letter-spacing:0.5px;text-transform:uppercase;margin-bottom:6px; }
+    .roi-item {
+      display:flex;align-items:center;gap:6px;margin-bottom:4px;
+      font-size:10px;font-family:var(--mono);
+    }
+    .roi-rank { color:var(--accent);width:14px;text-align:right;flex-shrink:0; }
+    .roi-name { color:var(--text);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+    .roi-val { color:var(--text-dim);flex-shrink:0; }
+
+    /* ── Colour legend bar ──────────────────────────────────────────────────*/
+    #legend-bar-wrap {
+      position:fixed; bottom:100px; left:50%;transform:translateX(-50%);
+      width:240px; z-index:10; pointer-events:none;
+    }
+    #legend-label-row { display:flex;justify-content:space-between;margin-bottom:3px; }
+    #legend-label-row span { font-size:9px;font-family:var(--mono);color:var(--text-dim); }
+    #legend-bar {
+      height:6px;border-radius:3px;
+      background: linear-gradient(to right, #010003, #420a68, #892b7c, #c83e4d, #e8722c, #f6d44b, #fcffa4);
+    }
+    #legend-map-name { text-align:center;margin-top:3px;font-size:8px;font-family:var(--mono);color:var(--text-dim);letter-spacing:1px;text-transform:uppercase; }
+
+    /* ── Timeline ────────────────────────────────────────────────────────────*/
+    #timeline {
+      position:fixed; bottom:14px; left:328px; right:296px;
+      height:72px; display:flex; align-items:center; padding:0 18px; gap:12px; z-index:10;
+    }
+    #tl-play {
+      width:34px;height:34px;border-radius:9px;cursor:pointer;
+      border:1px solid var(--border);background:transparent;color:var(--text);
+      display:flex;align-items:center;justify-content:center;font-size:14px;
+      transition:all 0.2s;flex-shrink:0;
+    }
+    #tl-play:hover { background:var(--accent);border-color:var(--accent); }
+
+    #tl-track { flex:1;display:flex;flex-direction:column;gap:3px; }
+    #tl-slider {
+      -webkit-appearance:none;appearance:none;height:4px;border-radius:2px;outline:none;cursor:pointer;
+      background: linear-gradient(to right, var(--accent) var(--pct,0%), rgba(255,255,255,0.1) var(--pct,0%));
+    }
+    #tl-slider::-webkit-slider-thumb {
+      -webkit-appearance:none;width:14px;height:14px;border-radius:50%;
+      background:var(--accent);cursor:pointer;box-shadow:0 0 6px rgba(88,101,242,0.6);
+    }
+
+    /* Segment tick marks under slider */
+    #tl-ticks { display:flex;gap:0;height:8px;position:relative;overflow:hidden; }
+    .tl-tick {
+      flex:1;border-left:1px solid rgba(255,255,255,0.08);height:6px;cursor:pointer;
+      position:relative;transition:background 0.15s;
+    }
+    .tl-tick:hover { background:rgba(88,101,242,0.15); }
+    .tl-tick.active { border-left-color:rgba(88,101,242,0.5); }
+
+    #tl-time { font-size:11px;font-family:var(--mono);color:var(--text-dim);width:54px;text-align:right;flex-shrink:0; }
+    .tl-speed {
+      font-size:9px;font-family:var(--mono);padding:3px 8px;border-radius:6px;
+      border:1px solid var(--border);background:transparent;color:var(--text-dim);cursor:pointer;transition:all 0.15s;
+    }
+    .tl-speed.active { background:rgba(88,101,242,0.15);color:var(--accent);border-color:var(--accent); }
+    .tl-speed:hover { color:var(--text);border-color:var(--accent); }
+    #tl-controls { display:flex;gap:4px;align-items:center; }
+
+    /* ── Loading overlay ─────────────────────────────────────────────────────*/
+    #loading {
+      position:fixed;inset:0;z-index:200;
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      background:var(--bg);gap:14px;transition:opacity 0.5s;
+    }
+    #loading.hidden { display:none; }
+    .spinner { width:38px;height:38px;border:3px solid rgba(88,101,242,0.18);border-top-color:var(--accent);border-radius:50%;animation:spin 0.75s linear infinite; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    #loading-text { font-size:14px;color:var(--text-dim);font-family:var(--mono); }
+    #loading-stage { font-size:11px;color:var(--accent);font-family:var(--mono); }
+    #loading-progress { width:200px;height:2px;background:rgba(88,101,242,0.15);border-radius:1px;overflow:hidden; }
+    #loading-bar { height:100%;background:var(--accent);border-radius:1px;width:0%;transition:width 0.4s ease; }
+
+    /* ── ROI hover tooltip ──────────────────────────────────────────────────*/
+    #roi-tooltip {
+      position:fixed;pointer-events:none;z-index:80;
+      background:rgba(10,15,28,0.95);border:1px solid var(--border);
+      border-radius:8px;padding:8px 12px;
+      font-size:11px;font-family:var(--mono);color:var(--text);
+      backdrop-filter:blur(10px);display:none;
+      line-height:1.6;min-width:160px;
+    }
+    #roi-tooltip.visible { display:block; }
+    .tt-value { color:var(--accent);font-weight:600; }
+
+    /* ── 3D CSS label container ─────────────────────────────────────────────*/
+    #label-container {
+      position:fixed;inset:0;z-index:5;pointer-events:none;overflow:hidden;
+    }
+    .brain-label {
+      position:absolute;transform:translate(-50%,-50%);
+      font-size:9px;font-family:var(--mono);color:rgba(255,255,255,0.55);
+      background:rgba(7,11,18,0.65);border:1px solid rgba(88,101,242,0.2);
+      border-radius:4px;padding:2px 6px;white-space:nowrap;
+      pointer-events:none;transition:opacity 0.3s;
+    }
+
+    /* ── Drop zone ──────────────────────────────────────────────────────────*/
+    #drop-zone {
+      position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);
+      width:440px;text-align:center;z-index:50;display:none;
+    }
+    #drop-zone.visible { display:block; }
+    .dz-icon { font-size:46px;margin-bottom:14px;opacity:0.35; }
+    .dz-title { font-size:17px;font-weight:500;margin-bottom:8px; }
+    .dz-sub { font-size:12px;color:var(--text-dim);line-height:1.65; }
+    .dz-btn {
+      margin-top:18px;display:inline-block;padding:10px 24px;
+      border-radius:8px;background:var(--accent);color:#fff;
+      font-size:13px;font-weight:500;cursor:pointer;border:none;
+    }
+
+    /* ── HRF curve overlay (top-right corner of canvas) ─────────────────── */
+    #hrf-canvas-wrap {
+      position:fixed;bottom:100px;right:296px;margin-right:18px;
+      width:180px;z-index:10;pointer-events:none;
+    }
+    #hrf-label { font-size:9px;font-family:var(--mono);color:var(--text-dim);letter-spacing:0.5px;text-transform:uppercase;margin-bottom:3px; }
+    #hrf-canvas { width:100%;height:48px;display:block;border-radius:4px; }
+
+    /* ── Drag-over highlight ────────────────────────────────────────────────*/
+    body.drag-over::after {
+      content:'Drop to analyse';
+      position:fixed;inset:0;z-index:300;
+      background:rgba(88,101,242,0.12);
+      border:2px dashed var(--accent);border-radius:14px;
+      display:flex;align-items:center;justify-content:center;
+      font-size:22px;font-weight:500;color:var(--accent);pointer-events:none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Loading overlay -->
+  <div id="loading">
+    <div class="spinner"></div>
+    <div id="loading-text">Initializing JemmaBrain</div>
+    <div id="loading-stage">Loading cortical surface…</div>
+    <div id="loading-progress"><div id="loading-bar"></div></div>
+  </div>
+
+  <!-- 3D canvas -->
+  <div id="canvas-container"></div>
+
+  <!-- 3D CSS label layer -->
+  <div id="label-container"></div>
+
+  <!-- Top bar -->
+  <div id="topbar" class="glass" style="border-radius:0;border-top:none;border-left:none;border-right:none;">
+    <div id="status-dot"></div>
+    <div class="logo">Jemma<span>Brain</span></div>
+    <div class="subtitle">🔴 Red Team Kitchen × ISU · TRIBE v2 + Gemma 4 · Recipe No. 001</div>
+    <div class="badge">fsaverage5 · 20,484 verts · 2 Hz</div>
+    <div id="topbar-actions">
+      <button class="top-btn" id="btn-mode-bold"    title="BOLD heatmap (B)">🔥 BOLD</button>
+      <button class="top-btn" id="btn-mode-net"     title="Yeo-7 networks (N)">🧠 Networks</button>
+      <button class="top-btn" id="btn-mode-hemi"    title="Hemisphere tint (H)">↔ Hemi</button>
+      <button class="top-btn" id="btn-labels"       title="Toggle region labels (L)">🏷 Labels</button>
+      <button class="top-btn" id="btn-autorotate"   title="Auto-rotate (R)">↻ Spin</button>
+    </div>
+  </div>
+
+  <!-- Left panel: stimulus + narration + segments -->
+  <div id="left-panel" class="glass">
+    <div class="panel-header">
+      <span class="ph-icon">📡</span> Stimulus &amp; Narration
+    </div>
+
+    <div id="stimulus-info">
+      <div id="stimulus-title">Drop a video or audio file to begin</div>
+      <div id="stimulus-meta">—</div>
+    </div>
+
+    <div id="tier-tabs">
+      <button class="tier-btn" data-tier="0">🧒 T0</button>
+      <button class="tier-btn" data-tier="1">👵 T1</button>
+      <button class="tier-btn active" data-tier="2">👥 T2</button>
+      <button class="tier-btn" data-tier="3">📚 T3</button>
+      <button class="tier-btn" data-tier="4">🎓 T4</button>
+      <button class="tier-btn" data-tier="5">🩺 T5</button>
+      <button class="tier-btn" data-tier="6">🔬 T6</button>
+    </div>
+
+    <div id="narration-text">
+      <p style="color:var(--text-dim);font-style:italic;">
+        Narration will appear here after analysis completes.</p>
+    </div>
+
+    <!-- 5-second segment breakdown -->
+    <div id="seg-panel">
+      <div class="panel-header" style="padding:8px 14px;">
+        <span class="ph-icon">⏱</span> 5-Second Segments
+      </div>
+      <div id="seg-list">
+        <p style="padding:8px 14px;font-size:10px;color:var(--text-dim);font-family:var(--mono);">
+          Segment data loads with analysis…</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right panel: analytics + network bars + ROI list -->
+  <div id="right-panel" class="glass">
+    <div class="panel-header">
+      <span class="ph-icon">📊</span> Brain Analytics
+    </div>
+
+    <div class="metric-group">
+      <div class="metric-label">Peak BOLD time</div>
+      <div id="peak-time" class="metric-value">—<span class="metric-unit">s</span></div>
+      <div id="peak-region" class="metric-sub">—</div>
+    </div>
+
+    <div class="metric-group">
+      <div class="metric-label">Dominant network</div>
+      <div id="dominant-net" class="metric-value" style="font-size:13px">—</div>
+      <div id="dominant-sub" class="metric-sub">—</div>
+    </div>
+
+    <div class="metric-group" style="display:flex;gap:0;">
+      <div style="flex:1;border-right:1px solid var(--border);padding-right:10px;">
+        <div class="metric-label">Cortex active</div>
+        <div id="cortex-pct" class="metric-value" style="font-size:15px;">—<span class="metric-unit">%</span></div>
+      </div>
+      <div style="flex:1;padding-left:10px;">
+        <div class="metric-label">Current TR</div>
+        <div id="current-tr" class="metric-value" style="font-size:15px;">—<span class="metric-unit"></span></div>
+      </div>
+    </div>
+
+    <!-- Network activity sparkline -->
+    <div id="activity-canvas-wrap">
+      <div id="activity-label">Network activity over time</div>
+      <canvas id="activity-canvas"></canvas>
+    </div>
+
+    <!-- Yeo-7 network bars -->
+    <div class="network-list" id="network-list"></div>
+
+    <!-- Top ROI list -->
+    <div id="roi-detail">
+      <div class="roi-detail-header">Top active regions (current TR)</div>
+      <div id="roi-list"></div>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+  <div id="timeline" class="glass">
+    <button id="tl-play">▶</button>
+    <div id="tl-track">
+      <input type="range" id="tl-slider" min="0" max="100" value="0" step="1" />
+      <div id="tl-ticks"></div>
+    </div>
+    <div id="tl-time">0.0 s</div>
+    <div id="tl-controls">
+      <button class="tl-speed" data-speed="0.5">0.5×</button>
+      <button class="tl-speed active" data-speed="1">1×</button>
+      <button class="tl-speed" data-speed="2">2×</button>
+      <button class="tl-speed" data-speed="4">4×</button>
+    </div>
+  </div>
+
+  <!-- Colour legend (centred above timeline) -->
+  <div id="legend-bar-wrap">
+    <div id="legend-label-row">
+      <span id="legend-lo">0σ</span>
+      <span id="legend-hi">3σ</span>
+    </div>
+    <div id="legend-bar"></div>
+    <div id="legend-map-name">inferno</div>
+  </div>
+
+  <!-- HRF curve (small canvas above timeline right) -->
+  <div id="hrf-canvas-wrap">
+    <div id="hrf-label">Haemodynamic response</div>
+    <canvas id="hrf-canvas"></canvas>
+  </div>
+
+  <!-- ROI hover tooltip -->
+  <div id="roi-tooltip"></div>
+
+  <script type="module" src="/src/main.js"></script>
+
+  <!-- ── Google Analytics 4 ─────────────────────────────────────────────── -->
+  <!-- Replace G-XXXXXXXXXX with real Measurement ID from analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      // Custom dimensions
+      custom_map: {
+        dimension1: 'user_tier',
+        dimension2: 'dominant_network',
+        dimension3: 'audience_mode',
+      },
+      // Don't send PII
+      anonymize_ip: true,
+    });
+
+    // ── JemmaBrain analytics helpers (called from main.js) ─────────────────
+    window.RTK_GA = {
+      trackFileSubmit: (filetype, size_mb, user_tier) => {
+        gtag('event', 'file_submitted', {
+          file_type: filetype,
+          size_mb: Math.round(size_mb * 10) / 10,
+          user_tier,
+        });
+      },
+      trackJobQueued: (queue_pos, model_tier) => {
+        gtag('event', 'job_queued', { queue_position: queue_pos, model_tier });
+      },
+      trackAnalysisComplete: (duration_s, dominant_network, n_trs) => {
+        gtag('event', 'analysis_complete', {
+          pipeline_duration_s: Math.round(duration_s),
+          dominant_network,
+          n_trs,
+        });
+      },
+      trackNarrationViewed: (tier_name, audience_mode) => {
+        gtag('event', 'narration_tier_viewed', { tier_name, audience_mode });
+      },
+      trackBrainInteraction: (action, detail) => {
+        gtag('event', 'brain_viewer_interaction', { action, ...detail });
+      },
+      trackAudienceModeChange: (from_mode, to_mode) => {
+        gtag('event', 'audience_mode_changed', { from_mode, to_mode });
+      },
+      trackYouTubeSubmit: (video_id) => {
+        gtag('event', 'youtube_url_submitted', { video_id });
+      },
+      trackUpgradeClick: (from_tier, to_tier) => {
+        gtag('event', 'upgrade_clicked', { from_tier, to_tier });
+      },
+      trackResultShare: (platform) => {
+        gtag('event', 'result_shared', { platform });
+      },
+      trackRecipeIntro: (seconds_shown, dismissed_via) => {
+        gtag('event', 'recipe_intro_interaction', { seconds_shown, dismissed_via });
+      },
+    };
+  </script>
+
+  <!-- ── YouTube URL submission UI ────────────────────────────────────────── -->
+  <style>
+    #yt-submit-bar {
+      position: fixed; bottom: 92px; left: 328px; right: 296px;
+      display: flex; gap: 8px; align-items: center;
+      z-index: 20; padding: 0 18px;
+    }
+    #yt-url-input {
+      flex: 1; height: 32px; border-radius: 8px;
+      background: rgba(10,15,26,0.9); border: 1px solid rgba(88,101,242,0.25);
+      color: var(--text); font-family: var(--mono); font-size: 11px;
+      padding: 0 10px; outline: none; transition: border-color 0.2s;
+    }
+    #yt-url-input::placeholder { color: var(--text-dim); }
+    #yt-url-input:focus { border-color: var(--accent); }
+    #yt-url-input.error { border-color: #eb459e; }
+    #yt-submit-btn {
+      height: 32px; padding: 0 14px; border-radius: 8px;
+      background: #ff0000; border: none; color: #fff; cursor: pointer;
+      font-size: 11px; font-family: var(--mono); display: flex;
+      align-items: center; gap: 5px; transition: background 0.2s; white-space: nowrap;
+    }
+    #yt-submit-btn:hover { background: #cc0000; }
+    #yt-submit-btn:disabled { background: rgba(255,0,0,0.3); cursor: not-allowed; }
+    #yt-status { font-size: 10px; color: var(--text-dim); font-family: var(--mono); white-space: nowrap; }
+  </style>
+
+  <div id="yt-submit-bar">
+    <input
+      id="yt-url-input"
+      type="url"
+      placeholder="▶ Paste a YouTube URL to analyse (youtube.com/watch?v=...)"
+      autocomplete="off"
+      spellcheck="false"
+    />
+    <button id="yt-submit-btn">▶ Analyse</button>
+    <span id="yt-status"></span>
+  </div>
+
+  <script>
+  (function () {
+    const input  = document.getElementById('yt-url-input');
+    const btn    = document.getElementById('yt-submit-btn');
+    const status = document.getElementById('yt-status');
+
+    function extractYTId(url) {
+      try {
+        const u = new URL(url.trim());
+        if (u.hostname.includes('youtu.be'))   return u.pathname.slice(1).split('?')[0];
+        if (u.hostname.includes('youtube.com')) return u.searchParams.get('v') || null;
+      } catch { /* fall through */ }
+      return null;
+    }
+
+    async function submitYT() {
+      const raw = input.value.trim();
+      const vid  = extractYTId(raw);
+
+      input.classList.remove('error');
+      if (!vid) {
+        input.classList.add('error');
+        status.textContent = '⚠ Invalid YouTube URL';
+        return;
+      }
+
+      btn.disabled  = true;
+      status.textContent = '⏳ Fetching…';
+
+      try {
+        // Tell the server to fetch and queue the YouTube video
+        const res = await fetch('/api/submit-youtube', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ video_id: vid }),
+        });
+        const data = await res.json();
+
+        if (!res.ok) {
+          status.textContent = `❌ ${data.error || 'Server error'}`;
+          input.classList.add('error');
+        } else {
+          status.textContent = `✅ Queued (job ${data.job_id})`;
+          input.value = '';
+          if (window.RTK_GA) {
+            window.RTK_GA.trackYouTubeSubmit(vid);
+          }
+        }
+      } catch (e) {
+        status.textContent = '❌ Network error';
+      } finally {
+        btn.disabled = false;
+        setTimeout(() => { if (status.textContent.startsWith('✅')) status.textContent = ''; }, 5000);
+      }
+    }
+
+    btn.addEventListener('click', submitYT);
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') submitYT(); });
+  })();
+  </script>
+</body>
+</html>

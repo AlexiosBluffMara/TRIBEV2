@@ -1,0 +1,22 @@
+{
+  "name": "jemmabrain-viz",
+  "version": "1.0.0",
+  "description": "Real-time 3D cortical BOLD visualization — TRIBE v2 + Gemma 4 + Kimi K2.5",
+  "type": "module",
+  "scripts": {
+    "dev":   "vite --host 0.0.0.0 --port 5173",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4173"
+  },
+  "dependencies": {
+    "three":          "^0.176.0",
+    "leva":           "^0.9.35",
+    "@tweenjs/tween.js": "^25.0.0",
+    "gsap":           "^3.12.7",
+    "stats.js":       "^0.17.0"
+  },
+  "devDependencies": {
+    "vite":           "^6.3.5",
+    "@vitejs/plugin-basic-ssl": "^1.2.0"
+  }
+}

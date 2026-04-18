@@ -1,0 +1,56 @@
+## Cloud Build config for the JemmaBrain webapp server image
+## Run: gcloud builds submit . --config=gcp/cloudbuild-server.yaml \
+##          --substitutions=_REGISTRY=us-central1-docker.pkg.dev/PROJECT/jemmabrain,_BUCKET=my-bucket
+
+substitutions:
+  _REGISTRY: "us-central1-docker.pkg.dev/jemmabrain-prod/jemmabrain"
+  _BUCKET:   "jemmabrain-prod-data"
+  _TAG:      "latest"
+
+steps:
+
+# 1. Build Vite frontend
+- name: 'node:22'
+  dir: 'webapp'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      npm ci --prefer-offline
+      VITE_GCS_MESH_BASE=https://storage.googleapis.com/${_BUCKET}/mesh npm run build
+
+# 2. Build Docker image
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+    - 'build'
+    - '-f', 'gcp/Dockerfile.server'
+    - '-t', '${_REGISTRY}/server:${_TAG}'
+    - '-t', '${_REGISTRY}/server:$SHORT_SHA'
+    - '.'
+
+# 3. Push image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', '--all-tags', '${_REGISTRY}/server']
+
+# 4. Deploy to Cloud Run
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'gcloud'
+  args:
+    - 'run', 'deploy', 'jemmabrain-server'
+    - '--image', '${_REGISTRY}/server:${_TAG}'
+    - '--region', 'us-central1'
+    - '--platform', 'managed'
+    - '--allow-unauthenticated'
+    - '--memory', '2Gi'
+    - '--cpu', '2'
+    - '--min-instances', '0'
+    - '--max-instances', '10'
+    - '--set-env-vars', 'GCS_BUCKET=${_BUCKET},GCS_MESH_BASE=https://storage.googleapis.com/${_BUCKET}/mesh'
+
+images:
+  - '${_REGISTRY}/server:${_TAG}'
+  - '${_REGISTRY}/server:$SHORT_SHA'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: E2_HIGHCPU_8

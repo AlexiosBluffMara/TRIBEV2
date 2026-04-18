@@ -56,14 +56,16 @@ And 🐱 on the user's original message as an immediate ack.
 | `bot/config.py` | paths, env vars, two-model split, TRIBE overrides |
 | `bot/prompts.py` | central persona + all system/user prompt templates |
 | `bot/ollama_client.py` | `generate()` / `generate_json()` with `think:false` + `keep_alive:0` |
-| `bot/cat_gate.py` | Gemma JSON-mode classify of 4 keyframes → `CatClassification` |
+| `bot/media_gate.py` | Gemma JSON-mode classify of 4 keyframes → `MediaDescription` |
+| `bot/cat_gate.py` | back-compat shim (deprecated) → re-exports from `media_gate` |
 | `bot/tiers.py` | three-tier (layperson/clinician/researcher) + quick narration |
 | `bot/pipeline.py` | `TribeModel` loader, `run_inference`, `run_inference_text_only` |
 | `bot/visualize.py` | peak cortex PNG + streaming ROI MP4 |
 | `bot/gemma_vision.py` | ffmpeg keyframe extraction helpers |
 | `bot/gemma.py` | legacy clinician narration for `run_demo` back-compat |
 | `bot/hwmon.py` | nvidia-smi + psutil sampling around each stage |
-| `bot/make_demo_asset.py` | build `assets/cat_demo_20s.mp4` from a source clip |
+| `bot/make_demo_asset.py` | build `assets/demo_clip_20s.mp4` from a source clip |
+| `bot/batch_runner.py` | batch-process a media directory → 3 Discord webhook posts per file |
 | `bot/run_demo.py` | CLI end-to-end run with hardware report |
 | `bot/bot.py` | discord.py bot with progressive edits + reactions |
 

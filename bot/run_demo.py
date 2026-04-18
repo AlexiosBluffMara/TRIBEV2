@@ -1,13 +1,13 @@
 """End-to-end offline demo: Gemma vision -> TRIBE v2 -> Gemma narration.
 
 Runs on a single media file (video preferred) and prints a hardware strain
-report (GPU VRAM, util, RAM) for each stage so we can size the medical-office
+report (GPU VRAM, util, RAM) for each stage so we can size the deployment
 box. Outputs: outputs/brain_peak.png, outputs/tribev2_stream.mp4,
 outputs/gemma_vision.txt, outputs/gemma_narration.txt, outputs/report.json.
 
 Usage:
-    python -m bot.run_demo                              # uses assets/cat_demo_20s.mp4
-    python -m bot.run_demo assets/cat_demo_20s.mp4
+    python -m bot.run_demo                              # uses the packaged demo clip
+    python -m bot.run_demo path/to/your_clip.mp4
     python -m bot.run_demo --skip-stream --skip-vision
 """
 from __future__ import annotations
@@ -17,7 +17,7 @@ import json
 import time
 from pathlib import Path
 
-from . import cat_gate, config, gemma
+from . import config, gemma, media_gate
 from .hwmon import Monitor
 from .pipeline import run_inference
 from .visualize import render_peak_cortex, render_roi_stream
@@ -50,21 +50,20 @@ def main() -> None:
     print(f"\n[demo] Stimulus: {media} ({report['size_mb']} MB)")
     t_start = time.time()
 
-    # --- Stage 1: Gemma multimodal vision (cat-gate classifier) ---
+    # --- Stage 1: Gemma multimodal vision ---
     vision_text = None
     if not args.skip_vision:
         with Monitor("gemma-vision") as m:
-            cls = cat_gate.classify(media, n_frames=4)
+            cls = media_gate.classify(media, n_frames=4)
         vision_text = cls.short_description()
-        (config.OUT_DIR / "gemma_vision.txt").write_text(
-            vision_text + "\n\n" + cls.cat_remark, encoding="utf-8"
-        )
-        print("\n=== Gemma vision (what's in the video) ===")
+        (config.OUT_DIR / "gemma_vision.txt").write_text(vision_text, encoding="utf-8")
+        print("\n=== Gemma vision (what's in the media) ===")
         print(vision_text)
-        print(f"({cls.cat_remark})")
+        print(f"(content_type: {cls.content_type}, modality: {cls.modality})")
         report["stages"]["gemma_vision"] = _stage(m, extras={
             "frames": [str(f) for f in cls.frames],
-            "is_cat": cls.is_cat,
+            "content_type": cls.content_type,
+            "modality": cls.modality,
         })
 
     # --- Stage 2: TRIBE v2 model load ---

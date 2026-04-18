@@ -29,7 +29,7 @@ narration. Nothing leaves the machine.
    (or keep it resident if you plan to use `run_demo.py` instead of the
    Discord flow).
 
-4. **Regenerate `assets/cat_demo_20s.mp4`** (captures your real cat clip):
+4. **Regenerate `assets/demo_clip_20s.mp4`** (builds from your source clip or a synthetic fallback):
    ```bash
    python -m bot.make_demo_asset
    ```
@@ -57,11 +57,11 @@ narration. Nothing leaves the machine.
 - Show the Discord server with the bot online and `/jemma-demo` in the
   command list.
 
-### 0:50 — 1:15  upload the cat video
+### 0:50 — 1:15  upload the demo clip
 
-- Drag `assets/cat_source.mp4` into the Discord channel.
+- Drag `assets/demo_clip_20s.mp4` (or any media file) into the Discord channel.
 - The bot replies almost immediately with **Gemma vision** text describing
-  the cat clip. (~1-2 s — this is the "wow, it saw that?" moment.)
+  the clip. (~1-2 s — this is the "wow, it saw that?" moment.)
 - Cut to `nvidia-smi` terminal — show VRAM briefly spike to ~18 GB during
   Gemma, then drop as `keep_alive: 0` evicts it.
 

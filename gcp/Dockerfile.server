@@ -1,0 +1,35 @@
+# ============================================================
+# JemmaBrain — webapp server image for Cloud Run
+# No GPU needed — serves BOLD data from GCS, proxies nothing heavy
+# ============================================================
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# System deps
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl ca-certificates \
+  && rm -rf /var/lib/apt/lists/*
+
+# Python deps (server only, no torch)
+COPY requirements-server.txt ./
+RUN pip install --no-cache-dir -r requirements-server.txt
+
+# Copy source
+COPY bot/config.py        bot/config.py
+COPY bot/__init__.py      bot/__init__.py
+COPY bot/results_store.py bot/results_store.py
+COPY bot/tunnel.py        bot/tunnel.py
+COPY webapp/server.py     webapp/server.py
+COPY webapp/dist/         webapp/dist/
+# brain.glb served from GCS (set GCS_MESH_BASE env), not bundled here
+
+# Environment
+ENV PORT=8765
+ENV GCS_BUCKET=""
+ENV GCS_MESH_BASE=""
+ENV PYTHONUNBUFFERED=1
+
+EXPOSE 8765
+
+CMD ["python", "-m", "uvicorn", "webapp.server:app", "--host", "0.0.0.0", "--port", "8765", "--workers", "2"]
