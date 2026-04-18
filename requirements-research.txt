@@ -1,0 +1,30 @@
+# Research-only deps: local fine-tune on RTX 5090 (Blackwell sm_120).
+# Do NOT install in the production bot environment — these are for offline research
+# per docs/LOCAL_FINETUNE_PLAN.md and must stay quarantined from the commercial pipeline.
+#
+# Install:
+#   "C:/Users/soumi/TRIBEV2/.venv/Scripts/pip.exe" install -r requirements-research.txt
+#
+# Requires: torch>=2.7 with CUDA 12.8+ (already in requirements.txt as 2.11.0+cu128)
+#
+# ── Python 3.14 constraint ───────────────────────────────────────────────────
+# The production venv uses Python 3.14. Several heavy PDF/image packages
+# (docling, marker-pdf, datatrove with its lxml/pillow pins) don't ship 3.14
+# wheels yet and pull Pillow 10.4 which requires source-build zlib on Windows.
+#
+# For PDF→markdown work, use a separate Python 3.12 venv:
+#   py -3.12 -m venv C:/Users/soumi/research312
+#   C:/Users/soumi/research312/Scripts/pip install -r requirements-research-pdf.txt
+# That venv is corpus-processing only, never imported by bot/.
+
+# ── Fine-tune stack (Blackwell / Python 3.14 compatible) ─────────────────────
+unsloth                     # latest — includes Blackwell sm_120 support
+bitsandbytes                # 4-bit / 8-bit quantization, QLoRA
+peft                        # LoRA adapters
+trl                         # SFT, DPO, ORPO trainers
+datasets                    # HF datasets + streaming
+accelerate                  # distributed / mixed-precision training
+
+# ── Streaming + parallel data ops (work on Py3.14) ───────────────────────────
+polars                      # fast dataframe ops on parquet shards
+zstandard                   # corpus compression standard

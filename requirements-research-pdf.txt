@@ -1,0 +1,17 @@
+# PDF/corpus processing deps — install into a SEPARATE Python 3.12 venv.
+# These pull Pillow 10.4 and other deps that don't have Python 3.14 wheels yet.
+#
+# Setup:
+#   py -3.12 -m venv C:/Users/soumi/research312
+#   C:/Users/soumi/research312/Scripts/python -m pip install -U pip
+#   C:/Users/soumi/research312/Scripts/pip install -r requirements-research-pdf.txt
+#
+# Usage: activate that venv only when running the PDF→markdown pipeline.
+# Do NOT install into the production bot venv (Python 3.14).
+
+datatrove                   # HF tool for dedupe, filter, tokenize large corpora
+marker-pdf                  # primary PDF→markdown (fast + accurate)
+docling                     # fallback PDF→markdown (better for math-heavy papers)
+pymupdf4llm                 # fastest PDF→markdown for born-digital PDFs
+lancedb                     # embedded vector DB on SSD, no server
+qdrant-client               # alternative if you need a full vector server

@@ -53,7 +53,17 @@ uploads/
 # --- webapp build + deps ---
 webapp/node_modules/
 webapp/dist/
+webapp/.vite/
 webapp/__pycache__/
+
+# --- research-only venvs (if created locally) ---
+research312/
+
+# --- unsloth on-disk compile cache ---
+unsloth_compiled_cache/
+
+# --- Claude Code local state ---
+.claude/
 
 # --- large test clips (not committed; use make_demo_asset) ---
 assets/test_*.mp4

@@ -3,9 +3,13 @@ discord.py==2.7.1
 
 # ── PyTorch (RTX 5090 / Blackwell needs cu128 wheel) ────────────────────────
 # Install with: pip install --index-url https://download.pytorch.org/whl/cu128 \
-#               torch==2.11.0+cu128 torchvision==0.26.0+cu128
-torch==2.11.0+cu128
-torchvision==0.26.0+cu128
+#               torch torchvision
+#
+# Unsloth currently pins torch 2.10; bare tribev2 works with 2.10 or 2.11.
+# If unsloth is installed, keep torch at 2.10 to avoid conflicts. Both versions
+# ship cu128 wheels with sm_120 support.
+torch>=2.10.0
+torchvision>=0.25.0
 
 # ── TRIBE v2 source (installed as editable from tribev2_src/) ────────────────
 # pip install --no-deps -e tribev2_src

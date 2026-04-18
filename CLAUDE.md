@@ -20,9 +20,9 @@ JemmaBrain: takes short video/audio/text clips, predicts cortical BOLD response 
 ## Stack at a glance
 
 - **Compute:** Windows 11 · RTX 5090 (32 GB GDDR7, Blackwell sm_120) · 64 GB RAM
-- **Python venv:** `C:\Users\soumi\venvs\tribev2` (NOT on D: drive)
+- **Python venv:** `C:\Users\soumi\TRIBEV2\.venv` (NOT on D: drive — kept on C: for speed, invoked by `start_bot.ps1`)
 - **Inference:** TRIBE v2 BF16 + torch.compile, 4–7 min per full multimodal pipeline
-- **LLM:** Gemma 3 27B via Unsloth GGUFs in Ollama — Q8_0 for narration, Q5_K_M for agents
+- **LLM:** Gemma via Ollama (local tags: `gemma4:26b`, `gemma4:31b`, `gemma4:e4b-it-bf16`, `gemma4:e4b-it-q8_0`). Narration uses the largest fitting variant; agent loop uses e4b-it-q8_0 for speed.
 - **Backend:** FastAPI (`webapp/server.py`) on localhost:8765
 - **Frontend:** Vite + Three.js (`webapp/`) on localhost:5173
 - **Bot:** Discord.py (`bot/`) with RBAC, priority queue, rate limiting, analysis threads

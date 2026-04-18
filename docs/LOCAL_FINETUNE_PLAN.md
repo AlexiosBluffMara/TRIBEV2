@@ -40,22 +40,41 @@ Two NVMe SSDs is the sweet spot:
 
 Don't try to keep all 30T of RedPajama-v2 locally. Stream from HF Datasets with on-the-fly tokenization instead.
 
-## Multimodal Gemma 3 on RTX 5090
+## Multimodal Gemma 4 on RTX 5090
 
-Gemma 3 is natively multimodal (vision encoder baked in at 4B / 12B / 27B sizes; the 1B is text-only). Key variants for this box:
+Gemma 4 shipped in early 2026 and is the current local generation. The user has already pulled via Ollama:
 
-| Variant | Format | VRAM (bf16) | VRAM (4bit) | Use case |
-|---------|--------|-------------|-------------|----------|
-| `google/gemma-3-27b-it` | HF (bf16) | ~54GB | — | Too big for bf16 on 5090 |
-| `unsloth/gemma-3-27b-it-bnb-4bit` | HF (4bit) | — | ~18GB | Vision-capable, fits with headroom for LoRA |
-| `unsloth/gemma-3-27b-it-unsloth-bnb-4bit` | HF (dynamic 4bit) | — | ~18GB | Best accuracy/speed tradeoff — use this |
-| `unsloth/gemma-3-27b-it-GGUF:Q8_0` | GGUF | — | ~29GB | Ollama path for narration (text only, practically) |
-| `unsloth/gemma-3-12b-it-bnb-4bit` | HF (4bit) | — | ~9GB | Fast agent loop + vision; room for full LoRA |
-| `unsloth/gemma-3-4b-it-bnb-4bit` | HF (4bit) | — | ~3.5GB | Classifier / quality filter / distillation target |
+```
+gemma4:26b                 17 GB   (largest dense)
+gemma4:31b                 19 GB   (reasoning-tuned class)
+gemma4:e4b-it-bf16         16 GB   (efficient 4B params, bf16)
+gemma4:e4b-it-q8_0         11 GB   (efficient 4B, Q8 quant)
+gemma4:e4b                 9.6 GB  (default Q4)
+gemma4:e2b                 7.2 GB  (efficient 2B, default Q4)
+gemma4-e4b-128k:latest     9.6 GB  (128k context E4B)
+gemma4-e2b-128k:latest     7.2 GB  (128k context E2B)
+```
 
-**For the Hermes agent w/ vision:** use `unsloth/gemma-3-12b-it-unsloth-bnb-4bit` through transformers (not Ollama). 12B is enough for tool-use loops, gives you vision, and leaves ~20GB VRAM for KV cache and concurrent workloads.
+These are already operational for the bot's narration/agent pipelines via Ollama.
 
-**For narration (text only):** stay on the GGUF/Ollama path per `docs/KIMI_VS_GEMMA.md`. No reason to switch.
+**For fine-tuning (HF format, not GGUF):** use the Unsloth-published Gemma 4 tags. Unsloth publishes:
+- `unsloth/gemma-4-26b-it-bnb-4bit` (vision-capable) — verify exact tag via `huggingface-cli search unsloth gemma-4`
+- `unsloth/gemma-4-e4b-it-bnb-4bit` (smaller, vision-capable)
+- `unsloth/gemma-4-e2b-it-bnb-4bit` (distillation target)
+
+VRAM fit on the 32GB 5090 (approximate; verify with actual load):
+
+| Model class | Method | Seq len | Batch | VRAM | Fit |
+|-------------|--------|---------|-------|------|-----|
+| Gemma 4 26B | QLoRA (r=16) | 2048 | 1 + grad accum 8 | ~28GB | Tight |
+| Gemma 4 26B | QLoRA (r=64) | 4096 | 1 + grad accum 4 | ~30GB | Very tight |
+| Gemma 4 E4B | LoRA (r=64) | 4096 | 2 + grad accum 4 | ~10GB | Comfortable |
+| Gemma 4 E4B | Full FT | 4096 | 1 + grad accum 8 | ~24GB | Viable |
+| Gemma 4 E2B | Full FT | 4096 | 2 + grad accum 8 | ~14GB | Easy |
+
+**For the Hermes agent w/ vision:** use `unsloth/gemma-4-e4b-it-bnb-4bit` through transformers (not Ollama). E4B is enough for tool-use loops, supports vision, and leaves ~20GB VRAM for KV cache and concurrent workloads.
+
+**For narration (text only):** stay on the Ollama path (`gemma4:26b` or `gemma4:31b`) per `docs/KIMI_VS_GEMMA.md`. No reason to switch — already pulled, already fast.
 
 ## Fine-tuning on the 5090
 
