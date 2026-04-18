@@ -1,4 +1,4 @@
-# YouTube demo script — MindScope offline brain-response Discord bot
+# YouTube demo script — Jemma offline brain-response Discord bot
 
 Goal: a ~3-minute screen recording showing a cat video go into a Discord
 channel, get analyzed by Gemma 4 E4B, predicted by TRIBE v2 on the local
@@ -45,7 +45,7 @@ narration. Nothing leaves the machine.
 
 ### 0:00 — 0:20  cold open
 
-- Quick title slide: **"MindScope — brain response inference, 100% offline"**
+- Quick title slide: **"Jemma — brain response inference, 100% offline"**
 - B-roll: `nvidia-smi` output showing the idle RTX 5090 + `ollama list`
   showing `gemma4:e4b-it-q8_0`.
 
@@ -54,7 +54,7 @@ narration. Nothing leaves the machine.
 - One sentence on why: *"Medical offices can't send patient video to the
   cloud. Our box ships with Gemma 4 and TRIBE v2 locally — no data leaves."*
 - Show `docker-compose` is NOT running (emphasize single-box deploy).
-- Show the Discord server with the bot online and `/mindscope-demo` in the
+- Show the Discord server with the bot online and `/jemma-demo` in the
   command list.
 
 ### 0:50 — 1:15  upload the cat video

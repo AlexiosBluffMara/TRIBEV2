@@ -4,8 +4,11 @@ a block of work runs, then reports peak and average usage.
 from __future__ import annotations
 
 import subprocess
+import sys
 import threading
 import time
+
+_NOWWIN = subprocess.CREATE_NO_WINDOW if sys.platform == "win32" else 0
 from dataclasses import dataclass, field
 
 
@@ -45,6 +48,7 @@ def _query_nvidia_smi() -> tuple[float, int, int, float] | None:
                 "--format=csv,noheader,nounits",
             ],
             text=True, timeout=2,
+            creationflags=_NOWWIN,
         )
         line = out.strip().splitlines()[0]
         mem, util, temp, power = [p.strip() for p in line.split(",")]

@@ -44,6 +44,9 @@ DEFAULT = CatClassification(
 
 def classify(video_path: Path, n_frames: int = 4) -> CatClassification:
     frames = extract_keyframes(video_path, n=n_frames)
+    if not frames:
+        print(f"[cat_gate] ffmpeg produced no frames for {video_path.name}; using text-only fallback")
+        return CatClassification(**{**DEFAULT.__dict__, "frames": []})
     images_b64 = [base64.b64encode(p.read_bytes()).decode() for p in frames]
     duration = _probe_duration(video_path)
     user = prompts.CAT_GATE_USER.format(n=len(frames), duration=duration)

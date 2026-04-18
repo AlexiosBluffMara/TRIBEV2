@@ -1,6 +1,6 @@
-# MindCat — offline cat-brain Discord bot
+# Jemma — offline cat-brain Discord bot
 
-MindCat is a Discord bot that eats cat videos and returns a cortical
+Jemma is a Discord bot that eats cat videos and returns a cortical
 activity map plus three audience-tiered narrations. Everything runs on
 one local box (RTX 5090, 32 GB VRAM, Windows 11). No data leaves the
 machine.
@@ -90,10 +90,10 @@ python -m bot.bot
 ```
 
 In Discord:
-- `/mindcat-demo` — runs the packaged cat clip
+- `/jemma-demo` — runs the packaged cat clip
 - Drop an `.mp4/.mov/.mkv/.webm/.wav/.mp3/.flac` in the channel — the
   bot picks it up automatically (<= 25 MB)
-- `/mindcat-status` — GPU + Ollama + TRIBE config health
+- `/jemma-status` — GPU + Ollama + TRIBE config health
 
 ## Full setup walkthrough
 
@@ -155,7 +155,7 @@ already sets this for you.
 ### 4. Discord bot token
 
 1. https://discord.com/developers/applications → New Application →
-   give it a name (e.g. "MindCat").
+   give it a name (e.g. "Jemma").
 2. Bot tab → Reset Token → copy → `export DISCORD_TOKEN=...`.
 3. Bot tab → enable **Message Content Intent** (required — the bot
    reads attachments from on_message).
@@ -205,11 +205,11 @@ PARAMETER num_ctx 8192
 EOF
 
 # 3. register with Ollama
-ollama create mindcat-gemma -f Modelfile
+ollama create jemma-gemma -f Modelfile
 
 # 4. point the bot at it
-export OLLAMA_MODEL_FAST=mindcat-gemma
-export OLLAMA_MODEL_QUALITY=mindcat-gemma
+export OLLAMA_MODEL_FAST=jemma-gemma
+export OLLAMA_MODEL_QUALITY=jemma-gemma
 ```
 
 You can split fast/quality across two tags — e.g. UD-Q4_K_XL for the
