@@ -47,6 +47,7 @@ from . import config, media_gate, tiers
 from .hwmon import _query_nvidia_smi
 from .logger import log
 from .pipeline import load_model, run_inference, run_inference_text_only
+from .scheduler import start_scheduler, stop_scheduler
 from .visualize import render_peak_cortex
 
 
@@ -107,6 +108,7 @@ class _JemmaClient(discord.Client):
             return
         _shutdown_event.set()
         log.info("bot closing; announcing offline")
+        stop_scheduler()
         await _post_status("🔴 **Jemma is going offline.**")
         if _worker_task and not _worker_task.done():
             _worker_task.cancel()
@@ -282,8 +284,20 @@ async def on_ready() -> None:
     await asyncio.to_thread(load_model)
     log.info("TRIBE v2 pre-warmed; Jemma is ready")
 
+    async def _restart_worker() -> None:
+        global _worker_task
+        _worker_task = asyncio.create_task(_worker(), name="pipeline-worker")
+        log.info("pipeline worker restarted by scheduler")
+
     global _worker_task
     _worker_task = asyncio.create_task(_worker(), name="pipeline-worker")
+
+    start_scheduler(
+        post_status_fn=_post_status,
+        job_queue=_job_queue,
+        worker_task_getter=lambda: _worker_task,
+        restart_worker_fn=_restart_worker,
+    )
 
     if sys.platform != "win32":
         loop = asyncio.get_running_loop()
