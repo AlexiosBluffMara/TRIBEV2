@@ -33,3 +33,21 @@ outputs/preds.npy
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# --- downloaded raw clips (large, not needed in repo) ---
+assets/dl_*.mp4
+assets/dl_*.webm
+
+# --- runtime outputs ---
+outputs/frames/
+outputs/*.png
+outputs/*.mp4
+outputs/*.parquet
+outputs/gemma_*.txt
+outputs/report.json
+logs/
+uploads/
+
+# --- large test clips (not committed; use make_demo_asset) ---
+assets/test_*.mp4
+assets/cat_source.mp4

@@ -1,0 +1,68 @@
+# Jemma + Ollama sidecar — GPU passthrough via nvidia-container-toolkit
+#
+# Prerequisites:
+#   - Docker Desktop (Windows/Mac) or Docker Engine (Linux) with GPU support
+#   - NVIDIA Container Toolkit: https://docs.nvidia.com/datacenter/cloud-native/
+#   - .env file with DISCORD_TOKEN, HF_TOKEN, etc. (copy from .env.example)
+#
+# Usage:
+#   docker compose up -d              # start both services
+#   docker compose logs -f jemma      # follow Jemma logs
+#   docker compose down               # stop and remove containers
+
+services:
+  # ── Ollama ─────────────────────────────────────────────────────────────────
+  ollama:
+    image: ollama/ollama:latest
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "http://localhost:11434/"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  # ── Jemma ──────────────────────────────────────────────────────────────────
+  jemma:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      ollama:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      # Point Jemma at the Docker-internal Ollama URL (overrides .env)
+      OLLAMA_URL: http://ollama:11434
+      PYTHONUNBUFFERED: "1"
+    volumes:
+      # Large model assets: bind-mount from host, never baked into image
+      - ${TRIBEV2_WEIGHTS:-./tribev2_weights}:/app/tribev2_weights:ro
+      - ${TRIBEV2_SRC:-./tribev2_src}:/app/tribev2_src:ro
+      - ${HF_HOME:-~/.cache/huggingface}:/root/.cache/huggingface
+      # Runtime output dirs: writable, persisted on host
+      - ./tribev2_cache:/app/tribev2_cache
+      - ./uploads:/app/uploads
+      - ./outputs:/app/outputs
+      - ./logs:/app/logs
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes:
+  ollama_data:

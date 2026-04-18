@@ -1,12 +1,12 @@
-"""Generate the 20-second cat demo asset.
+"""Generate the 20-second demo asset for the Jemma pipeline smoke test.
 
-Preferred path: a real cat clip at ``assets/cat_source.mp4``. We trim the
-first 20 seconds, keep its native audio (purring/meowing) so TRIBE v2's
-wav2vec-bert extractor has real signal, and optionally mix in a short
-narration line for TRIBE's text extractor.
+Preferred path: a real clip at ``assets/demo_source.mp4``. We trim the
+first 20 seconds, keep its native audio so TRIBE v2's wav2vec-BERT
+extractor has real signal, and optionally mix in a short narration line
+for TRIBE's text extractor.
 
 Fallback path (no source clip): a synthetic gradient backdrop + gTTS
-narration, so the pipeline still runs end-to-end.
+narration, so the pipeline still runs end-to-end on any machine.
 
 Usage:
     python -m bot.make_demo_asset
@@ -23,17 +23,17 @@ from pathlib import Path
 from . import config
 
 NARRATION = (
-    "A tabby cat sits on a sunny windowsill, slowly stretching its paws. "
-    "It blinks at a bird flitting past the glass, then lets out a soft purr. "
-    "The rhythmic sound fills the quiet room as the cat curls back into a "
-    "warm patch of afternoon light and closes its eyes."
+    "A 20-second media excerpt is playing. This is the Jemma offline demo "
+    "clip used to smoke-test the TRIBE v2 end-to-end pipeline: vision "
+    "encoding, audio feature extraction, and cortical surface prediction "
+    "across all 20,484 fsaverage5 vertices at 2 Hz."
 )
 CLIP_SECONDS = 20
 
 ASSETS = config.ASSETS_DIR
-OUT_VIDEO = ASSETS / "cat_demo_20s.mp4"
-NARRATION_WAV = ASSETS / "cat_demo_20s_audio.wav"
-SOURCE_CLIP = ASSETS / "cat_source.mp4"  # optional real cat video
+OUT_VIDEO = ASSETS / "demo_clip_20s.mp4"
+NARRATION_WAV = ASSETS / "demo_clip_20s_audio.wav"
+SOURCE_CLIP = ASSETS / "demo_source.mp4"  # optional real source clip
 
 
 def _require_ffmpeg() -> str:
@@ -81,7 +81,7 @@ def _trim_real_clip(source: Path, with_narration: bool) -> Path:
     ffmpeg = _require_ffmpeg()
     if with_narration:
         audio = _generate_narration()
-        # 80% native audio (purring), 50% narration, downmix to mono 16kHz
+        # 80% native audio, 50% narration, downmix to mono 16kHz
         cmd = [
             ffmpeg, "-y",
             "-i", str(source),

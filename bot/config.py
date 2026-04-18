@@ -53,5 +53,7 @@ DISCORD_TOKEN = os.environ.get("DISCORD_TOKEN")
 DISCORD_GUILD_ID = os.environ.get("DISCORD_GUILD_ID")
 # Only respond in this channel if set (optional guardrail).
 DISCORD_ALLOWED_CHANNEL_ID = os.environ.get("DISCORD_ALLOWED_CHANNEL_ID")
+# Post online/offline announcements here if set.
+DISCORD_STATUS_CHANNEL_ID = os.environ.get("DISCORD_STATUS_CHANNEL_ID")
 
-DEMO_VIDEO = ASSETS_DIR / "cat_demo_20s.mp4"
+DEMO_VIDEO = ASSETS_DIR / "demo_clip_20s.mp4"
