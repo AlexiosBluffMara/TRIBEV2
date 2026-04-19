@@ -65,6 +65,9 @@ unsloth_compiled_cache/
 # --- Claude Code local state ---
 .claude/
 
+# --- exported session transcripts (regeneratable via scripts/export_chat_logs.py) ---
+archive/chatlogs/
+
 # --- large test clips (not committed; use make_demo_asset) ---
 assets/test_*.mp4
 assets/cat_source.mp4
