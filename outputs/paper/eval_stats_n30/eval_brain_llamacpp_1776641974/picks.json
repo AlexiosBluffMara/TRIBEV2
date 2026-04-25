@@ -1,0 +1,842 @@
+[
+  {
+    "stimulus_label": "a child reading aloud from a picture book",
+    "modality": "audio",
+    "top_rois": [
+      "7Networks_LH_Cont_pCun_2",
+      "7Networks_RH_Cont_Par_4",
+      "7Networks_LH_Limbic_OFC_3",
+      "7Networks_RH_DorsAttn_Post_8",
+      "7Networks_LH_Default_PFC_7",
+      "7Networks_RH_Default_Temp_6",
+      "7Networks_LH_Cont_Par_7",
+      "7Networks_RH_Default_pCunPCC_4"
+    ],
+    "roi_means": {
+      "7Networks_LH_Cont_pCun_2": 0.547,
+      "7Networks_RH_Cont_Par_4": 0.541,
+      "7Networks_LH_Limbic_OFC_3": 0.642,
+      "7Networks_RH_DorsAttn_Post_8": 0.396,
+      "7Networks_LH_Default_PFC_7": 0.335,
+      "7Networks_RH_Default_Temp_6": 0.506,
+      "7Networks_LH_Cont_Par_7": 0.335,
+      "7Networks_RH_Default_pCunPCC_4": 0.315
+    },
+    "duration_s": 17.9,
+    "peak_time_s": 4.7,
+    "prompt": "Stimulus: a child reading aloud from a picture book\nDuration: 17.9 s, peak activity at t=4.7s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Cont_pCun_2: mean |z| = 0.547\n  - 7Networks_RH_Cont_Par_4: mean |z| = 0.541\n  - 7Networks_LH_Limbic_OFC_3: mean |z| = 0.642\n  - 7Networks_RH_DorsAttn_Post_8: mean |z| = 0.396\n  - 7Networks_LH_Default_PFC_7: mean |z| = 0.335\n  - 7Networks_RH_Default_Temp_6: mean |z| = 0.506\n  - 7Networks_LH_Cont_Par_7: mean |z| = 0.335\n  - 7Networks_RH_Default_pCunPCC_4: mean |z| = 0.315\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The observed activation pattern during the auditory and visual processing of a child reading aloud suggests a coordinated engagement of multiple large-scale neural networks. The highest mean |z| values are observed in the left hemisphere limbic/orbitofrontal regions, indicating potential processing of the affective or reward-related components of the stimulus. Concurrently, increased activity in the left and right control networks, specifically within the precuneus and parietal regions, suggests heightened attentional allocation and integration of sensory information. The involvement of the default mode network, particularly in the prefrontal and temporal regions, may reflect the internal representation of the narrative or the maintenance of task-relevant context. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a city driving scene at dusk with headlights and neon signs",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_LH_SomMot_22",
+      "7Networks_LH_SomMot_8",
+      "7Networks_LH_Vis_21",
+      "7Networks_RH_Vis_10",
+      "7Networks_RH_Vis_7",
+      "7Networks_RH_Vis_21",
+      "7Networks_LH_Vis_23",
+      "7Networks_RH_Limbic_OFC_1"
+    ],
+    "roi_means": {
+      "7Networks_LH_SomMot_22": 0.598,
+      "7Networks_LH_SomMot_8": 0.579,
+      "7Networks_LH_Vis_21": 0.565,
+      "7Networks_RH_Vis_10": 0.637,
+      "7Networks_RH_Vis_7": 0.535,
+      "7Networks_RH_Vis_21": 0.496,
+      "7Networks_LH_Vis_23": 0.371,
+      "7Networks_RH_Limbic_OFC_1": 0.427
+    },
+    "duration_s": 35.0,
+    "peak_time_s": 21.6,
+    "prompt": "Stimulus: a city driving scene at dusk with headlights and neon signs\nDuration: 35.0 s, peak activity at t=21.6s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_SomMot_22: mean |z| = 0.598\n  - 7Networks_LH_SomMot_8: mean |z| = 0.579\n  - 7Networks_LH_Vis_21: mean |z| = 0.565\n  - 7Networks_RH_Vis_10: mean |z| = 0.637\n  - 7Networks_RH_Vis_7: mean |z| = 0.535\n  - 7Networks_RH_Vis_21: mean |z| = 0.496\n  - 7Networks_LH_Vis_23: mean |z| = 0.371\n  - 7Networks_RH_Limbic_OFC_1: mean |z| = 0.427\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus, consisting of a city driving scene at dusk with high-contrast light sources, elicited peak activity at 21.6 seconds characterized by significant engagement of the visual and somatomotor networks. Increased activation within the bilateral visual networks (LH_Vis_21, RH_Vis_10, RH_Vis_7, RH_Vis_21, and LH_Vis_23) suggests intensive processing of luminance changes, motion, and complex spatial features inherent in the driving environment. Concurrently, heightened activity in the left hemisphere somatomotor regions (LH_SomMot_22 and LH_SomMot_8) may reflect the integration of visual input with motor-related preparation or the simulation of driving maneuvers. The observed activation in the right hemisphere orbitofrontal cortex (RH_Limbic_OFC_1) indicates the involvement of limbic circuitry, potentially related to the processing of environmental salience or reward-related stimuli such as neon lights. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a news bulletin transcript about a city marathon",
+    "modality": "text",
+    "top_rois": [
+      "7Networks_LH_Vis_24",
+      "7Networks_LH_DorsAttn_Post_2",
+      "7Networks_LH_Vis_17",
+      "7Networks_RH_Cont_pCun_2",
+      "7Networks_LH_Limbic_OFC_3",
+      "7Networks_LH_Default_pCunPCC_4",
+      "7Networks_RH_Default_Temp_4",
+      "7Networks_RH_Default_PFC_4"
+    ],
+    "roi_means": {
+      "7Networks_LH_Vis_24": 0.633,
+      "7Networks_LH_DorsAttn_Post_2": 0.579,
+      "7Networks_LH_Vis_17": 0.663,
+      "7Networks_RH_Cont_pCun_2": 0.314,
+      "7Networks_LH_Limbic_OFC_3": 0.548,
+      "7Networks_LH_Default_pCunPCC_4": 0.396,
+      "7Networks_RH_Default_Temp_4": 0.521,
+      "7Networks_RH_Default_PFC_4": 0.717
+    },
+    "duration_s": 31.4,
+    "peak_time_s": 14.0,
+    "prompt": "Stimulus: a news bulletin transcript about a city marathon\nDuration: 31.4 s, peak activity at t=14.0s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Vis_24: mean |z| = 0.633\n  - 7Networks_LH_DorsAttn_Post_2: mean |z| = 0.579\n  - 7Networks_LH_Vis_17: mean |z| = 0.663\n  - 7Networks_RH_Cont_pCun_2: mean |z| = 0.314\n  - 7Networks_LH_Limbic_OFC_3: mean |z| = 0.548\n  - 7Networks_LH_Default_pCunPCC_4: mean |z| = 0.396\n  - 7Networks_RH_Default_Temp_4: mean |z| = 0.521\n  - 7Networks_RH_Default_PFC_4: mean |z| = 0.717\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus, consisting of a 31.4-second news transcript regarding a city marathon, elicited peak neural activity at 14.0 seconds across several functional networks. Increased activity in the left hemisphere visual networks (7Networks_LH_Vis_24 and 7Networks_LH_Vis_17) suggests the processing of visual-spatial information or the mental imagery of the event described. Concurrently, activation in the left dorsal attention network (7Networks_LH_DorsAttn_Post_2) indicates directed engagement with the auditory linguistic content, while involvement of the right hemisphere default mode network components (7Networks_RH_Default_PFC_4 and 7Networks_RH_Default_Temp_4) suggests internal integration or semantic processing of the news narrative. The presence of activity in the left limbic and right posterior cingulate regions further indicates the recruitment of networks associated with emotional salience and self-referential processing during the broadcast. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a construction site with cranes, pouring concrete, and rhythmic machine sounds",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_RH_Vis_23",
+      "7Networks_LH_DorsAttn_FEF_2",
+      "7Networks_RH_Vis_5",
+      "7Networks_RH_SomMot_14",
+      "7Networks_RH_DorsAttn_Post_11",
+      "7Networks_RH_Vis_29",
+      "7Networks_RH_SomMot_3",
+      "7Networks_LH_Vis_7"
+    ],
+    "roi_means": {
+      "7Networks_RH_Vis_23": 0.749,
+      "7Networks_LH_DorsAttn_FEF_2": 0.659,
+      "7Networks_RH_Vis_5": 0.604,
+      "7Networks_RH_SomMot_14": 0.451,
+      "7Networks_RH_DorsAttn_Post_11": 0.502,
+      "7Networks_RH_Vis_29": 0.268,
+      "7Networks_RH_SomMot_3": 0.245,
+      "7Networks_LH_Vis_7": 0.462
+    },
+    "duration_s": 49.2,
+    "peak_time_s": 38.8,
+    "prompt": "Stimulus: a construction site with cranes, pouring concrete, and rhythmic machine sounds\nDuration: 49.2 s, peak activity at t=38.8s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Vis_23: mean |z| = 0.749\n  - 7Networks_LH_DorsAttn_FEF_2: mean |z| = 0.659\n  - 7Networks_RH_Vis_5: mean |z| = 0.604\n  - 7Networks_RH_SomMot_14: mean |z| = 0.451\n  - 7Networks_RH_DorsAttn_Post_11: mean |z| = 0.502\n  - 7Networks_RH_Vis_29: mean |z| = 0.268\n  - 7Networks_RH_SomMot_3: mean |z| = 0.245\n  - 7Networks_LH_Vis_7: mean |z| = 0.462\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus, consisting of visual elements of construction activity and rhythmic auditory inputs, elicited peak neural activity at 38.8 seconds, characterized by heightened engagement in the visual and attentional networks. Increased |z| scores in the right hemisphere visual networks (Vis_23, Vis_5, and Vis_29) and the left hemisphere visual network (Vis_7) suggest robust processing of the complex spatial and motion-based features of the cranes and concrete pouring. Concurrently, activation in the left hemisphere dorsal attention network (DorsAttn_FEF_2) and right hemisphere dorsal attention network (DorsAttn_Post_11) indicates top-down orienting to the rhythmic machine sounds and salient visual changes. The involvement of the right hemisphere somatomotor networks (SomMot_14 and SomMot_3) may reflect the neural encoding of the rhythmic, repetitive nature of the auditory-motor stimuli. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a construction site with cranes, pouring concrete, and rhythmic machine sounds",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_LH_Vis_16",
+      "7Networks_RH_SomMot_19",
+      "7Networks_RH_SalVentAttn_TempOccPar_2",
+      "7Networks_RH_SalVentAttn_ParOper_4",
+      "7Networks_RH_SalVentAttn_ParOper_2",
+      "7Networks_LH_Vis_4",
+      "7Networks_RH_Vis_23",
+      "7Networks_RH_Default_Temp_4"
+    ],
+    "roi_means": {
+      "7Networks_LH_Vis_16": 0.67,
+      "7Networks_RH_SomMot_19": 0.725,
+      "7Networks_RH_SalVentAttn_TempOccPar_2": 0.54,
+      "7Networks_RH_SalVentAttn_ParOper_4": 0.539,
+      "7Networks_RH_SalVentAttn_ParOper_2": 0.551,
+      "7Networks_LH_Vis_4": 0.35,
+      "7Networks_RH_Vis_23": 0.461,
+      "7Networks_RH_Default_Temp_4": 0.348
+    },
+    "duration_s": 59.6,
+    "peak_time_s": 10.9,
+    "prompt": "Stimulus: a construction site with cranes, pouring concrete, and rhythmic machine sounds\nDuration: 59.6 s, peak activity at t=10.9s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Vis_16: mean |z| = 0.670\n  - 7Networks_RH_SomMot_19: mean |z| = 0.725\n  - 7Networks_RH_SalVentAttn_TempOccPar_2: mean |z| = 0.540\n  - 7Networks_RH_SalVentAttn_ParOper_4: mean |z| = 0.539\n  - 7Networks_RH_SalVentAttn_ParOper_2: mean |z| = 0.551\n  - 7Networks_LH_Vis_4: mean |z| = 0.350\n  - 7Networks_RH_Vis_23: mean |z| = 0.461\n  - 7Networks_RH_Default_Temp_4: mean |z| = 0.348\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus, consisting of visual elements of heavy machinery and rhythmic auditory input, elicited peak neural activity at 10.9 seconds across several functional networks. The observed activation in the right hemisphere somatomotor (SomMot) and ventral attention (SalVentAttn) networks suggests heightened processing of rhythmic, sensory-driven stimuli and the allocation of attentional resources to salient environmental changes. Concurrent increases in the left and right visual (Vis) networks indicate robust encoding of the moving mechanical components, such as cranes and pouring concrete. The involvement of the right hemisphere ventral attention regions, specifically within the temporo-occipital-parietal and opercular subdivisions, suggests an orientation response to the high-intensity, unpredictable elements of the construction environment. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a written narrative about a lone astronaut repairing a satellite",
+    "modality": "text",
+    "top_rois": [
+      "7Networks_LH_Default_Temp_9",
+      "7Networks_RH_Default_PFC_9",
+      "7Networks_RH_Vis_12",
+      "7Networks_LH_DorsAttn_Post_5",
+      "7Networks_RH_DorsAttn_Post_2",
+      "7Networks_RH_Default_Temp_1",
+      "7Networks_LH_SalVentAttn_ParOper_5",
+      "7Networks_LH_Default_PFC_1"
+    ],
+    "roi_means": {
+      "7Networks_LH_Default_Temp_9": 0.78,
+      "7Networks_RH_Default_PFC_9": 0.64,
+      "7Networks_RH_Vis_12": 0.725,
+      "7Networks_LH_DorsAttn_Post_5": 0.527,
+      "7Networks_RH_DorsAttn_Post_2": 0.423,
+      "7Networks_RH_Default_Temp_1": 0.412,
+      "7Networks_LH_SalVentAttn_ParOper_5": 0.397,
+      "7Networks_LH_Default_PFC_1": 0.322
+    },
+    "duration_s": 22.4,
+    "peak_time_s": 15.3,
+    "prompt": "Stimulus: a written narrative about a lone astronaut repairing a satellite\nDuration: 22.4 s, peak activity at t=15.3s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Default_Temp_9: mean |z| = 0.780\n  - 7Networks_RH_Default_PFC_9: mean |z| = 0.640\n  - 7Networks_RH_Vis_12: mean |z| = 0.725\n  - 7Networks_LH_DorsAttn_Post_5: mean |z| = 0.527\n  - 7Networks_RH_DorsAttn_Post_2: mean |z| = 0.423\n  - 7Networks_RH_Default_Temp_1: mean |z| = 0.412\n  - 7Networks_LH_SalVentAttn_ParOper_5: mean |z| = 0.397\n  - 7Networks_LH_Default_PFC_1: mean |z| = 0.322\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The presented stimulus, a 22.4-second written narrative regarding an astronaut, elicited peak neural activity at 15.3 seconds characterized by prominent involvement of the default mode network (DMN) and the dorsal attention network (DAN). The elevated |z| scores in the left and right temporal and prefrontal DMN nodes suggest high levels of internally directed cognition, likely associated with mental imagery and the construction of a narrative scene. Concurrently, activation within the right visual and bilateral dorsal attention networks indicates the processing of spatial information and the allocation of top-down attentional resources to track the described task. The inclusion of the salience network suggests the integration of these sensory and cognitive elements into a coherent stream of information. This analysis represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "an action sequence with rapid cuts and explosions in an urban alley",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_RH_DorsAttn_FEF_5",
+      "7Networks_LH_Default_Temp_4",
+      "7Networks_LH_SalVentAttn_ParOper_5",
+      "7Networks_LH_Vis_8",
+      "7Networks_LH_Vis_26",
+      "7Networks_LH_Default_pCunPCC_4",
+      "7Networks_LH_Default_Temp_2",
+      "7Networks_RH_Default_Temp_5"
+    ],
+    "roi_means": {
+      "7Networks_RH_DorsAttn_FEF_5": 0.539,
+      "7Networks_LH_Default_Temp_4": 0.683,
+      "7Networks_LH_SalVentAttn_ParOper_5": 0.607,
+      "7Networks_LH_Vis_8": 0.44,
+      "7Networks_LH_Vis_26": 0.436,
+      "7Networks_LH_Default_pCunPCC_4": 0.589,
+      "7Networks_LH_Default_Temp_2": 0.522,
+      "7Networks_RH_Default_Temp_5": 0.394
+    },
+    "duration_s": 21.8,
+    "peak_time_s": 15.1,
+    "prompt": "Stimulus: an action sequence with rapid cuts and explosions in an urban alley\nDuration: 21.8 s, peak activity at t=15.1s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_DorsAttn_FEF_5: mean |z| = 0.539\n  - 7Networks_LH_Default_Temp_4: mean |z| = 0.683\n  - 7Networks_LH_SalVentAttn_ParOper_5: mean |z| = 0.607\n  - 7Networks_LH_Vis_8: mean |z| = 0.440\n  - 7Networks_LH_Vis_26: mean |z| = 0.436\n  - 7Networks_LH_Default_pCunPCC_4: mean |z| = 0.589\n  - 7Networks_LH_Default_Temp_2: mean |z| = 0.522\n  - 7Networks_RH_Default_Temp_5: mean |z| = 0.394\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The presented stimulus, characterized by rapid visual transitions and high-intensity auditory-visual events, elicited peak neural activity at 15.1 seconds across several interconnected functional networks. Increased activity in the left hemisphere visual networks (Vis_8, Vis_26) suggests heightened processing of the rapid motion and structural changes inherent in the action sequence. Concurrently, activation within the salience and dorsal attention networks (SalVentAttn_ParOper_5, DorsAttn_FEF_5) indicates a heightened state of stimulus-driven attentional shifting and the detection of unexpected environmental changes. The involvement of multiple regions within the default mode network, particularly those associated with temporal and posterior cingulate areas, suggests a complex integration of sensory input with internal representations during the processing of the high-intensity sequence. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a short animated clip of a cat chasing a laser pointer across a wooden floor",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_LH_Default_PFC_7",
+      "7Networks_LH_Default_Temp_4",
+      "7Networks_LH_Vis_15",
+      "7Networks_LH_Vis_11",
+      "7Networks_RH_Vis_14",
+      "7Networks_RH_Vis_1",
+      "7Networks_LH_Cont_pCun_3",
+      "7Networks_RH_Default_PFC_2"
+    ],
+    "roi_means": {
+      "7Networks_LH_Default_PFC_7": 0.656,
+      "7Networks_LH_Default_Temp_4": 0.56,
+      "7Networks_LH_Vis_15": 0.644,
+      "7Networks_LH_Vis_11": 0.685,
+      "7Networks_RH_Vis_14": 0.537,
+      "7Networks_RH_Vis_1": 0.58,
+      "7Networks_LH_Cont_pCun_3": 0.495,
+      "7Networks_RH_Default_PFC_2": 0.392
+    },
+    "duration_s": 17.7,
+    "peak_time_s": 8.2,
+    "prompt": "Stimulus: a short animated clip of a cat chasing a laser pointer across a wooden floor\nDuration: 17.7 s, peak activity at t=8.2s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Default_PFC_7: mean |z| = 0.656\n  - 7Networks_LH_Default_Temp_4: mean |z| = 0.560\n  - 7Networks_LH_Vis_15: mean |z| = 0.644\n  - 7Networks_LH_Vis_11: mean |z| = 0.685\n  - 7Networks_RH_Vis_14: mean |z| = 0.537\n  - 7Networks_RH_Vis_1: mean |z| = 0.580\n  - 7Networks_LH_Cont_pCun_3: mean |z| = 0.495\n  - 7Networks_RH_Default_PFC_2: mean |z| = 0.392\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The presented stimulus, an animated clip of a cat chasing a laser pointer, elicited peak activity at 8.2 seconds characterized by heightened engagement in visual and default mode networks. Significant activation within the left and right visual networks (LH_Vis_15, LH_Vis_11, RH_Vis_14, and RH_Vis_1) suggests intensive processing of the moving light stimulus and its trajectory across the wooden floor. Concurrently, increased |z| scores in the left prefrontal and temporal regions of the default mode network (LH_Default_PFC_7 and LH_Default_Temp_4), alongside the right prefrontal region, indicate the recruitment of higher-order cognitive processes, potentially involving task-unrelated thought or internal monitoring of the stimulus dynamics. The activation in the left cingulate/precuneus (LH_Cont_pCun_3) further suggests integration of spatial attention and sensory input. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "an action sequence with rapid cuts and explosions in an urban alley",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_LH_SomMot_7",
+      "7Networks_RH_SomMot_2",
+      "7Networks_LH_Vis_24",
+      "7Networks_LH_Vis_2",
+      "7Networks_RH_SomMot_10",
+      "7Networks_LH_Vis_18",
+      "7Networks_RH_Default_Temp_1",
+      "7Networks_RH_Default_Temp_8"
+    ],
+    "roi_means": {
+      "7Networks_LH_SomMot_7": 0.686,
+      "7Networks_RH_SomMot_2": 0.817,
+      "7Networks_LH_Vis_24": 0.618,
+      "7Networks_LH_Vis_2": 0.394,
+      "7Networks_RH_SomMot_10": 0.457,
+      "7Networks_LH_Vis_18": 0.493,
+      "7Networks_RH_Default_Temp_1": 0.528,
+      "7Networks_RH_Default_Temp_8": 0.323
+    },
+    "duration_s": 19.9,
+    "peak_time_s": 10.3,
+    "prompt": "Stimulus: an action sequence with rapid cuts and explosions in an urban alley\nDuration: 19.9 s, peak activity at t=10.3s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_SomMot_7: mean |z| = 0.686\n  - 7Networks_RH_SomMot_2: mean |z| = 0.817\n  - 7Networks_LH_Vis_24: mean |z| = 0.618\n  - 7Networks_LH_Vis_2: mean |z| = 0.394\n  - 7Networks_RH_SomMot_10: mean |z| = 0.457\n  - 7Networks_LH_Vis_18: mean |z| = 0.493\n  - 7Networks_RH_Default_Temp_1: mean |z| = 0.528\n  - 7Networks_RH_Default_Temp_8: mean |z| = 0.323\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The presented stimulus, characterized by rapid visual transitions and high-intensity luminance changes in an urban setting, elicited peak neural activity at 10.3 seconds across several functional networks. Increased activation in the left and right somatomotor networks (SomMot) suggests heightened processing of sudden, high-arousal sensory inputs or the preparation of motor responses to the perceived action. Concurrently, significant engagement of the left and right visual networks (Vis) indicates intensive processing of the rapid cuts and complex spatial dynamics within the scene. The involvement of the right default mode network components (Default_Temp) may reflect the integration of these external sensory changes with internal task-related attention or environmental monitoring. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "an action sequence with rapid cuts and explosions in an urban alley",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_RH_Vis_5",
+      "7Networks_RH_Limbic_OFC_3",
+      "7Networks_LH_SomMot_16",
+      "7Networks_RH_SomMot_17",
+      "7Networks_LH_Default_PFC_4",
+      "7Networks_LH_DorsAttn_Post_2",
+      "7Networks_RH_Cont_Par_1",
+      "7Networks_RH_Cont_Par_7"
+    ],
+    "roi_means": {
+      "7Networks_RH_Vis_5": 0.702,
+      "7Networks_RH_Limbic_OFC_3": 0.689,
+      "7Networks_LH_SomMot_16": 0.641,
+      "7Networks_RH_SomMot_17": 0.681,
+      "7Networks_LH_Default_PFC_4": 0.495,
+      "7Networks_LH_DorsAttn_Post_2": 0.523,
+      "7Networks_RH_Cont_Par_1": 0.494,
+      "7Networks_RH_Cont_Par_7": 0.199
+    },
+    "duration_s": 68.2,
+    "peak_time_s": 24.1,
+    "prompt": "Stimulus: an action sequence with rapid cuts and explosions in an urban alley\nDuration: 68.2 s, peak activity at t=24.1s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Vis_5: mean |z| = 0.702\n  - 7Networks_RH_Limbic_OFC_3: mean |z| = 0.689\n  - 7Networks_LH_SomMot_16: mean |z| = 0.641\n  - 7Networks_RH_SomMot_17: mean |z| = 0.681\n  - 7Networks_LH_Default_PFC_4: mean |z| = 0.495\n  - 7Networks_LH_DorsAttn_Post_2: mean |z| = 0.523\n  - 7Networks_RH_Cont_Par_1: mean |z| = 0.494\n  - 7Networks_RH_Cont_Par_7: mean |z| = 0.199\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The presented stimulus, characterized by rapid visual transitions and high-intensity auditory-visual events, elicited peak neural activity at 24.1 seconds, primarily involving the right hemisphere visual network (mean |z| = 0.702) and the right hemisphere orbitofrontal limbic network (mean |z| = 0.689). This pattern suggests a high degree of sensory processing coupled with emotional salience, as the activation of the somatomotor networks in both hemispheres (mean |z| values of 0.641 and 0.681) indicates a motor-sensory integration response to the perceived action. Additionally, the involvement of the left hemisphere dorsal attention network (mean |z| = 0.523) and the left hemisphere prefrontal default mode network (mean |z| = 0.495) suggests an allocation of cognitive resources toward monitoring the salient environmental changes. This collective activation reflects a coordinated response to high-arousal stimuli through the integration of visual, limbic, and attentional systems, and this is a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a lecturer explaining synaptic plasticity with a whiteboard diagram",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_RH_Cont_Par_1",
+      "7Networks_LH_SomMot_22",
+      "7Networks_RH_Vis_20",
+      "7Networks_LH_SalVentAttn_ParOper_3",
+      "7Networks_RH_Vis_19",
+      "7Networks_LH_Vis_29",
+      "7Networks_RH_Vis_7",
+      "7Networks_RH_DorsAttn_FEF_5"
+    ],
+    "roi_means": {
+      "7Networks_RH_Cont_Par_1": 0.575,
+      "7Networks_LH_SomMot_22": 0.546,
+      "7Networks_RH_Vis_20": 0.682,
+      "7Networks_LH_SalVentAttn_ParOper_3": 0.355,
+      "7Networks_RH_Vis_19": 0.654,
+      "7Networks_LH_Vis_29": 0.576,
+      "7Networks_RH_Vis_7": 0.301,
+      "7Networks_RH_DorsAttn_FEF_5": 0.304
+    },
+    "duration_s": 21.5,
+    "peak_time_s": 17.7,
+    "prompt": "Stimulus: a lecturer explaining synaptic plasticity with a whiteboard diagram\nDuration: 21.5 s, peak activity at t=17.7s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Cont_Par_1: mean |z| = 0.575\n  - 7Networks_LH_SomMot_22: mean |z| = 0.546\n  - 7Networks_RH_Vis_20: mean |z| = 0.682\n  - 7Networks_LH_SalVentAttn_ParOper_3: mean |z| = 0.355\n  - 7Networks_RH_Vis_19: mean |z| = 0.654\n  - 7Networks_LH_Vis_29: mean |z| = 0.576\n  - 7Networks_RH_Vis_7: mean |z| = 0.301\n  - 7Networks_RH_DorsAttn_FEF_5: mean |z| = 0.304\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus consists of a 21.5-second instructional video featuring a lecturer and a whiteboard diagram, with peak neural activity recorded at 17.7 seconds. The observed activation pattern demonstrates high-magnitude responses in the right and left visual networks (RH_Vis_20, RH_Vis_19, LH_Vis_29, RH_Vis_7), suggesting intensive processing of the visual components of the diagram. Concurrent activity in the right hemisphere's control/parietal network (RH_Cont_Par_1) and the left hemisphere's somatomotor network (LH_SomMot_22) indicates integrated cognitive engagement with the presented information. Additionally, increased activity in the left salience/ventral attention network (LH_SalVentAttn_ParOper_3) and the right dorsal attention network (RH_DorsAttn_FEF_5) suggests the brain is actively directing attentional resources toward the salient features of the lecture. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a sports highlight reel of fast-break basketball plays",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_RH_Vis_14",
+      "7Networks_LH_Vis_12",
+      "7Networks_RH_Vis_1",
+      "7Networks_RH_Cont_pCun_2",
+      "7Networks_RH_Default_Temp_7",
+      "7Networks_RH_Cont_Par_7",
+      "7Networks_LH_Cont_Par_7",
+      "7Networks_LH_SomMot_17"
+    ],
+    "roi_means": {
+      "7Networks_RH_Vis_14": 0.699,
+      "7Networks_LH_Vis_12": 0.554,
+      "7Networks_RH_Vis_1": 0.421,
+      "7Networks_RH_Cont_pCun_2": 0.392,
+      "7Networks_RH_Default_Temp_7": 0.315,
+      "7Networks_RH_Cont_Par_7": 0.662,
+      "7Networks_LH_Cont_Par_7": 0.444,
+      "7Networks_LH_SomMot_17": 0.363
+    },
+    "duration_s": 46.0,
+    "peak_time_s": 11.4,
+    "prompt": "Stimulus: a sports highlight reel of fast-break basketball plays\nDuration: 46.0 s, peak activity at t=11.4s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Vis_14: mean |z| = 0.699\n  - 7Networks_LH_Vis_12: mean |z| = 0.554\n  - 7Networks_RH_Vis_1: mean |z| = 0.421\n  - 7Networks_RH_Cont_pCun_2: mean |z| = 0.392\n  - 7Networks_RH_Default_Temp_7: mean |z| = 0.315\n  - 7Networks_RH_Cont_Par_7: mean |z| = 0.662\n  - 7Networks_LH_Cont_Par_7: mean |z| = 0.444\n  - 7Networks_LH_SomMot_17: mean |z| = 0.363\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus consists of a 46.0-second high-speed visual sequence, with peak neural activity observed at 11.4 seconds. The activation pattern is characterized by significant engagement within the visual networks, specifically the right and left occipital regions (7Networks_RH_Vis_14, 7Networks_LH_Vis_12, and 7Networks_RH_Vis_1), indicating intensive processing of rapid motion and luminance changes. Concurrently, increased activity in the bilateral parietal networks (7Networks_RH_Cont_Par_7 and 7Networks_LH_Cont_Par_7) suggests heightened spatial attention and the integration of visual motion into a coherent physical trajectory. The involvement of the right hemisphere precuneus and left hemisphere somatomotor regions further indicates the recruitment of dorsal stream processes for spatial awareness and the potential simulation of motor dynamics. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a cooking tutorial filmed in a home kitchen",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_LH_Limbic_OFC_1",
+      "7Networks_RH_Vis_13",
+      "7Networks_RH_Vis_27",
+      "7Networks_RH_SomMot_10",
+      "7Networks_RH_Vis_1",
+      "7Networks_LH_Cont_Par_6",
+      "7Networks_LH_Default_PFC_7",
+      "7Networks_LH_Cont_Par_4"
+    ],
+    "roi_means": {
+      "7Networks_LH_Limbic_OFC_1": 0.596,
+      "7Networks_RH_Vis_13": 0.572,
+      "7Networks_RH_Vis_27": 0.552,
+      "7Networks_RH_SomMot_10": 0.467,
+      "7Networks_RH_Vis_1": 0.69,
+      "7Networks_LH_Cont_Par_6": 0.511,
+      "7Networks_LH_Default_PFC_7": 0.366,
+      "7Networks_LH_Cont_Par_4": 0.279
+    },
+    "duration_s": 28.7,
+    "peak_time_s": 9.0,
+    "prompt": "Stimulus: a cooking tutorial filmed in a home kitchen\nDuration: 28.7 s, peak activity at t=9.0s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Limbic_OFC_1: mean |z| = 0.596\n  - 7Networks_RH_Vis_13: mean |z| = 0.572\n  - 7Networks_RH_Vis_27: mean |z| = 0.552\n  - 7Networks_RH_SomMot_10: mean |z| = 0.467\n  - 7Networks_RH_Vis_1: mean |z| = 0.690\n  - 7Networks_LH_Cont_Par_6: mean |z| = 0.511\n  - 7Networks_LH_Default_PFC_7: mean |z| = 0.366\n  - 7Networks_LH_Cont_Par_4: mean |z| = 0.279\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus, a 28.7-second cooking tutorial, elicited peak neural activity at 9.0 seconds, characterized by heightened engagement in visual and motor-related networks. Significant activation within the right hemisphere visual networks (RH_Vis_1, RH_Vis_13, and RH_Vis_27) suggests intensive processing of the instructional visual stream, likely involving feature extraction and motion tracking. This is accompanied by activity in the right somatomotor network (RH_SomMot_10) and left contralateral parietal regions (LH_Cont_Par_6), which may indicate the simulation of manual actions or the integration of spatial instructions. Additionally, increased activity in the left orbitofrontal cortex (LH_Limbic_OFC_1) and left prefrontal default mode network (LH_Default_PFC_7) suggests the involvement of reward-related evaluation and internal task-relevant monitoring. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a printed paragraph describing the architecture of the visual cortex",
+    "modality": "text",
+    "top_rois": [
+      "7Networks_LH_SalVentAttn_ParOper_4",
+      "7Networks_RH_Default_Temp_2",
+      "7Networks_LH_DorsAttn_Post_5",
+      "7Networks_RH_Cont_Par_2",
+      "7Networks_RH_DorsAttn_FEF_4",
+      "7Networks_LH_SalVentAttn_ParOper_2",
+      "7Networks_RH_Default_PFC_5",
+      "7Networks_LH_Default_Temp_1"
+    ],
+    "roi_means": {
+      "7Networks_LH_SalVentAttn_ParOper_4": 0.628,
+      "7Networks_RH_Default_Temp_2": 0.47,
+      "7Networks_LH_DorsAttn_Post_5": 0.548,
+      "7Networks_RH_Cont_Par_2": 0.493,
+      "7Networks_RH_DorsAttn_FEF_4": 0.545,
+      "7Networks_LH_SalVentAttn_ParOper_2": 0.32,
+      "7Networks_RH_Default_PFC_5": 0.523,
+      "7Networks_LH_Default_Temp_1": 0.454
+    },
+    "duration_s": 51.6,
+    "peak_time_s": 48.8,
+    "prompt": "Stimulus: a printed paragraph describing the architecture of the visual cortex\nDuration: 51.6 s, peak activity at t=48.8s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_SalVentAttn_ParOper_4: mean |z| = 0.628\n  - 7Networks_RH_Default_Temp_2: mean |z| = 0.470\n  - 7Networks_LH_DorsAttn_Post_5: mean |z| = 0.548\n  - 7Networks_RH_Cont_Par_2: mean |z| = 0.493\n  - 7Networks_RH_DorsAttn_FEF_4: mean |z| = 0.545\n  - 7Networks_LH_SalVentAttn_ParOper_2: mean |z| = 0.320\n  - 7Networks_RH_Default_PFC_5: mean |z| = 0.523\n  - 7Networks_LH_Default_Temp_1: mean |z| = 0.454\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The presented stimulus, a 51.6-second reading of text regarding visual cortex architecture, elicited peak activity at 48.8 seconds characterized by engagement across multiple functional networks. The activation of the left and right Dorsal Attention networks suggests active top-down modulation of visual processing to facilitate the decoding of complex linguistic and structural information. Concurrently, increased activity within the Salience and Default Mode networks, specifically involving the left opercular and right temporal regions, indicates the integration of task-relevant stimuli with internal semantic processing. The involvement of the right Contralateral and Frontal Eye Field regions further suggests the maintenance of spatial attention and ocular stability required for sustained reading. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a scene of a dog running through an open meadow toward its owner",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_LH_Default_pCunPCC_4",
+      "7Networks_LH_DorsAttn_Post_9",
+      "7Networks_LH_Cont_Par_1",
+      "7Networks_RH_Cont_Par_1",
+      "7Networks_RH_Vis_13",
+      "7Networks_LH_Cont_Par_6",
+      "7Networks_LH_Vis_12",
+      "7Networks_RH_Vis_10"
+    ],
+    "roi_means": {
+      "7Networks_LH_Default_pCunPCC_4": 0.707,
+      "7Networks_LH_DorsAttn_Post_9": 0.558,
+      "7Networks_LH_Cont_Par_1": 0.567,
+      "7Networks_RH_Cont_Par_1": 0.473,
+      "7Networks_RH_Vis_13": 0.473,
+      "7Networks_LH_Cont_Par_6": 0.505,
+      "7Networks_LH_Vis_12": 0.427,
+      "7Networks_RH_Vis_10": 0.331
+    },
+    "duration_s": 43.0,
+    "peak_time_s": 28.2,
+    "prompt": "Stimulus: a scene of a dog running through an open meadow toward its owner\nDuration: 43.0 s, peak activity at t=28.2s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Default_pCunPCC_4: mean |z| = 0.707\n  - 7Networks_LH_DorsAttn_Post_9: mean |z| = 0.558\n  - 7Networks_LH_Cont_Par_1: mean |z| = 0.567\n  - 7Networks_RH_Cont_Par_1: mean |z| = 0.473\n  - 7Networks_RH_Vis_13: mean |z| = 0.473\n  - 7Networks_LH_Cont_Par_6: mean |z| = 0.505\n  - 7Networks_LH_Vis_12: mean |z| = 0.427\n  - 7Networks_RH_Vis_10: mean |z| = 0.331\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The presented stimulus, depicting a dog running toward an owner, elicited peak neural activity at 28.2 seconds, characterized by a distributed activation across visual, attentional, and higher-order networks. Significant engagement of the bilateral visual networks (RH_Vis_13, LH_Vis_12, RH_Vis_10) indicates the processing of motion and environmental features within the meadow scene. Concurrently, activation in the dorsal attention network (LH_DorsAttn_Post_9) suggests the allocation of spatial focus toward the moving subject, while activity in the left hemisphere's default mode network component (LH_Default_pCunPCC_4) may reflect the integration of the scene's social or autobiographical relevance. The involvement of multiple control and parietal regions (LH_Cont_Par_1, RH_Cont_Par_1, LH_Cont_Par_6) suggests the maintenance of task-relevant representations during the observation of the movement. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "an action sequence with rapid cuts and explosions in an urban alley",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_LH_Vis_21",
+      "7Networks_RH_SalVentAttn_ParOper_4",
+      "7Networks_RH_Vis_9",
+      "7Networks_LH_Vis_27",
+      "7Networks_RH_SalVentAttn_ParOper_5",
+      "7Networks_LH_Vis_6",
+      "7Networks_RH_SomMot_22",
+      "7Networks_LH_DorsAttn_Post_6"
+    ],
+    "roi_means": {
+      "7Networks_LH_Vis_21": 0.679,
+      "7Networks_RH_SalVentAttn_ParOper_4": 0.605,
+      "7Networks_RH_Vis_9": 0.609,
+      "7Networks_LH_Vis_27": 0.549,
+      "7Networks_RH_SalVentAttn_ParOper_5": 0.467,
+      "7Networks_LH_Vis_6": 0.433,
+      "7Networks_RH_SomMot_22": 0.355,
+      "7Networks_LH_DorsAttn_Post_6": 0.354
+    },
+    "duration_s": 27.1,
+    "peak_time_s": 13.9,
+    "prompt": "Stimulus: an action sequence with rapid cuts and explosions in an urban alley\nDuration: 27.1 s, peak activity at t=13.9s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Vis_21: mean |z| = 0.679\n  - 7Networks_RH_SalVentAttn_ParOper_4: mean |z| = 0.605\n  - 7Networks_RH_Vis_9: mean |z| = 0.609\n  - 7Networks_LH_Vis_27: mean |z| = 0.549\n  - 7Networks_RH_SalVentAttn_ParOper_5: mean |z| = 0.467\n  - 7Networks_LH_Vis_6: mean |z| = 0.433\n  - 7Networks_RH_SomMot_22: mean |z| = 0.355\n  - 7Networks_LH_DorsAttn_Post_6: mean |z| = 0.354\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The presented stimulus, characterized by rapid visual transitions and high-intensity kinetic events, elicited peak neural activity at 13.9 seconds, primarily driven by increased activation within the visual networks (LH_Vis_21, RH_Vis_9, LH_Vis_27, and LH_Vis_6). This heightened activity in the primary and secondary visual cortices suggests intense processing of rapid luminance and motion changes. Concurrently, significant activation in the right hemisphere salience and ventral attention networks (RH_SalVentAttn_ParOper_4 and RH_SalVentAttn_ParOper_5) indicates the brain is prioritizing the detection of unexpected, high-priority environmental stimuli. The involvement of the right somatomotor (RH_SomMot_22) and left dorsal attention (LH_DorsAttn_Post_6) regions further suggests a coordinated response to orienting attention and preparing for potential motoric implications of the observed action. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a city driving scene at dusk with headlights and neon signs",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_RH_Vis_4",
+      "7Networks_LH_DorsAttn_Post_2",
+      "7Networks_LH_Vis_6",
+      "7Networks_LH_DorsAttn_FEF_2",
+      "7Networks_LH_Vis_3",
+      "7Networks_LH_Vis_7",
+      "7Networks_LH_SalVentAttn_TempOccPar_3",
+      "7Networks_RH_SalVentAttn_TempOccPar_3"
+    ],
+    "roi_means": {
+      "7Networks_RH_Vis_4": 0.607,
+      "7Networks_LH_DorsAttn_Post_2": 0.567,
+      "7Networks_LH_Vis_6": 0.706,
+      "7Networks_LH_DorsAttn_FEF_2": 0.625,
+      "7Networks_LH_Vis_3": 0.46,
+      "7Networks_LH_Vis_7": 0.549,
+      "7Networks_LH_SalVentAttn_TempOccPar_3": 0.427,
+      "7Networks_RH_SalVentAttn_TempOccPar_3": 0.49
+    },
+    "duration_s": 36.8,
+    "peak_time_s": 28.3,
+    "prompt": "Stimulus: a city driving scene at dusk with headlights and neon signs\nDuration: 36.8 s, peak activity at t=28.3s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Vis_4: mean |z| = 0.607\n  - 7Networks_LH_DorsAttn_Post_2: mean |z| = 0.567\n  - 7Networks_LH_Vis_6: mean |z| = 0.706\n  - 7Networks_LH_DorsAttn_FEF_2: mean |z| = 0.625\n  - 7Networks_LH_Vis_3: mean |z| = 0.460\n  - 7Networks_LH_Vis_7: mean |z| = 0.549\n  - 7Networks_LH_SalVentAttn_TempOccPar_3: mean |z| = 0.427\n  - 7Networks_RH_SalVentAttn_TempOccPar_3: mean |z| = 0.490\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The observed activation pattern during the 36.8-second driving scene indicates a coordinated engagement of visual and attentional processing networks, peaking at 28.3 seconds. Significant increases in mean |z| scores within the left and right visual networks (Vis_3, Vis_4, Vis_6, and Vis_7) suggest heightened processing of the high-contrast luminance changes presented by headlights and neon signs. Concurrently, activation in the dorsal attention networks (DorsAttn_Post_2 and DorsAttn_FEF_2) suggests the allocation of top-down spatial attention to track moving stimuli within the driving environment. The involvement of the salience/ventral attention networks (SalVentAttn_TempOccPar_3) further indicates the detection of stimulus-driven, unexpected changes in the visual field. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a printed paragraph describing the architecture of the visual cortex",
+    "modality": "text",
+    "top_rois": [
+      "7Networks_RH_Cont_Par_2",
+      "7Networks_LH_DorsAttn_Post_6",
+      "7Networks_LH_Default_Temp_5",
+      "7Networks_LH_Default_pCunPCC_1",
+      "7Networks_LH_DorsAttn_FEF_4",
+      "7Networks_LH_Cont_pCun_3",
+      "7Networks_LH_Default_pCunPCC_3",
+      "7Networks_RH_Cont_Par_5"
+    ],
+    "roi_means": {
+      "7Networks_RH_Cont_Par_2": 0.698,
+      "7Networks_LH_DorsAttn_Post_6": 0.815,
+      "7Networks_LH_Default_Temp_5": 0.672,
+      "7Networks_LH_Default_pCunPCC_1": 0.562,
+      "7Networks_LH_DorsAttn_FEF_4": 0.447,
+      "7Networks_LH_Cont_pCun_3": 0.403,
+      "7Networks_LH_Default_pCunPCC_3": 0.32,
+      "7Networks_RH_Cont_Par_5": 0.376
+    },
+    "duration_s": 26.2,
+    "peak_time_s": 3.5,
+    "prompt": "Stimulus: a printed paragraph describing the architecture of the visual cortex\nDuration: 26.2 s, peak activity at t=3.5s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Cont_Par_2: mean |z| = 0.698\n  - 7Networks_LH_DorsAttn_Post_6: mean |z| = 0.815\n  - 7Networks_LH_Default_Temp_5: mean |z| = 0.672\n  - 7Networks_LH_Default_pCunPCC_1: mean |z| = 0.562\n  - 7Networks_LH_DorsAttn_FEF_4: mean |z| = 0.447\n  - 7Networks_LH_Cont_pCun_3: mean |z| = 0.403\n  - 7Networks_LH_Default_pCunPCC_3: mean |z| = 0.320\n  - 7Networks_RH_Cont_Par_5: mean |z| = 0.376\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus, consisting of a printed paragraph regarding visual cortex architecture, elicited peak neural activity at 3.5 seconds, characterized by engagement across multiple functional networks. The observed activation in the Left Hemisphere Dorsal Attention Network (LH_DorsAttn_Post_6 and LH_DorsAttn_FEF_4) suggests active top-down processing and focused visual attention required for reading comprehension. Concurrently, involvement of the Left Hemisphere Default Mode Network (LH_Default_Temp_5, LH_Default_pCunPCC_1, and LH_Default_pCunPCC_3) indicates internal semantic integration and the processing of complex linguistic information. Additionally, activity within the Right Hemisphere Cingulo-Opercular Network (RH_Cont_Par_2 and RH_Cont_Par_5) likely reflects the maintenance of task-related cognitive control during the stimulus duration. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a forest soundscape with birdsong and rustling leaves",
+    "modality": "audio",
+    "top_rois": [
+      "7Networks_LH_Cont_Par_5",
+      "7Networks_LH_DorsAttn_FEF_2",
+      "7Networks_RH_SomMot_26",
+      "7Networks_LH_Default_PFC_8",
+      "7Networks_RH_DorsAttn_Post_2",
+      "7Networks_RH_Limbic_TempPole_4",
+      "7Networks_LH_Default_Temp_1",
+      "7Networks_RH_SomMot_17"
+    ],
+    "roi_means": {
+      "7Networks_LH_Cont_Par_5": 0.748,
+      "7Networks_LH_DorsAttn_FEF_2": 0.609,
+      "7Networks_RH_SomMot_26": 0.76,
+      "7Networks_LH_Default_PFC_8": 0.541,
+      "7Networks_RH_DorsAttn_Post_2": 0.331,
+      "7Networks_RH_Limbic_TempPole_4": 0.621,
+      "7Networks_LH_Default_Temp_1": 0.476,
+      "7Networks_RH_SomMot_17": 0.287
+    },
+    "duration_s": 62.8,
+    "peak_time_s": 27.0,
+    "prompt": "Stimulus: a forest soundscape with birdsong and rustling leaves\nDuration: 62.8 s, peak activity at t=27.0s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Cont_Par_5: mean |z| = 0.748\n  - 7Networks_LH_DorsAttn_FEF_2: mean |z| = 0.609\n  - 7Networks_RH_SomMot_26: mean |z| = 0.760\n  - 7Networks_LH_Default_PFC_8: mean |z| = 0.541\n  - 7Networks_RH_DorsAttn_Post_2: mean |z| = 0.331\n  - 7Networks_RH_Limbic_TempPole_4: mean |z| = 0.621\n  - 7Networks_LH_Default_Temp_1: mean |z| = 0.476\n  - 7Networks_RH_SomMot_17: mean |z| = 0.287\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus, consisting of a 62.8-second forest soundscape, elicited peak neural activity at 27.0 seconds, characterized by a distributed pattern across sensory, attentional, and higher-order networks. Increased activity in the right hemisphere somatomotor regions (SomMot_26, SomMot_17) and the left hemisphere dorsal attention network (FEF_2, Post_2) suggests active auditory processing and the allocation of spatial attention to the acoustic features of the birdsong and rustling leaves. Concurrently, engagement of the left hemisphere parcellated control network (Cont_Par_5) and the right hemisphere limbic temporal pole (Limbic_TempPole_4) indicates the integration of these sensory inputs with internal regulatory processes and potential affective evaluation. The involvement of the left hemisphere default mode network (PFC_8, Temp_1) suggests that the stimulus may also trigger self-referential or associative processing related to the environmental context. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a written narrative about a lone astronaut repairing a satellite",
+    "modality": "text",
+    "top_rois": [
+      "7Networks_RH_Default_Temp_2",
+      "7Networks_LH_DorsAttn_Post_8",
+      "7Networks_LH_SalVentAttn_ParOper_5",
+      "7Networks_RH_Default_Temp_6",
+      "7Networks_RH_Default_PFC_9",
+      "7Networks_LH_Cont_Par_7",
+      "7Networks_LH_DorsAttn_FEF_3",
+      "7Networks_LH_SomMot_21"
+    ],
+    "roi_means": {
+      "7Networks_RH_Default_Temp_2": 0.78,
+      "7Networks_LH_DorsAttn_Post_8": 0.576,
+      "7Networks_LH_SalVentAttn_ParOper_5": 0.622,
+      "7Networks_RH_Default_Temp_6": 0.339,
+      "7Networks_RH_Default_PFC_9": 0.443,
+      "7Networks_LH_Cont_Par_7": 0.647,
+      "7Networks_LH_DorsAttn_FEF_3": 0.48,
+      "7Networks_LH_SomMot_21": 0.308
+    },
+    "duration_s": 21.0,
+    "peak_time_s": 16.0,
+    "prompt": "Stimulus: a written narrative about a lone astronaut repairing a satellite\nDuration: 21.0 s, peak activity at t=16.0s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Default_Temp_2: mean |z| = 0.780\n  - 7Networks_LH_DorsAttn_Post_8: mean |z| = 0.576\n  - 7Networks_LH_SalVentAttn_ParOper_5: mean |z| = 0.622\n  - 7Networks_RH_Default_Temp_6: mean |z| = 0.339\n  - 7Networks_RH_Default_PFC_9: mean |z| = 0.443\n  - 7Networks_LH_Cont_Par_7: mean |z| = 0.647\n  - 7Networks_LH_DorsAttn_FEF_3: mean |z| = 0.480\n  - 7Networks_LH_SomMot_21: mean |z| = 0.308\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The observed activation pattern during the 21.0-second narrative stimulus suggests a complex integration of internal thought and external task monitoring, peaking at t=16.0s. Increased activity in the right hemisphere Default Mode Network (specifically the temporal and prefrontal components) indicates engagement in internally directed processing, such as mental imagery or episodic simulation of the astronaut's scenario. This is accompanied by significant activation in the left hemisphere Dorsal Attention and Salience networks, which likely reflects the maintenance of task-relevant focus and the processing of salient narrative elements. Furthermore, activation in the left hemisphere Cingulo-Opercular and Somatomotor networks suggests the recruitment of networks responsible for sustained attentional control and the potential simulation of motoric actions related to the repair task. This analysis represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a short silent sequence of abstract colored shapes moving on a plain background",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_LH_DorsAttn_FEF_3",
+      "7Networks_LH_Cont_Par_7",
+      "7Networks_RH_Vis_28",
+      "7Networks_RH_Default_pCunPCC_2",
+      "7Networks_LH_Default_Temp_3",
+      "7Networks_RH_Vis_9",
+      "7Networks_RH_DorsAttn_Post_2",
+      "7Networks_LH_SomMot_4"
+    ],
+    "roi_means": {
+      "7Networks_LH_DorsAttn_FEF_3": 0.684,
+      "7Networks_LH_Cont_Par_7": 0.564,
+      "7Networks_RH_Vis_28": 0.67,
+      "7Networks_RH_Default_pCunPCC_2": 0.433,
+      "7Networks_LH_Default_Temp_3": 0.478,
+      "7Networks_RH_Vis_9": 0.529,
+      "7Networks_RH_DorsAttn_Post_2": 0.15,
+      "7Networks_LH_SomMot_4": 0.322
+    },
+    "duration_s": 25.3,
+    "peak_time_s": 13.9,
+    "prompt": "Stimulus: a short silent sequence of abstract colored shapes moving on a plain background\nDuration: 25.3 s, peak activity at t=13.9s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_DorsAttn_FEF_3: mean |z| = 0.684\n  - 7Networks_LH_Cont_Par_7: mean |z| = 0.564\n  - 7Networks_RH_Vis_28: mean |z| = 0.670\n  - 7Networks_RH_Default_pCunPCC_2: mean |z| = 0.433\n  - 7Networks_LH_Default_Temp_3: mean |z| = 0.478\n  - 7Networks_RH_Vis_9: mean |z| = 0.529\n  - 7Networks_RH_DorsAttn_Post_2: mean |z| = 0.150\n  - 7Networks_LH_SomMot_4: mean |z| = 0.322\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The observed activation pattern during the 25.3-second stimulus indicates a primary engagement of the visual and attentional networks in response to the moving abstract shapes. Significant activity in the right hemisphere visual networks (RH_Vis_28 and RH_Vis_9) suggests the processing of basic motion and chromatic features, while increased activity in the left hemisphere dorsal attention network (LH_DorsAttn_FEF_3) indicates the allocation of top-down attentional resources to track the moving stimuli. The simultaneous involvement of the left hemisphere control network (LH_Cont_Par_7) and elements of the default mode network (RH_Default_pCunPCC_2 and LH_Default_Temp_3) may reflect the integration of sensory input with internal representations or the maintenance of task-relevant spatial awareness. This pattern reflects a coordinated effort between sensory perception and attentional modulation to process dynamic visual information. This is a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a surgical procedure explained step-by-step in third person",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_LH_DorsAttn_Post_10",
+      "7Networks_LH_Vis_22",
+      "7Networks_RH_SalVentAttn_ParOper_4",
+      "7Networks_LH_SomMot_8",
+      "7Networks_LH_DorsAttn_FEF_3",
+      "7Networks_LH_DorsAttn_FEF_5",
+      "7Networks_RH_Cont_Par_1",
+      "7Networks_RH_Vis_20"
+    ],
+    "roi_means": {
+      "7Networks_LH_DorsAttn_Post_10": 0.73,
+      "7Networks_LH_Vis_22": 0.547,
+      "7Networks_RH_SalVentAttn_ParOper_4": 0.565,
+      "7Networks_LH_SomMot_8": 0.686,
+      "7Networks_LH_DorsAttn_FEF_3": 0.476,
+      "7Networks_LH_DorsAttn_FEF_5": 0.519,
+      "7Networks_RH_Cont_Par_1": 0.565,
+      "7Networks_RH_Vis_20": 0.459
+    },
+    "duration_s": 36.7,
+    "peak_time_s": 2.2,
+    "prompt": "Stimulus: a surgical procedure explained step-by-step in third person\nDuration: 36.7 s, peak activity at t=2.2s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_DorsAttn_Post_10: mean |z| = 0.730\n  - 7Networks_LH_Vis_22: mean |z| = 0.547\n  - 7Networks_RH_SalVentAttn_ParOper_4: mean |z| = 0.565\n  - 7Networks_LH_SomMot_8: mean |z| = 0.686\n  - 7Networks_LH_DorsAttn_FEF_3: mean |z| = 0.476\n  - 7Networks_LH_DorsAttn_FEF_5: mean |z| = 0.519\n  - 7Networks_RH_Cont_Par_1: mean |z| = 0.565\n  - 7Networks_RH_Vis_20: mean |z| = 0.459\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus, consisting of a third-person step-by-step explanation of a surgical procedure, elicited peak activity at 2.2 seconds across several interconnected cortical networks. The activation of the left dorsolateral attentional regions (DorsAttn) and the right salience/ventral attentional regions (SalVentAttn) suggests a high level of focused, top-down directed attention toward the procedural details. Concurrent engagement of the left somatomotor (SomMot) and contralateral control (Cont) networks, alongside bilateral visual (Vis) regions, indicates the integration of auditory instructional content with the mental simulation of motor sequences and spatial visual processing. This pattern represents the brain's attempt to cognitively map complex, sequential information into a coherent procedural framework. This is a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a printed paragraph describing the architecture of the visual cortex",
+    "modality": "text",
+    "top_rois": [
+      "7Networks_LH_Default_Temp_3",
+      "7Networks_RH_SalVentAttn_ParOper_1",
+      "7Networks_LH_Cont_pCun_3",
+      "7Networks_RH_Cont_Par_1",
+      "7Networks_LH_Cont_Par_5",
+      "7Networks_LH_Default_Temp_6",
+      "7Networks_LH_Vis_8",
+      "7Networks_RH_Cont_pCun_2"
+    ],
+    "roi_means": {
+      "7Networks_LH_Default_Temp_3": 0.628,
+      "7Networks_RH_SalVentAttn_ParOper_1": 0.785,
+      "7Networks_LH_Cont_pCun_3": 0.575,
+      "7Networks_RH_Cont_Par_1": 0.599,
+      "7Networks_LH_Cont_Par_5": 0.413,
+      "7Networks_LH_Default_Temp_6": 0.539,
+      "7Networks_LH_Vis_8": 0.302,
+      "7Networks_RH_Cont_pCun_2": 0.442
+    },
+    "duration_s": 49.1,
+    "peak_time_s": 26.6,
+    "prompt": "Stimulus: a printed paragraph describing the architecture of the visual cortex\nDuration: 49.1 s, peak activity at t=26.6s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Default_Temp_3: mean |z| = 0.628\n  - 7Networks_RH_SalVentAttn_ParOper_1: mean |z| = 0.785\n  - 7Networks_LH_Cont_pCun_3: mean |z| = 0.575\n  - 7Networks_RH_Cont_Par_1: mean |z| = 0.599\n  - 7Networks_LH_Cont_Par_5: mean |z| = 0.413\n  - 7Networks_LH_Default_Temp_6: mean |z| = 0.539\n  - 7Networks_LH_Vis_8: mean |z| = 0.302\n  - 7Networks_RH_Cont_pCun_2: mean |z| = 0.442\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus consists of a printed paragraph detailing visual cortex architecture, with peak neural activity observed at 26.6 seconds. The activation pattern is characterized by prominent engagement in the right salience/ventral attention network (mean |z| = 0.785) and the left default mode network (mean |z| = 0.628), suggesting a state of focused attention directed toward complex semantic processing and internal integration of information. Concurrent activity in the left and right control networks, specifically involving the parietal lobes (mean |z| ranges from 0.413 to 0.599), indicates the recruitment of top-down cognitive resources for managing the structural complexity of the text. While the left visual network shows lower relative activation (mean |z| = 0.302), the overall distribution reflects a coordinated effort between attentional orienting and higher-order cortical processing. This represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a city driving scene at dusk with headlights and neon signs",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_LH_SalVentAttn_ParOper_2",
+      "7Networks_RH_Default_PFC_5",
+      "7Networks_LH_SomMot_29",
+      "7Networks_RH_Vis_8",
+      "7Networks_LH_DorsAttn_Post_6",
+      "7Networks_RH_SomMot_5",
+      "7Networks_LH_Vis_10",
+      "7Networks_LH_DorsAttn_FEF_1"
+    ],
+    "roi_means": {
+      "7Networks_LH_SalVentAttn_ParOper_2": 0.683,
+      "7Networks_RH_Default_PFC_5": 0.649,
+      "7Networks_LH_SomMot_29": 0.626,
+      "7Networks_RH_Vis_8": 0.605,
+      "7Networks_LH_DorsAttn_Post_6": 0.522,
+      "7Networks_RH_SomMot_5": 0.512,
+      "7Networks_LH_Vis_10": 0.465,
+      "7Networks_LH_DorsAttn_FEF_1": 0.347
+    },
+    "duration_s": 59.2,
+    "peak_time_s": 49.1,
+    "prompt": "Stimulus: a city driving scene at dusk with headlights and neon signs\nDuration: 59.2 s, peak activity at t=49.1s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_SalVentAttn_ParOper_2: mean |z| = 0.683\n  - 7Networks_RH_Default_PFC_5: mean |z| = 0.649\n  - 7Networks_LH_SomMot_29: mean |z| = 0.626\n  - 7Networks_RH_Vis_8: mean |z| = 0.605\n  - 7Networks_LH_DorsAttn_Post_6: mean |z| = 0.522\n  - 7Networks_RH_SomMot_5: mean |z| = 0.512\n  - 7Networks_LH_Vis_10: mean |z| = 0.465\n  - 7Networks_LH_DorsAttn_FEF_1: mean |z| = 0.347\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus, consisting of a city driving scene at dusk, elicits peak neural activity at 49.1 seconds characterized by integrated engagement across sensory, attentional, and higher-order networks. Increased activity in the visual networks (RH_Vis_8 and LH_Vis_10) reflects the processing of high-contrast luminance from headlights and neon signage, while simultaneous activation in the dorsal attention networks (LH_DorsAttn_Post_6 and LH_DorsAttn_FEF_1) suggests the allocation of spatial focus to navigating the moving scene. The involvement of the salience/ventral attention network (LH_SalVentAttn_ParOper_2) and the default mode network (RH_Default_PFC_5) indicates the brain is likely monitoring for task-relevant environmental changes while integrating these visual inputs into a broader context. Additionally, activation in the somatomotor networks (LH_SomMot_29 and RH_SomMot_5) may reflect the implicit motor preparation or simulation associated with the driving perspective. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a scene of a dog running through an open meadow toward its owner",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_RH_DorsAttn_Post_8",
+      "7Networks_RH_Vis_15",
+      "7Networks_RH_SomMot_5",
+      "7Networks_RH_Vis_7",
+      "7Networks_LH_Vis_20",
+      "7Networks_LH_DorsAttn_FEF_2",
+      "7Networks_LH_SomMot_20",
+      "7Networks_LH_Default_PFC_7"
+    ],
+    "roi_means": {
+      "7Networks_RH_DorsAttn_Post_8": 0.869,
+      "7Networks_RH_Vis_15": 0.727,
+      "7Networks_RH_SomMot_5": 0.728,
+      "7Networks_RH_Vis_7": 0.528,
+      "7Networks_LH_Vis_20": 0.361,
+      "7Networks_LH_DorsAttn_FEF_2": 0.481,
+      "7Networks_LH_SomMot_20": 0.337,
+      "7Networks_LH_Default_PFC_7": 0.293
+    },
+    "duration_s": 46.3,
+    "peak_time_s": 12.6,
+    "prompt": "Stimulus: a scene of a dog running through an open meadow toward its owner\nDuration: 46.3 s, peak activity at t=12.6s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_DorsAttn_Post_8: mean |z| = 0.869\n  - 7Networks_RH_Vis_15: mean |z| = 0.727\n  - 7Networks_RH_SomMot_5: mean |z| = 0.728\n  - 7Networks_RH_Vis_7: mean |z| = 0.528\n  - 7Networks_LH_Vis_20: mean |z| = 0.361\n  - 7Networks_LH_DorsAttn_FEF_2: mean |z| = 0.481\n  - 7Networks_LH_SomMot_20: mean |z| = 0.337\n  - 7Networks_LH_Default_PFC_7: mean |z| = 0.293\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The presented stimulus, depicting a dog running through a meadow toward an owner, elicited peak neural activity at 12.6 seconds, characterized by significant engagement of the dorsal attention and visual networks. Increased activation in the right hemisphere dorsal attention (DorsAttn_Post_8) and left hemisphere frontal eye field (DorsAttn_FEF_2) suggests heightened top-down spatial monitoring and the allocation of attentional resources to track the moving subject. Concurrently, heightened activity within the right and left visual networks (Vis_15, Vis_7, Vis_20) reflects the processing of complex motion and environmental textures. The presence of moderate activation in somatomotor regions (SomMot_5, SomMot_20) may indicate the activation of mirror neuron systems or motor simulation related to the observed movement, while minimal activity in the left default mode network (Default_PFC_7) suggests a relative suppression of internally directed cognition in favor of external task-oriented processing. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a sports highlight reel of fast-break basketball plays",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_RH_Vis_5",
+      "7Networks_LH_Vis_4",
+      "7Networks_RH_DorsAttn_Post_4",
+      "7Networks_LH_SomMot_10",
+      "7Networks_LH_DorsAttn_Post_3",
+      "7Networks_LH_Default_pCunPCC_4",
+      "7Networks_LH_Default_Temp_6",
+      "7Networks_LH_Cont_Par_6"
+    ],
+    "roi_means": {
+      "7Networks_RH_Vis_5": 0.565,
+      "7Networks_LH_Vis_4": 0.527,
+      "7Networks_RH_DorsAttn_Post_4": 0.691,
+      "7Networks_LH_SomMot_10": 0.628,
+      "7Networks_LH_DorsAttn_Post_3": 0.414,
+      "7Networks_LH_Default_pCunPCC_4": 0.399,
+      "7Networks_LH_Default_Temp_6": 0.537,
+      "7Networks_LH_Cont_Par_6": 0.405
+    },
+    "duration_s": 49.3,
+    "peak_time_s": 14.3,
+    "prompt": "Stimulus: a sports highlight reel of fast-break basketball plays\nDuration: 49.3 s, peak activity at t=14.3s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Vis_5: mean |z| = 0.565\n  - 7Networks_LH_Vis_4: mean |z| = 0.527\n  - 7Networks_RH_DorsAttn_Post_4: mean |z| = 0.691\n  - 7Networks_LH_SomMot_10: mean |z| = 0.628\n  - 7Networks_LH_DorsAttn_Post_3: mean |z| = 0.414\n  - 7Networks_LH_Default_pCunPCC_4: mean |z| = 0.399\n  - 7Networks_LH_Default_Temp_6: mean |z| = 0.537\n  - 7Networks_LH_Cont_Par_6: mean |z| = 0.405\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus, consisting of high-velocity basketball highlights, elicited peak neural activity at 14.3 seconds, characterized by coordinated activation across visual, attentional, and motor-related networks. Increased activity in the right and left visual networks (Vis_4, Vis_5) indicates intensive processing of rapid motion and spatial changes, while significant engagement in the dorsal attention networks (DorsAttn_Post_3, DorsAttn_Post_4) suggests heightened exogenous orienting to salient moving objects. Concomitant activation in the left somatomotor network (SomMot_10) likely reflects motor simulation or mirror neuron activity in response to the observed athletic movements, alongside secondary involvement of the default and control networks (Default_Temp_6, Cont_Par_6) for integrating the stimulus within a broader task context. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a short animated clip of a cat chasing a laser pointer across a wooden floor",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_LH_Default_PFC_1",
+      "7Networks_LH_Cont_Par_7",
+      "7Networks_LH_Vis_23",
+      "7Networks_RH_Default_PFC_6",
+      "7Networks_RH_Cont_pCun_2",
+      "7Networks_LH_DorsAttn_Post_7",
+      "7Networks_LH_DorsAttn_Post_6",
+      "7Networks_LH_Default_PFC_6"
+    ],
+    "roi_means": {
+      "7Networks_LH_Default_PFC_1": 0.614,
+      "7Networks_LH_Cont_Par_7": 0.546,
+      "7Networks_LH_Vis_23": 0.575,
+      "7Networks_RH_Default_PFC_6": 0.496,
+      "7Networks_RH_Cont_pCun_2": 0.438,
+      "7Networks_LH_DorsAttn_Post_7": 0.386,
+      "7Networks_LH_DorsAttn_Post_6": 0.307,
+      "7Networks_LH_Default_PFC_6": 0.603
+    },
+    "duration_s": 35.2,
+    "peak_time_s": 20.0,
+    "prompt": "Stimulus: a short animated clip of a cat chasing a laser pointer across a wooden floor\nDuration: 35.2 s, peak activity at t=20.0s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Default_PFC_1: mean |z| = 0.614\n  - 7Networks_LH_Cont_Par_7: mean |z| = 0.546\n  - 7Networks_LH_Vis_23: mean |z| = 0.575\n  - 7Networks_RH_Default_PFC_6: mean |z| = 0.496\n  - 7Networks_RH_Cont_pCun_2: mean |z| = 0.438\n  - 7Networks_LH_DorsAttn_Post_7: mean |z| = 0.386\n  - 7Networks_LH_DorsAttn_Post_6: mean |z| = 0.307\n  - 7Networks_LH_Default_PFC_6: mean |z| = 0.603\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus, an animated clip of a cat chasing a laser pointer, elicited peak neural activity at 20.0 seconds, characterized by engagement across visual, attentional, and default mode networks. Increased activity in the LH_Vis_23 region suggests the processing of moving visual stimuli and motion trajectories across the wooden floor. Concurrently, activation within the LH_DorsAttn and RH_DorsAttn posterior regions indicates the deployment of top-down attentional mechanisms to track the dynamic stimulus. The involvement of multiple prefrontal components within the Default Mode Network (LH_Default_PFC_1, RH_Default_PFC_6, and LH_Default_PFC_6) suggests the integration of stimulus-driven input with internal representational or predictive processing. This pattern reflects a coordinated response between sensory perception and higher-order cognitive monitoring, and these values represent group-averaged TRIBE v2 predictions, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a nature documentary segment showing ocean waves crashing on a rocky coastline",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_LH_Vis_8",
+      "7Networks_RH_Limbic_OFC_3",
+      "7Networks_RH_Vis_23",
+      "7Networks_LH_Limbic_OFC_3",
+      "7Networks_LH_Vis_12",
+      "7Networks_LH_SalVentAttn_TempOccPar_1",
+      "7Networks_LH_DorsAttn_Post_9",
+      "7Networks_LH_SalVentAttn_ParOper_5"
+    ],
+    "roi_means": {
+      "7Networks_LH_Vis_8": 0.756,
+      "7Networks_RH_Limbic_OFC_3": 0.603,
+      "7Networks_RH_Vis_23": 0.725,
+      "7Networks_LH_Limbic_OFC_3": 0.6,
+      "7Networks_LH_Vis_12": 0.389,
+      "7Networks_LH_SalVentAttn_TempOccPar_1": 0.386,
+      "7Networks_LH_DorsAttn_Post_9": 0.422,
+      "7Networks_LH_SalVentAttn_ParOper_5": 0.565
+    },
+    "duration_s": 19.8,
+    "peak_time_s": 17.2,
+    "prompt": "Stimulus: a nature documentary segment showing ocean waves crashing on a rocky coastline\nDuration: 19.8 s, peak activity at t=17.2s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Vis_8: mean |z| = 0.756\n  - 7Networks_RH_Limbic_OFC_3: mean |z| = 0.603\n  - 7Networks_RH_Vis_23: mean |z| = 0.725\n  - 7Networks_LH_Limbic_OFC_3: mean |z| = 0.600\n  - 7Networks_LH_Vis_12: mean |z| = 0.389\n  - 7Networks_LH_SalVentAttn_TempOccPar_1: mean |z| = 0.386\n  - 7Networks_LH_DorsAttn_Post_9: mean |z| = 0.422\n  - 7Networks_LH_SalVentAttn_ParOper_5: mean |z| = 0.565\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The presented stimulus, consisting of ocean waves crashing on a rocky coastline, elicited peak neural activity at 17.2 seconds, characterized by significant engagement across visual and limbic networks. The observed activation in the left and right visual networks (7Networks_LH_Vis_8, 7Networks_RH_Vis_23, and 7Networks_LH_Vis_12) indicates the processing of high-contrast motion and complex spatial textures inherent in the coastal imagery. Concurrently, increased activity within the orbitofrontal cortex (7Networks_RH_Limbic_OFC_3 and 7Networks_LH_Limbic_OFC_3) suggests the integration of sensory input with potential affective or reward-related evaluation. Furthermore, engagement in the salience and dorsal attention networks (7Networks_LH_SalVentAttn_TempOccPar_1, 7Networks_LH_SalVentAttn_ParOper_5, and 7Networks_LH_DorsAttn_Post_9) reflects the brain's allocation of attentional resources to prioritize the dynamic environmental changes presented in the footage. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a surgical procedure explained step-by-step in third person",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_LH_Default_pCunPCC_3",
+      "7Networks_LH_Vis_29",
+      "7Networks_LH_SalVentAttn_ParOper_1",
+      "7Networks_LH_SomMot_2",
+      "7Networks_LH_Default_Temp_4",
+      "7Networks_RH_Vis_21",
+      "7Networks_RH_Cont_Par_3",
+      "7Networks_LH_Vis_10"
+    ],
+    "roi_means": {
+      "7Networks_LH_Default_pCunPCC_3": 0.514,
+      "7Networks_LH_Vis_29": 0.631,
+      "7Networks_LH_SalVentAttn_ParOper_1": 0.613,
+      "7Networks_LH_SomMot_2": 0.578,
+      "7Networks_LH_Default_Temp_4": 0.563,
+      "7Networks_RH_Vis_21": 0.43,
+      "7Networks_RH_Cont_Par_3": 0.31,
+      "7Networks_LH_Vis_10": 0.403
+    },
+    "duration_s": 26.8,
+    "peak_time_s": 10.4,
+    "prompt": "Stimulus: a surgical procedure explained step-by-step in third person\nDuration: 26.8 s, peak activity at t=10.4s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Default_pCunPCC_3: mean |z| = 0.514\n  - 7Networks_LH_Vis_29: mean |z| = 0.631\n  - 7Networks_LH_SalVentAttn_ParOper_1: mean |z| = 0.613\n  - 7Networks_LH_SomMot_2: mean |z| = 0.578\n  - 7Networks_LH_Default_Temp_4: mean |z| = 0.563\n  - 7Networks_RH_Vis_21: mean |z| = 0.430\n  - 7Networks_RH_Cont_Par_3: mean |z| = 0.310\n  - 7Networks_LH_Vis_10: mean |z| = 0.403\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus, consisting of a third-person step-by-step explanation of a surgical procedure, elicited peak neural activity at 10.4 seconds across several integrated cortical networks. Increased activation in the left visual (Vis) and right visual (Vis) regions suggests the processing of instructional imagery or the mental reconstruction of the described anatomical movements. Concurrently, activity within the left salience/ventral attention (SalVentAttn) and left somatomotor (SomMot) networks indicates the allocation of attentional resources to the procedural steps and the simulation of motoric actions associated with the surgery. The involvement of the left default mode network (Default_pCunPCC and Default_Temp) suggests the integration of this external information into internal semantic frameworks or working memory. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  },
+  {
+    "stimulus_label": "a city driving scene at dusk with headlights and neon signs",
+    "modality": "video",
+    "top_rois": [
+      "7Networks_LH_DorsAttn_Post_1",
+      "7Networks_LH_Default_pCunPCC_4",
+      "7Networks_RH_Vis_8",
+      "7Networks_RH_Default_PFC_9",
+      "7Networks_RH_Vis_7",
+      "7Networks_LH_SomMot_20",
+      "7Networks_RH_Default_Temp_5",
+      "7Networks_RH_DorsAttn_Post_1"
+    ],
+    "roi_means": {
+      "7Networks_LH_DorsAttn_Post_1": 0.529,
+      "7Networks_LH_Default_pCunPCC_4": 0.588,
+      "7Networks_RH_Vis_8": 0.575,
+      "7Networks_RH_Default_PFC_9": 0.498,
+      "7Networks_RH_Vis_7": 0.327,
+      "7Networks_LH_SomMot_20": 0.455,
+      "7Networks_RH_Default_Temp_5": 0.204,
+      "7Networks_RH_DorsAttn_Post_1": 0.429
+    },
+    "duration_s": 62.7,
+    "peak_time_s": 30.6,
+    "prompt": "Stimulus: a city driving scene at dusk with headlights and neon signs\nDuration: 62.7 s, peak activity at t=30.6s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_DorsAttn_Post_1: mean |z| = 0.529\n  - 7Networks_LH_Default_pCunPCC_4: mean |z| = 0.588\n  - 7Networks_RH_Vis_8: mean |z| = 0.575\n  - 7Networks_RH_Default_PFC_9: mean |z| = 0.498\n  - 7Networks_RH_Vis_7: mean |z| = 0.327\n  - 7Networks_LH_SomMot_20: mean |z| = 0.455\n  - 7Networks_RH_Default_Temp_5: mean |z| = 0.204\n  - 7Networks_RH_DorsAttn_Post_1: mean |z| = 0.429\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "The stimulus, consisting of a city driving scene at dusk, evokes a pattern of activation characterized by significant engagement of the visual and default mode networks. Increased activity in the right hemisphere visual regions (RH_Vis_8 and RH_Vis_7) reflects the processing of high-contrast luminance changes from headlights and neon signs, while simultaneous activation in the left hemisphere default mode components (LH_Default_pCunPCC_4) suggests internal integration or spontaneous thought during the observation. The involvement of the dorsal attention networks in both hemispheres (LH_DorsAttn_Post_1 and RH_DorsAttn_Post_1) indicates the allocation of-top-down resources to track moving stimuli within the scene, alongside moderate activity in the left somatomotor network (LH_SomMot_20) which may relate to the motor-related imagery of driving. This pattern represents a coordinated effort between sensory perception, attentional shifting, and higher-order cognitive processing, and this is a group-averaged TRIBE v2 prediction, not a diagnostic result."
+  }
+]

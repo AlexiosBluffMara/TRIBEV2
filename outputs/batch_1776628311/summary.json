@@ -1,0 +1,419 @@
+{
+  "ts": 1776628311,
+  "clips": [
+    "D:\\TRIBEV2\\assets\\dl_nature.mp4",
+    "D:\\TRIBEV2\\assets\\dl_neurosci.mp4",
+    "D:\\TRIBEV2\\assets\\dl_spiderman.mp4",
+    "D:\\TRIBEV2\\assets\\test_nature_30s.mp4",
+    "D:\\TRIBEV2\\assets\\test_spiderman_25s.mp4",
+    "D:\\TRIBEV2\\assets\\test_neurosci_30s.mp4"
+  ],
+  "warmup": {
+    "duration_s": 15.1,
+    "gpu_vram_peak_gb": 5.46,
+    "gpu_vram_mean_gb": 4.15,
+    "gpu_util_peak_pct": 37,
+    "gpu_util_mean_pct": 13.7,
+    "gpu_temp_peak_c": 44,
+    "gpu_power_peak_w": 91.0,
+    "ram_peak_gb": 31.6,
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "allocated": 0.72,
+    "reserved": 0.85,
+    "total": 34.19,
+    "free": 33.35
+  },
+  "records": [
+    {
+      "media": "D:\\TRIBEV2\\assets\\dl_nature.mp4",
+      "slug": "dl_nature",
+      "stages": {
+        "gemma_vision": {
+          "duration_s": 4.76,
+          "gpu_vram_peak_gb": 15.66,
+          "gpu_vram_mean_gb": 11.56,
+          "gpu_util_peak_pct": 80,
+          "gpu_util_mean_pct": 24.1,
+          "gpu_temp_peak_c": 49,
+          "gpu_power_peak_w": 155.0,
+          "ram_peak_gb": 23.6,
+          "content_type": "video",
+          "modality": "visual"
+        },
+        "tribe_inference": {
+          "duration_s": 411.68,
+          "gpu_vram_peak_gb": 17.07,
+          "gpu_vram_mean_gb": 12.33,
+          "gpu_util_peak_pct": 99,
+          "gpu_util_mean_pct": 42.8,
+          "gpu_temp_peak_c": 67,
+          "gpu_power_peak_w": 540.0,
+          "ram_peak_gb": 33.2,
+          "timesteps": 77,
+          "vertices": 20484,
+          "peak_t_s": 38.0,
+          "top_rois": [
+            "7Networks_LH_Vis_18",
+            "7Networks_LH_Vis_8",
+            "7Networks_RH_Vis_17",
+            "7Networks_RH_Vis_4",
+            "7Networks_LH_Vis_4",
+            "7Networks_RH_Vis_20",
+            "7Networks_RH_Vis_5",
+            "7Networks_RH_Vis_25"
+          ]
+        },
+        "visualize_peak": {
+          "duration_s": 2.25,
+          "gpu_vram_peak_gb": 4.47,
+          "gpu_vram_mean_gb": 4.46,
+          "gpu_util_peak_pct": 36,
+          "gpu_util_mean_pct": 21.8,
+          "gpu_temp_peak_c": 36,
+          "gpu_power_peak_w": 66.0,
+          "ram_peak_gb": 22.4,
+          "path": "D:\\TRIBEV2\\outputs\\batch_1776628311\\dl_nature\\brain_peak.png"
+        },
+        "gemma_narration": {
+          "duration_s": 6.84,
+          "gpu_vram_peak_gb": 24.33,
+          "gpu_vram_mean_gb": 19.27,
+          "gpu_util_peak_pct": 87,
+          "gpu_util_mean_pct": 27.6,
+          "gpu_temp_peak_c": 43,
+          "gpu_power_peak_w": 288.0,
+          "ram_peak_gb": 24.1,
+          "narration_chars": 864
+        }
+      },
+      "vision_summary": "The sequence displays several distinct outdoor scenes. One shows a train station platform with people standing. Another features a bright, grassy field with a path winding through it. The final frames depict natural landscapes with roads and buildings.",
+      "narration": "The stimulus dl_nature consists of a 38.5-second sequence of diverse outdoor landscapes, including train stations, grassy fields, and roads, with peak activity recorded at 38.0 seconds. The observed activation pattern is concentrated within the visual networks of both the left and right hemispheres, specifically involving regions such as LH_Vis_18, LH_Vis_8, RH_Vis_17, and RH_Vis_4. This widespread engagement across multiple ventral and dorsal visual stream components suggests the processing of complex spatial hierarchies, chromatic information, and motion dynamics inherent in the changing natural scenes. The distribution of mean |z| values across these specific cortical areas indicates a coordinated sensory response to the visual features presented in the sequence. This analysis represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+    },
+    {
+      "media": "D:\\TRIBEV2\\assets\\dl_neurosci.mp4",
+      "slug": "dl_neurosci",
+      "stages": {
+        "gemma_vision": {
+          "duration_s": 4.74,
+          "gpu_vram_peak_gb": 15.97,
+          "gpu_vram_mean_gb": 11.66,
+          "gpu_util_peak_pct": 87,
+          "gpu_util_mean_pct": 29.7,
+          "gpu_temp_peak_c": 46,
+          "gpu_power_peak_w": 288.0,
+          "ram_peak_gb": 23.8,
+          "content_type": "image",
+          "modality": "visual"
+        },
+        "tribe_inference": {
+          "duration_s": 1086.28,
+          "gpu_vram_peak_gb": 17.23,
+          "gpu_vram_mean_gb": 12.76,
+          "gpu_util_peak_pct": 99,
+          "gpu_util_mean_pct": 65.7,
+          "gpu_temp_peak_c": 72,
+          "gpu_power_peak_w": 554.0,
+          "ram_peak_gb": 37.9,
+          "timesteps": 739,
+          "vertices": 20484,
+          "peak_t_s": 129.5,
+          "top_rois": [
+            "7Networks_LH_Default_Temp_7",
+            "7Networks_RH_SomMot_1",
+            "7Networks_LH_Default_Temp_5",
+            "7Networks_RH_Default_Temp_7",
+            "7Networks_RH_SomMot_6",
+            "7Networks_LH_Default_Temp_8",
+            "7Networks_LH_Default_Temp_9",
+            "7Networks_RH_Default_Temp_6"
+          ]
+        },
+        "visualize_peak": {
+          "duration_s": 2.04,
+          "gpu_vram_peak_gb": 4.78,
+          "gpu_vram_mean_gb": 4.78,
+          "gpu_util_peak_pct": 33,
+          "gpu_util_mean_pct": 11.8,
+          "gpu_temp_peak_c": 38,
+          "gpu_power_peak_w": 83.0,
+          "ram_peak_gb": 25.4,
+          "path": "D:\\TRIBEV2\\outputs\\batch_1776628311\\dl_neurosci\\brain_peak.png"
+        },
+        "gemma_narration": {
+          "duration_s": 9.28,
+          "gpu_vram_peak_gb": 23.93,
+          "gpu_vram_mean_gb": 20.2,
+          "gpu_util_peak_pct": 83,
+          "gpu_util_mean_pct": 19.1,
+          "gpu_temp_peak_c": 43,
+          "gpu_power_peak_w": 157.0,
+          "ram_peak_gb": 27.1,
+          "narration_chars": 752
+        }
+      },
+      "vision_summary": "The image displays a diagram of the human brain with various parts labeled. Text lists brainstem components, including the midbrain, pons, and medulla oblongata. The overall presentation appears to be for educational purposes regarding neuroscience.",
+      "narration": "The stimulus consists of an educational diagram detailing the anatomical components of the human brainstem. The observed activation pattern shows a distribution of activity across the left and right hemispheres, primarily concentrated within the temporal components of the Default Mode Network (DMN) and the Somatomotor Network. The increased activity in the temporal DMN regions suggests engagement in internal processing or semantic integration related to the educational content, while the simultaneous activation in the Somatomotor Network may reflect the cognitive effort associated with visual attention or the processing of structural anatomical information. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+    },
+    {
+      "media": "D:\\TRIBEV2\\assets\\dl_spiderman.mp4",
+      "slug": "dl_spiderman",
+      "stages": {
+        "gemma_vision": {
+          "duration_s": 11.93,
+          "gpu_vram_peak_gb": 15.53,
+          "gpu_vram_mean_gb": 13.65,
+          "gpu_util_peak_pct": 86,
+          "gpu_util_mean_pct": 18.9,
+          "gpu_temp_peak_c": 44,
+          "gpu_power_peak_w": 289.0,
+          "ram_peak_gb": 26.9,
+          "content_type": "video",
+          "modality": "visual"
+        },
+        "tribe_inference": {
+          "duration_s": 708.28,
+          "gpu_vram_peak_gb": 17.25,
+          "gpu_vram_mean_gb": 12.75,
+          "gpu_util_peak_pct": 100,
+          "gpu_util_mean_pct": 58.7,
+          "gpu_temp_peak_c": 71,
+          "gpu_power_peak_w": 550.0,
+          "ram_peak_gb": 37.1,
+          "timesteps": 414,
+          "vertices": 20484,
+          "peak_t_s": 28.5,
+          "top_rois": [
+            "7Networks_LH_Default_Temp_7",
+            "7Networks_LH_Vis_18",
+            "7Networks_LH_Vis_26",
+            "7Networks_RH_Vis_21",
+            "7Networks_RH_Vis_17",
+            "7Networks_RH_Vis_15",
+            "7Networks_LH_Vis_7",
+            "7Networks_RH_Vis_25"
+          ]
+        },
+        "visualize_peak": {
+          "duration_s": 2.09,
+          "gpu_vram_peak_gb": 4.53,
+          "gpu_vram_mean_gb": 4.53,
+          "gpu_util_peak_pct": 33,
+          "gpu_util_mean_pct": 13.8,
+          "gpu_temp_peak_c": 37,
+          "gpu_power_peak_w": 62.0,
+          "ram_peak_gb": 25.3,
+          "path": "D:\\TRIBEV2\\outputs\\batch_1776628311\\dl_spiderman\\brain_peak.png"
+        },
+        "gemma_narration": {
+          "duration_s": 8.81,
+          "gpu_vram_peak_gb": 23.73,
+          "gpu_vram_mean_gb": 20.11,
+          "gpu_util_peak_pct": 87,
+          "gpu_util_mean_pct": 21.6,
+          "gpu_temp_peak_c": 43,
+          "gpu_power_peak_w": 244.0,
+          "ram_peak_gb": 27.0,
+          "narration_chars": 911
+        }
+      },
+      "vision_summary": "The first frame shows a man standing in a dimly lit, indoor-like setting. The second frame depicts large electrical transmission towers against a sunset over a landscape. The final frames show the man outdoors, appearing to move with an object, and a final abstract, dark scene.",
+      "narration": "The stimulus \"dl_spiderman\" consists of a 207-second sequence featuring indoor settings, electrical towers at sunset, and outdoor movement, with peak neural activity occurring at 28.5 seconds. The observed activation pattern shows a concentration of mean |z| values within the visual networks of both the left and right hemispheres, specifically involving regions such as LH_Vis_18, LH_Vis_26, RH_Vis_21, and RH_Vis_17. This widespread engagement of the visual cortex suggests the brain is processing the high-contrast transitions and spatial changes inherent in the video frames. Additionally, the involvement of the LH_Default_Temp_7 region indicates a secondary integration of these visual inputs within the default mode network, potentially reflecting internal processing or semantic integration of the observed scenes. This analysis represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+    },
+    {
+      "media": "D:\\TRIBEV2\\assets\\test_nature_30s.mp4",
+      "slug": "test_nature_30s",
+      "stages": {
+        "gemma_vision": {
+          "duration_s": 10.36,
+          "gpu_vram_peak_gb": 15.0,
+          "gpu_vram_mean_gb": 13.1,
+          "gpu_util_peak_pct": 86,
+          "gpu_util_mean_pct": 19.3,
+          "gpu_temp_peak_c": 44,
+          "gpu_power_peak_w": 327.0,
+          "ram_peak_gb": 26.6,
+          "content_type": "video",
+          "modality": "visual"
+        },
+        "tribe_inference": {
+          "duration_s": 185.04,
+          "gpu_vram_peak_gb": 17.5,
+          "gpu_vram_mean_gb": 8.7,
+          "gpu_util_peak_pct": 99,
+          "gpu_util_mean_pct": 41.3,
+          "gpu_temp_peak_c": 69,
+          "gpu_power_peak_w": 543.0,
+          "ram_peak_gb": 36.1,
+          "timesteps": 30,
+          "vertices": 20484,
+          "peak_t_s": 7.5,
+          "top_rois": [
+            "7Networks_LH_Vis_18",
+            "7Networks_RH_Vis_4",
+            "7Networks_LH_Vis_8",
+            "7Networks_RH_Vis_17",
+            "7Networks_LH_Vis_4",
+            "7Networks_RH_Vis_25",
+            "7Networks_LH_Vis_27",
+            "7Networks_RH_Vis_20"
+          ]
+        },
+        "visualize_peak": {
+          "duration_s": 2.16,
+          "gpu_vram_peak_gb": 4.29,
+          "gpu_vram_mean_gb": 4.29,
+          "gpu_util_peak_pct": 33,
+          "gpu_util_mean_pct": 13.5,
+          "gpu_temp_peak_c": 37,
+          "gpu_power_peak_w": 63.0,
+          "ram_peak_gb": 25.3,
+          "path": "D:\\TRIBEV2\\outputs\\batch_1776628311\\test_nature_30s\\brain_peak.png"
+        },
+        "gemma_narration": {
+          "duration_s": 7.12,
+          "gpu_vram_peak_gb": 23.58,
+          "gpu_vram_mean_gb": 18.95,
+          "gpu_util_peak_pct": 84,
+          "gpu_util_mean_pct": 22.8,
+          "gpu_temp_peak_c": 43,
+          "gpu_power_peak_w": 158.0,
+          "ram_peak_gb": 26.9,
+          "narration_chars": 761
+        }
+      },
+      "vision_summary": "The keyframes depict a view from high above the Earth, showing layers of clouds. Bright, straight streaks of light are visible across the sky in the frames.",
+      "narration": "The stimulus, consisting of high-altitude aerial footage with high-contrast light streaks, elicited peak neural activity at 7.5 seconds across several bilateral visual networks. The observed activation in the LH and RH Vis 4 and Vis 18 networks suggests heightened processing of luminance transitions and edge detection associated with the bright streaks against the cloud layers. Additionally, activity in the Vis 8, Vis 17, Vis 25, Vis 27, and Vis 20 networks indicates integrated processing of spatial features and motion within the visual field. This pattern reflects the cortical encoding of high-contrast luminance changes and structural depth within the presented naturalistic scene. This is a group-averaged TRIBE v2 prediction, not a diagnostic result."
+    },
+    {
+      "media": "D:\\TRIBEV2\\assets\\test_spiderman_25s.mp4",
+      "slug": "test_spiderman_25s",
+      "stages": {
+        "gemma_vision": {
+          "duration_s": 5.28,
+          "gpu_vram_peak_gb": 14.92,
+          "gpu_vram_mean_gb": 11.54,
+          "gpu_util_peak_pct": 85,
+          "gpu_util_mean_pct": 27.2,
+          "gpu_temp_peak_c": 44,
+          "gpu_power_peak_w": 265.0,
+          "ram_peak_gb": 26.8,
+          "content_type": "video",
+          "modality": "visual"
+        },
+        "tribe_inference": {
+          "duration_s": 194.57,
+          "gpu_vram_peak_gb": 16.9,
+          "gpu_vram_mean_gb": 7.85,
+          "gpu_util_peak_pct": 98,
+          "gpu_util_mean_pct": 36.6,
+          "gpu_temp_peak_c": 67,
+          "gpu_power_peak_w": 542.0,
+          "ram_peak_gb": 37.2,
+          "timesteps": 25,
+          "vertices": 20484,
+          "peak_t_s": 8.5,
+          "top_rois": [
+            "7Networks_LH_Vis_18",
+            "7Networks_RH_Vis_17",
+            "7Networks_RH_Vis_25",
+            "7Networks_RH_Vis_5",
+            "7Networks_LH_Vis_4",
+            "7Networks_LH_Vis_26",
+            "7Networks_RH_Vis_26",
+            "7Networks_RH_Vis_4"
+          ]
+        },
+        "visualize_peak": {
+          "duration_s": 2.12,
+          "gpu_vram_peak_gb": 5.09,
+          "gpu_vram_mean_gb": 4.49,
+          "gpu_util_peak_pct": 33,
+          "gpu_util_mean_pct": 12.2,
+          "gpu_temp_peak_c": 35,
+          "gpu_power_peak_w": 61.0,
+          "ram_peak_gb": 25.5,
+          "path": "D:\\TRIBEV2\\outputs\\batch_1776628311\\test_spiderman_25s\\brain_peak.png"
+        },
+        "gemma_narration": {
+          "duration_s": 8.42,
+          "gpu_vram_peak_gb": 23.38,
+          "gpu_vram_mean_gb": 19.51,
+          "gpu_util_peak_pct": 86,
+          "gpu_util_mean_pct": 19.0,
+          "gpu_temp_peak_c": 41,
+          "gpu_power_peak_w": 190.0,
+          "ram_peak_gb": 26.8,
+          "narration_chars": 762
+        }
+      },
+      "vision_summary": "The frames depict a chaotic scene on an urban street, characterized by smoke and multiple vehicles. Several cars are visible, some appearing to be involved in an incident. Figures are present, suggesting active movement within the environment.",
+      "narration": "The stimulus, consisting of 12.5 seconds of high-motion urban activity, elicited significant activation primarily within the bilateral visual networks, specifically involving the left and right hemispheres of the visual cortex (7Networks_LH_Vis and 7Networks_RH_Vis). The distribution of increased |z| scores across multiple visual sub-regions, such as Vis_18, Vis_17, and Vis_25, suggests intensive processing of complex spatial features, motion vectors, and luminance changes inherent in the chaotic scene. This pattern indicates a heightened state of sensory encoding as the brain attempts to parse fragmented visual information and moving objects within the environment. This analysis represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+    },
+    {
+      "media": "D:\\TRIBEV2\\assets\\test_neurosci_30s.mp4",
+      "slug": "test_neurosci_30s",
+      "stages": {
+        "gemma_vision": {
+          "duration_s": 9.99,
+          "gpu_vram_peak_gb": 14.98,
+          "gpu_vram_mean_gb": 12.82,
+          "gpu_util_peak_pct": 82,
+          "gpu_util_mean_pct": 17.6,
+          "gpu_temp_peak_c": 43,
+          "gpu_power_peak_w": 302.0,
+          "ram_peak_gb": 26.5,
+          "content_type": "image",
+          "modality": "visual"
+        },
+        "tribe_inference": {
+          "duration_s": 214.13,
+          "gpu_vram_peak_gb": 16.98,
+          "gpu_vram_mean_gb": 8.2,
+          "gpu_util_peak_pct": 99,
+          "gpu_util_mean_pct": 37.8,
+          "gpu_temp_peak_c": 68,
+          "gpu_power_peak_w": 538.0,
+          "ram_peak_gb": 37.5,
+          "timesteps": 30,
+          "vertices": 20484,
+          "peak_t_s": 0.0,
+          "top_rois": [
+            "7Networks_RH_SomMot_6",
+            "7Networks_RH_Vis_30",
+            "7Networks_RH_SomMot_1",
+            "7Networks_RH_SomMot_2",
+            "7Networks_LH_Default_Temp_7",
+            "7Networks_LH_SomMot_6",
+            "7Networks_RH_Cont_pCun_1",
+            "7Networks_RH_Default_Par_5"
+          ]
+        },
+        "visualize_peak": {
+          "duration_s": 2.13,
+          "gpu_vram_peak_gb": 5.35,
+          "gpu_vram_mean_gb": 4.7,
+          "gpu_util_peak_pct": 33,
+          "gpu_util_mean_pct": 20.0,
+          "gpu_temp_peak_c": 35,
+          "gpu_power_peak_w": 63.0,
+          "ram_peak_gb": 25.8,
+          "path": "D:\\TRIBEV2\\outputs\\batch_1776628311\\test_neurosci_30s\\brain_peak.png"
+        },
+        "gemma_narration": {
+          "duration_s": 8.61,
+          "gpu_vram_peak_gb": 23.63,
+          "gpu_vram_mean_gb": 20.06,
+          "gpu_util_peak_pct": 99,
+          "gpu_util_mean_pct": 30.9,
+          "gpu_temp_peak_c": 42,
+          "gpu_power_peak_w": 209.0,
+          "ram_peak_gb": 27.4,
+          "narration_chars": 796
+        }
+      },
+      "vision_summary": "The images display labeled diagrams of major brain structures. Specific parts shown include the cerebrum, cerebellum, and brainstem. Text labels accompany each corresponding anatomical illustration.",
+      "narration": "The stimulus consists of anatomical diagrams of brain structures accompanied by text labels, which elicited peak activity at the onset of the presentation. The observed activation pattern is characterized by increased mean |z| values in the right hemisphere somatomotor and visual networks, suggesting the processing of spatial and structural information presented visually. Additionally, activity within the left hemisphere temporal default mode network and right hemisphere cingulo-parietal control network indicates engagement in higher-order integration and attentional allocation to the labels. This pattern reflects the simultaneous processing of visual stimuli and the cognitive integration of anatomical nomenclature. This is a group-averaged TRIBE v2 prediction, not a diagnostic result."
+    }
+  ],
+  "total_seconds": 2908.96
+}

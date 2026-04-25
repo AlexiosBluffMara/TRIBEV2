@@ -1,0 +1,19 @@
+{
+  "source": "D:\\research\\datasets\\brain_narrations_combined_1k.jsonl",
+  "n_rows": 1000,
+  "modalities": {
+    "video": 560,
+    "audio": 280,
+    "text": 160
+  },
+  "prompt_words": {
+    "mean": 65.56,
+    "min": 63,
+    "max": 71
+  },
+  "completion_words": {
+    "mean": 120.516,
+    "min": 88,
+    "max": 155
+  }
+}

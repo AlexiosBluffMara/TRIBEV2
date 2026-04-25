@@ -1,0 +1,213 @@
+text	start	duration	sequence_id	sentence
+Ever	9.457	0.1399999999999988	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+since	9.637	0.1399999999999988	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+I	9.817	0.03999999999999915	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+got	9.897	0.14000000000000057	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+bit	10.057	0.1399999999999988	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+by	10.217	0.09999999999999964	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+that	10.337	0.14100000000000001	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+spider,	10.538	0.33999999999999986	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+I've	12.419	0.16000000000000014	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+only	12.619	0.14000000000000057	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+had	12.819	0.11999999999999922	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+one	13.159	0.09999999999999964	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+week	13.319	0.21999999999999886	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+where	15.38	0.15999999999999837	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+my	15.58	0.11999999999999922	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+life	15.74	0.17999999999999972	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+has	15.96	0.11999999999999744	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+felt	16.14	0.24099999999999966	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+normal.	16.441	1.6400000000000006	0	 Ever since I got bit by that spider, I've only had one week where my life has felt normal.
+That	18.121	0.16000000000000014	1	That was when you found out.
+was	18.321	0.1609999999999978	1	That was when you found out.
+when	18.522	0.16000000000000014	1	That was when you found out.
+you	18.702	0.1599999999999966	1	That was when you found out.
+found	18.882	0.1999999999999993	1	That was when you found out.
+out.	19.162	0.10000000000000142	1	That was when you found out.
+When	27.266	0.14000000000000057	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+you	27.426	0.08000000000000185	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+botched	27.546	0.3000000000000007	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+that	27.866	0.17999999999999972	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+spell	28.086	0.3410000000000011	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+where	28.447	0.14000000000000057	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+you	28.607	0.08000000000000185	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+wanted	28.727	0.1999999999999993	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+everyone	28.967	0.3200000000000003	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+to	29.307	0.08000000000000185	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+forget	29.427	0.28000000000000114	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+that	29.747	0.10000000000000142	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+Peter	29.867	0.21999999999999886	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+Parker's	30.127	0.36100000000000065	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+Spider-Man,	30.508	0.6000000000000014	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+we	35.73	0.12000000000000455	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+started	35.87	0.30000000000000426	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+getting	36.21	0.24099999999999966	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+some	36.491	0.14000000000000057	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+visitors.	36.671	0.4200000000000017	2	When you botched that spell where you wanted everyone to forget that Peter Parker's Spider-Man, we started getting some visitors.
+on	42.075	0.03999999999999915	3	 on every universe.
+every	42.175	0.35999999999999943	3	 on every universe.
+universe.	43.316	4.300999999999995	3	 on every universe.
+Hello,	51.599	0.3200000000000003	4	Hello, Peter.
+Peter.	51.979	0.3200000000000003	4	Hello, Peter.
+You're	57.422	0.14000000000000057	5	You're not Peter Parker.
+not	57.582	0.14000000000000057	5	You're not Peter Parker.
+Peter	57.742	0.17999999999999972	5	You're not Peter Parker.
+Parker.	57.982	0.5	5	You're not Peter Parker.
+I'm	61.943	0.12000000000000455	6	I'm sorry, what was your name again?
+sorry,	62.083	0.2010000000000005	6	I'm sorry, what was your name again?
+what	62.304	0.0799999999999983	6	I'm sorry, what was your name again?
+was	62.404	0.0799999999999983	6	I'm sorry, what was your name again?
+your	62.504	0.10000000000000142	6	I'm sorry, what was your name again?
+name	62.644	0.12000000000000455	6	I'm sorry, what was your name again?
+again?	62.804	0.23999999999999488	6	I'm sorry, what was your name again?
+Dr.	63.104	0.35999999999999943	7	Dr. Otto Octavius.
+Otto	63.644	0.240000000000002	7	Dr. Otto Octavius.
+Octavius.	64.044	0.6610000000000014	7	Dr. Otto Octavius.
+Wait,	68.686	0.1599999999999966	8	Wait, no, seriously, what's your actual name?
+no,	68.866	0.12000000000000455	8	Wait, no, seriously, what's your actual name?
+seriously,	69.006	0.30100000000000193	8	Wait, no, seriously, what's your actual name?
+what's	69.327	0.1599999999999966	8	Wait, no, seriously, what's your actual name?
+your	69.507	0.09999999999999432	8	Wait, no, seriously, what's your actual name?
+actual	69.687	0.28000000000000114	8	Wait, no, seriously, what's your actual name?
+name?	70.007	0.1799999999999926	8	Wait, no, seriously, what's your actual name?
+There	72.043	0.11999999999999034	9	 There are others out there.
+are	72.183	0.0799999999999983	9	 There are others out there.
+others	72.323	0.20000000000000284	9	 There are others out there.
+out	72.624	0.14000000000000057	9	 There are others out there.
+there.	72.784	0.19999999999998863	9	 There are others out there.
+We	73.184	0.14000000000000057	10	We need to send them back.
+need	73.384	0.22100000000000364	10	We need to send them back.
+to	73.625	0.0799999999999983	10	We need to send them back.
+send	73.765	0.1799999999999926	10	We need to send them back.
+them	73.965	0.11999999999999034	10	We need to send them back.
+back.	74.125	0.29999999999999716	10	We need to send them back.
+So,	75.286	0.3400000000000034	11	So, Scooby-Doo this crap.
+Scooby-Doo	76.027	0.7000000000000028	11	So, Scooby-Doo this crap.
+this	76.768	0.20000000000000284	11	So, Scooby-Doo this crap.
+crap.	77.048	0.4200000000000017	11	So, Scooby-Doo this crap.
+You	77.929	0.0799999999999983	12	You know, all this is kind of your mess.
+know,	78.029	0.14000000000000057	12	You know, all this is kind of your mess.
+all	78.309	0.12000000000000455	12	You know, all this is kind of your mess.
+this	78.449	0.14000000000000057	12	You know, all this is kind of your mess.
+is	78.649	0.060000000000002274	12	You know, all this is kind of your mess.
+kind	78.789	0.30100000000000193	12	You know, all this is kind of your mess.
+of	79.13	0.04000000000000625	12	You know, all this is kind of your mess.
+your	79.19	0.1599999999999966	12	You know, all this is kind of your mess.
+mess.	79.41	0.3200000000000074	12	You know, all this is kind of your mess.
+I	79.89	0.06099999999999284	13	I know a couple of magic words myself, starting with the word please.
+know	80.011	0.21999999999999886	13	I know a couple of magic words myself, starting with the word please.
+a	80.251	0.01999999999999602	13	I know a couple of magic words myself, starting with the word please.
+couple	80.411	0.20000000000000284	13	I know a couple of magic words myself, starting with the word please.
+of	80.631	0.04000000000000625	13	I know a couple of magic words myself, starting with the word please.
+magic	80.711	0.2609999999999957	13	I know a couple of magic words myself, starting with the word please.
+words	81.012	0.1799999999999926	13	I know a couple of magic words myself, starting with the word please.
+myself,	81.252	0.4000000000000057	13	I know a couple of magic words myself, starting with the word please.
+starting	81.692	0.3610000000000042	13	I know a couple of magic words myself, starting with the word please.
+with	82.113	0.18000000000000682	13	I know a couple of magic words myself, starting with the word please.
+the	82.533	0.09999999999999432	13	I know a couple of magic words myself, starting with the word please.
+word	82.673	0.29999999999999716	13	I know a couple of magic words myself, starting with the word please.
+please.	83.094	0.3400000000000034	13	I know a couple of magic words myself, starting with the word please.
+Please,	85.476	0.4200000000000017	14	Please, Scooby-Doo this crap.
+Scooby-Doo	86.557	0.5	14	Please, Scooby-Doo this crap.
+this	87.077	0.1599999999999966	14	Please, Scooby-Doo this crap.
+crap.	87.278	0.29999999999999716	14	Please, Scooby-Doo this crap.
+You're	92.661	0.1799999999999926	15	 You're flying out into the darkness to fight ghosts.
+flying	92.881	0.45999999999999375	15	 You're flying out into the darkness to fight ghosts.
+out	93.442	0.12000000000000455	15	 You're flying out into the darkness to fight ghosts.
+into	93.622	0.18000000000000682	15	 You're flying out into the darkness to fight ghosts.
+the	93.842	0.0799999999999983	15	 You're flying out into the darkness to fight ghosts.
+darkness	93.982	0.5400000000000063	15	 You're flying out into the darkness to fight ghosts.
+to	95.423	0.1599999999999966	15	 You're flying out into the darkness to fight ghosts.
+fight	95.663	0.21999999999999886	15	 You're flying out into the darkness to fight ghosts.
+ghosts.	95.943	0.48100000000000875	15	 You're flying out into the darkness to fight ghosts.
+What	96.604	0.12000000000000455	16	What do you mean?
+do	96.744	0.04000000000000625	16	What do you mean?
+you	96.804	0.0799999999999983	16	What do you mean?
+mean?	96.924	0.21999999999999886	16	What do you mean?
+They	97.845	0.18000000000000682	17	They all die fighting Spider-Man.
+all	98.085	0.14000000000000057	17	They all die fighting Spider-Man.
+die	98.265	0.3400000000000034	17	They all die fighting Spider-Man.
+fighting	98.885	0.340999999999994	17	They all die fighting Spider-Man.
+Spider-Man.	99.246	0.6800000000000068	17	They all die fighting Spider-Man.
+It's	100.667	0.20000000000000284	18	It's their fate.
+their	100.987	0.35999999999999943	18	It's their fate.
+fate.	101.447	0.35999999999999943	18	It's their fate.
+I'm	104.95	0.11999999999999034	19	I'm sorry, kid.
+sorry,	105.11	0.29999999999999716	19	I'm sorry, kid.
+kid.	105.47	0.20000000000000284	19	I'm sorry, kid.
+Yeah,	107.151	0.18000000000000682	20	Yeah, me too.
+me	107.351	0.12000000000000455	20	Yeah, me too.
+too.	107.531	0.3009999999999877	20	Yeah, me too.
+Don't.	108.312	0.28000000000000114	21	Don't.
+Look,	110.413	3.703000000000003	22	Look, there has to be another way.
+there	114.136	0.14000000000000057	22	Look, there has to be another way.
+has	114.296	0.23999999999999488	22	Look, there has to be another way.
+to	114.556	0.12000000000000455	22	Look, there has to be another way.
+be	114.716	0.10000000000000853	22	Look, there has to be another way.
+another	114.857	0.3400000000000034	22	Look, there has to be another way.
+way.	115.217	0.28000000000000114	22	Look, there has to be another way.
+There	115.517	0.2600000000000051	23	There isn't.
+isn't.	115.817	0.22000000000001307	23	There isn't.
+They're	117.258	0.21999999999999886	24	They're a danger to our universe.
+a	117.498	0.01999999999999602	24	They're a danger to our universe.
+danger	117.538	0.3410000000000082	24	They're a danger to our universe.
+to	117.899	0.09999999999999432	24	They're a danger to our universe.
+our	118.079	0.12000000000000455	24	They're a danger to our universe.
+universe.	118.359	0.44000000000001194	24	They're a danger to our universe.
+You're	120.12	0.11999999999999034	25	You're not gonna take this away from me.
+not	120.26	0.09999999999999432	25	You're not gonna take this away from me.
+gonna	120.38	0.10000000000000853	25	You're not gonna take this away from me.
+take	120.5	0.12099999999999511	25	You're not gonna take this away from me.
+this	120.641	0.11999999999999034	25	You're not gonna take this away from me.
+away	120.801	0.1599999999999966	25	You're not gonna take this away from me.
+from	120.981	0.12000000000000455	25	You're not gonna take this away from me.
+me.	121.121	0.0799999999999983	25	You're not gonna take this away from me.
+You're	125.25	0.2600000000000051	26	 You're struggling to have everything you want while the world tries to make you choose.
+struggling	125.65	0.6599999999999966	26	 You're struggling to have everything you want while the world tries to make you choose.
+to	126.51	0.1599999999999966	26	 You're struggling to have everything you want while the world tries to make you choose.
+have	127.591	0.44000000000001194	26	 You're struggling to have everything you want while the world tries to make you choose.
+everything	128.651	0.8400000000000034	26	 You're struggling to have everything you want while the world tries to make you choose.
+you	129.571	0.30100000000001614	26	 You're struggling to have everything you want while the world tries to make you choose.
+want	130.072	0.4000000000000057	26	 You're struggling to have everything you want while the world tries to make you choose.
+while	131.132	0.2599999999999909	26	 You're struggling to have everything you want while the world tries to make you choose.
+the	131.432	0.10000000000002274	26	 You're struggling to have everything you want while the world tries to make you choose.
+world	131.592	0.539999999999992	26	 You're struggling to have everything you want while the world tries to make you choose.
+tries	132.412	0.3199999999999932	26	 You're struggling to have everything you want while the world tries to make you choose.
+to	132.772	0.10099999999999909	26	 You're struggling to have everything you want while the world tries to make you choose.
+make	132.953	0.21999999999999886	26	 You're struggling to have everything you want while the world tries to make you choose.
+you	133.213	0.1599999999999966	26	 You're struggling to have everything you want while the world tries to make you choose.
+choose.	133.433	0.4399999999999977	26	 You're struggling to have everything you want while the world tries to make you choose.
+This	137.914	0.18000000000000682	27	This is all my fault.
+is	138.154	0.060000000000002274	27	This is all my fault.
+all	138.294	0.11999999999997613	27	This is all my fault.
+my	138.454	0.12000000000000455	27	This is all my fault.
+fault.	138.654	0.561000000000007	27	This is all my fault.
+I	139.255	0.03999999999999204	28	I can't save everyone.
+can't	139.355	0.21999999999999886	28	I can't save everyone.
+save	139.615	0.1599999999999966	28	I can't save everyone.
+everyone.	139.795	0.660000000000025	28	I can't save everyone.
+What's	161.292	0.13999999999998636	29	 What's happening?
+happening?	161.472	0.36099999999999	29	 What's happening?
+They're	162.453	0.16100000000000136	30	They're starting to come through and I can't stop them.
+starting	162.634	0.3400000000000034	30	They're starting to come through and I can't stop them.
+to	162.994	0.0800000000000125	30	They're starting to come through and I can't stop them.
+come	163.134	0.20000000000001705	30	They're starting to come through and I can't stop them.
+through	163.354	0.32099999999999795	30	They're starting to come through and I can't stop them.
+and	163.695	0.8410000000000082	30	They're starting to come through and I can't stop them.
+I	164.576	0.060000000000002274	30	They're starting to come through and I can't stop them.
+can't	164.696	0.28000000000000114	30	They're starting to come through and I can't stop them.
+stop	165.016	0.2810000000000059	30	They're starting to come through and I can't stop them.
+them.	165.317	0.1599999999999966	30	They're starting to come through and I can't stop them.
+December	168.08	0.3599999999999852	31	December 17th, exclusively at movie theaters.
+17th,	168.5	0.5209999999999866	31	December 17th, exclusively at movie theaters.
+exclusively	169.121	0.6209999999999809	31	December 17th, exclusively at movie theaters.
+at	169.782	0.060000000000002274	31	December 17th, exclusively at movie theaters.
+movie	169.862	0.21999999999999886	31	December 17th, exclusively at movie theaters.
+theaters.	170.102	0.3810000000000002	31	December 17th, exclusively at movie theaters.
+Tickets	170.603	0.28000000000000114	32	Tickets on sale November 29th.
+on	170.963	0.0800000000000125	32	Tickets on sale November 29th.
+sale	171.083	0.21999999999999886	32	Tickets on sale November 29th.
+November	171.344	0.28000000000000114	32	Tickets on sale November 29th.
+29th.	171.684	0.561000000000007	32	Tickets on sale November 29th.
+Spider	172.445	0.36000000000001364	33	Spider Monday.
+Monday.	172.845	0.4410000000000025	33	Spider Monday.

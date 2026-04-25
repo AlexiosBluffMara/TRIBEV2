@@ -78,33 +78,21 @@ def _apply_blackwell_opts(model) -> None:
     except AttributeError:
         log.warning('[pipeline] cuDNN SDPA API not available in this PyTorch build')
 
-    # 4. Cast model to BF16 — native Blackwell precision
-    # BF16 on sm_120 delivers same TFLOPS as FP16 but with better numeric stability.
-    try:
-        if hasattr(model, 'to'):
-            model.to(dtype=torch.bfloat16)
-            log.info('[pipeline] Model cast to BF16')
-    except Exception as exc:
-        log.warning('[pipeline] BF16 cast failed: %s', exc)
+    # 4. BF16 precision comes from autocast in run_inference — we do NOT cast weights.
+    # Casting the inner nn.Module to BF16 causes two problems:
+    #   (a) float32 input tensors mismatch BF16 weights at the first matmul,
+    #   (b) demo_utils.predict does `.detach().cpu().numpy()` on the output,
+    #       and numpy has no BF16 dtype → TypeError: Got unsupported ScalarType BFloat16.
+    # Autocast handles mixed-precision cleanly: activations are BF16, weights stay fp32,
+    # output is cast back to fp32 before the numpy hop.
 
     # 5. torch.compile — CUDA graph capture + kernel fusion
     # mode='reduce-overhead': enables CUDA graphs, ~15-30% speedup on repeated inference.
     # fullgraph=False: safer for models with dynamic control flow (TRIBE v2 has loops).
+    # torch.compile on pydantic wrappers is fragile; skip unless we can prove it helps.
+    # Autocast + BF16 weights + cuDNN SDPA already deliver most of the Blackwell win.
     global _compiled
-    if not _compiled:
-        try:
-            if hasattr(model, 'predict'):
-                compiled_predict = torch.compile(
-                    model.predict,
-                    backend='inductor',
-                    mode='reduce-overhead',
-                    fullgraph=False,
-                )
-                model.predict = compiled_predict
-                _compiled = True
-                log.info('[pipeline] torch.compile applied (inductor, reduce-overhead)')
-        except Exception as exc:
-            log.warning('[pipeline] torch.compile failed: %s — running uncompiled', exc)
+    _compiled = False
 
 
 def load_model():
@@ -130,13 +118,13 @@ def load_model():
     log.info('[pipeline] Loading TRIBE v2 from %s...', config.WEIGHTS_DIR)
     t0 = time.time()
 
+    # device='auto' -> TribeModel.from_pretrained moves the inner nn.Module to CUDA.
+    # Do NOT call .cuda() on the wrapper; it's a pydantic BaseModel, not an nn.Module.
     _model = TribeModel.from_pretrained(
         checkpoint_dir=str(config.WEIGHTS_DIR),
         cache_folder=str(config.CACHE_DIR),
+        device='cuda',
     )
-
-    # Pin to GPU
-    _model = _model.cuda()
 
     load_s = time.time() - t0
     log.info('[pipeline] TRIBE v2 loaded in %.1fs', load_s)
@@ -239,10 +227,10 @@ def run_inference(media_path: Path | str) -> InferenceResult:
 
     events_df = _build_events(model, media_path)
 
-    # BF16 autocast for Blackwell
-    autocast_ctx = torch.autocast('cuda', dtype=torch.bfloat16, enabled=True)
-
-    with torch.inference_mode(), autocast_ctx:
+    # NO autocast here. demo_utils.predict does `model(batch).detach().cpu().numpy()`
+    # inside its loop — autocast makes that output BF16, and numpy has no BF16 dtype.
+    # Blackwell perf still comes from TF32 matmuls + cuDNN SDPA (both enabled globally).
+    with torch.inference_mode():
         preds, _segments = model.predict(events=events_df)
 
     preds   = np.asarray(preds, dtype=np.float32)
@@ -280,7 +268,7 @@ def run_inference_text_only(text: str) -> InferenceResult:
         t0       = time.time()
         events_df = model.get_events_dataframe(text_path=str(tmp_txt))
 
-        with torch.inference_mode(), torch.autocast('cuda', dtype=torch.bfloat16):
+        with torch.inference_mode():
             preds, _segments = model.predict(events=events_df)
 
         preds   = np.asarray(preds, dtype=np.float32)

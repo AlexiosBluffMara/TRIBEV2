@@ -1,0 +1,55 @@
+dir,prompt80,base_template,adap_template,base_disclaimer,adap_disclaimer,base_yeo7,adap_yeo7,base_words,adap_words,base_ttr,adap_ttr
+eval_brain_llamacpp_1776641974,"Stimulus: a child reading aloud from a picture book
+Duration: 17.9 s, peak activ",0,1,1,1,2,0,112,112,0.7321,0.7143
+eval_brain_llamacpp_1776641974,"Stimulus: a city driving scene at dusk with headlights and neon signs
+Duration: ",0,1,1,1,3,0,103,107,0.7087,0.7570
+eval_brain_llamacpp_1776641974,"Stimulus: a news bulletin transcript about a city marathon
+Duration: 31.4 s, pea",0,1,1,1,5,0,97,126,0.7938,0.7222
+eval_brain_llamacpp_1776641974,"Stimulus: a construction site with cranes, pouring concrete, and rhythmic machin",0,0,1,1,3,0,102,130,0.7941,0.6231
+eval_brain_llamacpp_1776641974,"Stimulus: a construction site with cranes, pouring concrete, and rhythmic machin",0,1,1,1,4,0,100,115,0.7600,0.6609
+eval_brain_llamacpp_1776641974,"Stimulus: a written narrative about a lone astronaut repairing a satellite
+Durat",0,1,1,1,1,1,105,102,0.7333,0.7255
+eval_brain_llamacpp_1776641974,"Stimulus: an action sequence with rapid cuts and explosions in an urban alley
+Du",0,1,1,1,1,0,116,114,0.7586,0.7193
+eval_brain_llamacpp_1776641974,"Stimulus: a short animated clip of a cat chasing a laser pointer across a wooden",0,1,1,1,2,0,104,118,0.7596,0.6780
+eval_brain_llamacpp_1776641974,"Stimulus: an action sequence with rapid cuts and explosions in an urban alley
+Du",0,1,1,1,3,2,97,112,0.7629,0.7500
+eval_brain_llamacpp_1776641974,"Stimulus: an action sequence with rapid cuts and explosions in an urban alley
+Du",0,0,1,1,6,0,120,122,0.7500,0.6967
+eval_brain_llamacpp_1776641974,"Stimulus: a lecturer explaining synaptic plasticity with a whiteboard diagram
+Du",0,0,1,1,5,0,93,129,0.7742,0.6434
+eval_brain_llamacpp_1776641974,"Stimulus: a sports highlight reel of fast-break basketball plays
+Duration: 46.0 ",0,1,1,1,4,0,112,119,0.7143,0.7311
+eval_brain_llamacpp_1776641974,"Stimulus: a cooking tutorial filmed in a home kitchen
+Duration: 28.7 s, peak act",0,1,1,1,5,0,122,124,0.7295,0.7339
+eval_brain_llamacpp_1776641974,"Stimulus: a printed paragraph describing the architecture of the visual cortex
+D",0,0,1,1,1,0,105,118,0.7619,0.7373
+eval_brain_llamacpp_1776641974,"Stimulus: a scene of a dog running through an open meadow toward its owner
+Durat",0,0,1,1,2,1,112,115,0.7768,0.7391
+eval_brain_llamacpp_1776641974,"Stimulus: an action sequence with rapid cuts and explosions in an urban alley
+Du",0,0,1,1,4,0,99,126,0.7980,0.6825
+eval_brain_llamacpp_1776641974,"Stimulus: a city driving scene at dusk with headlights and neon signs
+Duration: ",0,0,1,1,3,0,104,113,0.7404,0.7434
+eval_brain_llamacpp_1776641974,"Stimulus: a printed paragraph describing the architecture of the visual cortex
+D",0,1,1,1,1,0,88,113,0.7841,0.7522
+eval_brain_llamacpp_1776641974,"Stimulus: a forest soundscape with birdsong and rustling leaves
+Duration: 62.8 s",0,1,1,1,4,0,105,120,0.7905,0.7583
+eval_brain_llamacpp_1776641974,"Stimulus: a written narrative about a lone astronaut repairing a satellite
+Durat",0,1,1,1,1,0,118,114,0.7203,0.6754
+eval_brain_llamacpp_1776641974,"Stimulus: a short silent sequence of abstract colored shapes moving on a plain b",0,1,1,1,5,0,97,123,0.7938,0.6585
+eval_brain_llamacpp_1776641974,"Stimulus: a surgical procedure explained step-by-step in third person
+Duration: ",0,1,1,1,0,4,89,116,0.8090,0.7586
+eval_brain_llamacpp_1776641974,"Stimulus: a printed paragraph describing the architecture of the visual cortex
+D",0,1,1,1,1,1,95,102,0.8211,0.7647
+eval_brain_llamacpp_1776641974,"Stimulus: a city driving scene at dusk with headlights and neon signs
+Duration: ",0,1,1,1,5,0,116,118,0.7500,0.7203
+eval_brain_llamacpp_1776641974,"Stimulus: a scene of a dog running through an open meadow toward its owner
+Durat",0,0,1,1,4,0,119,124,0.7143,0.7016
+eval_brain_llamacpp_1776641974,"Stimulus: a sports highlight reel of fast-break basketball plays
+Duration: 49.3 ",0,1,1,1,5,0,115,135,0.8000,0.7037
+eval_brain_llamacpp_1776641974,"Stimulus: a short animated clip of a cat chasing a laser pointer across a wooden",0,1,1,1,1,1,119,120,0.7227,0.7333
+eval_brain_llamacpp_1776641974,"Stimulus: a nature documentary segment showing ocean waves crashing on a rocky c",0,1,1,1,4,2,89,125,0.7865,0.6960
+eval_brain_llamacpp_1776641974,"Stimulus: a surgical procedure explained step-by-step in third person
+Duration: ",0,1,1,1,5,0,106,112,0.7830,0.7232
+eval_brain_llamacpp_1776641974,"Stimulus: a city driving scene at dusk with headlights and neon signs
+Duration: ",0,1,1,1,4,0,104,123,0.8077,0.7154

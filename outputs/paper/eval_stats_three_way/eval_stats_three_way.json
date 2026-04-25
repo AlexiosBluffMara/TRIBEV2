@@ -1,0 +1,415 @@
+{
+  "n_pairs": 30,
+  "snapshot": "D:\\TRIBEV2\\outputs\\paper\\eval_stats_three_way_gemma4\\eval_gemma4_three_way_1776674142",
+  "base_summary": {
+    "opens_with_template_rate": 0.0,
+    "has_tribe_disclaimer_rate": 0.0,
+    "has_not_diagnostic_rate": 0.0,
+    "mentions_peak_time_rate": 0.0,
+    "yeo7_networks_mentioned_mean": 0.0,
+    "yeo7_networks_mentioned_std": 0.0,
+    "yeo7_any_alias_mean": 0.0,
+    "yeo7_any_alias_std": 0.0,
+    "roi_verbatim_count_mean": 0.0,
+    "roi_verbatim_count_std": 0.0,
+    "n_words_mean": 0.0,
+    "n_words_std": 0.0,
+    "n_chars_mean": 0.0,
+    "n_chars_std": 0.0,
+    "ttr_mean": 0.0,
+    "ttr_std": 0.0
+  },
+  "v2_summary": {
+    "opens_with_template_rate": 0.0,
+    "has_tribe_disclaimer_rate": 0.0,
+    "has_not_diagnostic_rate": 0.0,
+    "mentions_peak_time_rate": 0.0,
+    "yeo7_networks_mentioned_mean": 0.0,
+    "yeo7_networks_mentioned_std": 0.0,
+    "yeo7_any_alias_mean": 0.0,
+    "yeo7_any_alias_std": 0.0,
+    "roi_verbatim_count_mean": 0.0,
+    "roi_verbatim_count_std": 0.0,
+    "n_words_mean": 0.0,
+    "n_words_std": 0.0,
+    "n_chars_mean": 0.0,
+    "n_chars_std": 0.0,
+    "ttr_mean": 0.0,
+    "ttr_std": 0.0
+  },
+  "v3_summary": {
+    "opens_with_template_rate": 0.0,
+    "has_tribe_disclaimer_rate": 0.0,
+    "has_not_diagnostic_rate": 0.0,
+    "mentions_peak_time_rate": 0.0,
+    "yeo7_networks_mentioned_mean": 0.0,
+    "yeo7_networks_mentioned_std": 0.0,
+    "yeo7_any_alias_mean": 0.0,
+    "yeo7_any_alias_std": 0.0,
+    "roi_verbatim_count_mean": 0.0,
+    "roi_verbatim_count_std": 0.0,
+    "n_words_mean": 0.0,
+    "n_words_std": 0.0,
+    "n_chars_mean": 0.0,
+    "n_chars_std": 0.0,
+    "ttr_mean": 0.0,
+    "ttr_std": 0.0
+  },
+  "v2_vs_base": {
+    "opens_with_template_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "has_tribe_disclaimer_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "has_not_diagnostic_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "mentions_peak_time_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "yeo7_strict_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "yeo7_alias_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "roi_verbatim_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "n_words_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "ttr_delta": {
+      "mean": 0.0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    }
+  },
+  "v3_vs_base": {
+    "opens_with_template_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "has_tribe_disclaimer_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "has_not_diagnostic_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "mentions_peak_time_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "yeo7_strict_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "yeo7_alias_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "roi_verbatim_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "n_words_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "ttr_delta": {
+      "mean": 0.0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    }
+  },
+  "v3_vs_v2": {
+    "opens_with_template_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "has_tribe_disclaimer_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "has_not_diagnostic_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "mentions_peak_time_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "yeo7_strict_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "yeo7_alias_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "roi_verbatim_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "n_words_delta": {
+      "mean": 0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    },
+    "ttr_delta": {
+      "mean": 0.0,
+      "std": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "sign": {
+        "n_nonzero": 0,
+        "n_positive": 0,
+        "p_two_sided": 1.0
+      }
+    }
+  }
+}

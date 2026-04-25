@@ -1,0 +1,14 @@
+text	start	duration	sequence_id	sentence
+The	0.051	0.060000000000000005	0	 The Parker Spider-Men.
+Parker	0.131	0.33999999999999997	0	 The Parker Spider-Men.
+Spider-Men.	0.511	0.5810000000000001	0	 The Parker Spider-Men.
+We	5.716	0.1200000000000001	1	We started getting some visitors.
+started	5.876	0.27999999999999936	1	We started getting some visitors.
+getting	6.196	0.2600000000000007	1	We started getting some visitors.
+some	6.496	0.12099999999999955	1	We started getting some visitors.
+visitors.	6.657	5.144	1	We started getting some visitors.
+From	11.841	0.1800000000000015	2	From every universe.
+every	12.181	0.36100000000000065	2	From every universe.
+universe.	13.322	0.4410000000000007	2	From every universe.
+Hello,	14.403	0.4399999999999995	3	Hello, Peter.
+Peter.	14.863	0.48099999999999987	3	Hello, Peter.

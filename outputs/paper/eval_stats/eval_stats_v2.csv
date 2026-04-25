@@ -1,0 +1,17 @@
+dir,prompt80,base_template,adap_template,base_disclaimer,adap_disclaimer,base_yeo7,adap_yeo7,base_words,adap_words,base_ttr,adap_ttr
+eval_brain_1776633841,"Stimulus: an action sequence with rapid cuts and explosions in an urban alley
+Du",0,1,0,1,3,0,94,127,0.7872,0.6614
+eval_brain_1776633841,"Stimulus: a monologue in a quiet room delivered to camera
+Duration: 16.8 s, peak",0,1,0,1,2,0,95,110,0.8000,0.6545
+eval_brain_1776633841,"Stimulus: a lecturer explaining synaptic plasticity with a whiteboard diagram
+Du",0,1,0,1,2,0,95,109,0.7895,0.6972
+eval_brain_1776637687,"Stimulus: a silent underwater coral reef with slow-moving fish
+Duration: 24.3 s,",0,1,0,1,4,0,105,119,0.7810,0.7311
+eval_brain_1776637687,"Stimulus: a city driving scene at dusk with headlights and neon signs
+Duration: ",0,1,0,1,4,0,109,139,0.7339,0.6835
+eval_brain_1776637687,"Stimulus: a printed paragraph describing the architecture of the visual cortex
+D",0,1,0,1,2,1,99,116,0.7172,0.7155
+eval_brain_1776637687,"Stimulus: a child reading aloud from a picture book
+Duration: 41.6 s, peak activ",0,1,0,1,4,4,91,133,0.7363,0.6692
+eval_brain_1776637687,"Stimulus: a city driving scene at dusk with headlights and neon signs
+Duration: ",0,0,0,1,6,0,98,126,0.7041,0.7381

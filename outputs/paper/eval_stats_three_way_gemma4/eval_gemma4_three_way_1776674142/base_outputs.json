@@ -1,0 +1,152 @@
+[
+  {
+    "prompt": "Stimulus: a child reading aloud from a picture book\nDuration: 17.9 s, peak activity at t=4.7s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Cont_pCun_2: mean |z| = 0.547\n  - 7Networks_RH_Cont_Par_4: mean |z| = 0.541\n  - 7Networks_LH_Limbic_OFC_3: mean |z| = 0.642\n  - 7Networks_RH_DorsAttn_Post_8: mean |z| = 0.396\n  - 7Networks_LH_Default_PFC_7: mean |z| = 0.335\n  - 7Networks_RH_Default_Temp_6: mean |z| = 0.506\n  - 7Networks_LH_Cont_Par_7: mean |z| = 0.335\n  - 7Networks_RH_Default_pCunPCC_4: mean |z| = 0.315\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 17.43213701248169
+  },
+  {
+    "prompt": "Stimulus: a city driving scene at dusk with headlights and neon signs\nDuration: 35.0 s, peak activity at t=21.6s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_SomMot_22: mean |z| = 0.598\n  - 7Networks_LH_SomMot_8: mean |z| = 0.579\n  - 7Networks_LH_Vis_21: mean |z| = 0.565\n  - 7Networks_RH_Vis_10: mean |z| = 0.637\n  - 7Networks_RH_Vis_7: mean |z| = 0.535\n  - 7Networks_RH_Vis_21: mean |z| = 0.496\n  - 7Networks_LH_Vis_23: mean |z| = 0.371\n  - 7Networks_RH_Limbic_OFC_1: mean |z| = 0.427\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.6026930809021
+  },
+  {
+    "prompt": "Stimulus: a news bulletin transcript about a city marathon\nDuration: 31.4 s, peak activity at t=14.0s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Vis_24: mean |z| = 0.633\n  - 7Networks_LH_DorsAttn_Post_2: mean |z| = 0.579\n  - 7Networks_LH_Vis_17: mean |z| = 0.663\n  - 7Networks_RH_Cont_pCun_2: mean |z| = 0.314\n  - 7Networks_LH_Limbic_OFC_3: mean |z| = 0.548\n  - 7Networks_LH_Default_pCunPCC_4: mean |z| = 0.396\n  - 7Networks_RH_Default_Temp_4: mean |z| = 0.521\n  - 7Networks_RH_Default_PFC_4: mean |z| = 0.717\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.601500511169434
+  },
+  {
+    "prompt": "Stimulus: a construction site with cranes, pouring concrete, and rhythmic machine sounds\nDuration: 49.2 s, peak activity at t=38.8s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Vis_23: mean |z| = 0.749\n  - 7Networks_LH_DorsAttn_FEF_2: mean |z| = 0.659\n  - 7Networks_RH_Vis_5: mean |z| = 0.604\n  - 7Networks_RH_SomMot_14: mean |z| = 0.451\n  - 7Networks_RH_DorsAttn_Post_11: mean |z| = 0.502\n  - 7Networks_RH_Vis_29: mean |z| = 0.268\n  - 7Networks_RH_SomMot_3: mean |z| = 0.245\n  - 7Networks_LH_Vis_7: mean |z| = 0.462\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.591053485870361
+  },
+  {
+    "prompt": "Stimulus: a construction site with cranes, pouring concrete, and rhythmic machine sounds\nDuration: 59.6 s, peak activity at t=10.9s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Vis_16: mean |z| = 0.670\n  - 7Networks_RH_SomMot_19: mean |z| = 0.725\n  - 7Networks_RH_SalVentAttn_TempOccPar_2: mean |z| = 0.540\n  - 7Networks_RH_SalVentAttn_ParOper_4: mean |z| = 0.539\n  - 7Networks_RH_SalVentAttn_ParOper_2: mean |z| = 0.551\n  - 7Networks_LH_Vis_4: mean |z| = 0.350\n  - 7Networks_RH_Vis_23: mean |z| = 0.461\n  - 7Networks_RH_Default_Temp_4: mean |z| = 0.348\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.598222017288208
+  },
+  {
+    "prompt": "Stimulus: a written narrative about a lone astronaut repairing a satellite\nDuration: 22.4 s, peak activity at t=15.3s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Default_Temp_9: mean |z| = 0.780\n  - 7Networks_RH_Default_PFC_9: mean |z| = 0.640\n  - 7Networks_RH_Vis_12: mean |z| = 0.725\n  - 7Networks_LH_DorsAttn_Post_5: mean |z| = 0.527\n  - 7Networks_RH_DorsAttn_Post_2: mean |z| = 0.423\n  - 7Networks_RH_Default_Temp_1: mean |z| = 0.412\n  - 7Networks_LH_SalVentAttn_ParOper_5: mean |z| = 0.397\n  - 7Networks_LH_Default_PFC_1: mean |z| = 0.322\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.580434083938599
+  },
+  {
+    "prompt": "Stimulus: an action sequence with rapid cuts and explosions in an urban alley\nDuration: 21.8 s, peak activity at t=15.1s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_DorsAttn_FEF_5: mean |z| = 0.539\n  - 7Networks_LH_Default_Temp_4: mean |z| = 0.683\n  - 7Networks_LH_SalVentAttn_ParOper_5: mean |z| = 0.607\n  - 7Networks_LH_Vis_8: mean |z| = 0.440\n  - 7Networks_LH_Vis_26: mean |z| = 0.436\n  - 7Networks_LH_Default_pCunPCC_4: mean |z| = 0.589\n  - 7Networks_LH_Default_Temp_2: mean |z| = 0.522\n  - 7Networks_RH_Default_Temp_5: mean |z| = 0.394\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.57296347618103
+  },
+  {
+    "prompt": "Stimulus: a short animated clip of a cat chasing a laser pointer across a wooden floor\nDuration: 17.7 s, peak activity at t=8.2s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Default_PFC_7: mean |z| = 0.656\n  - 7Networks_LH_Default_Temp_4: mean |z| = 0.560\n  - 7Networks_LH_Vis_15: mean |z| = 0.644\n  - 7Networks_LH_Vis_11: mean |z| = 0.685\n  - 7Networks_RH_Vis_14: mean |z| = 0.537\n  - 7Networks_RH_Vis_1: mean |z| = 0.580\n  - 7Networks_LH_Cont_pCun_3: mean |z| = 0.495\n  - 7Networks_RH_Default_PFC_2: mean |z| = 0.392\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.583291530609131
+  },
+  {
+    "prompt": "Stimulus: an action sequence with rapid cuts and explosions in an urban alley\nDuration: 19.9 s, peak activity at t=10.3s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_SomMot_7: mean |z| = 0.686\n  - 7Networks_RH_SomMot_2: mean |z| = 0.817\n  - 7Networks_LH_Vis_24: mean |z| = 0.618\n  - 7Networks_LH_Vis_2: mean |z| = 0.394\n  - 7Networks_RH_SomMot_10: mean |z| = 0.457\n  - 7Networks_LH_Vis_18: mean |z| = 0.493\n  - 7Networks_RH_Default_Temp_1: mean |z| = 0.528\n  - 7Networks_RH_Default_Temp_8: mean |z| = 0.323\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.648884057998657
+  },
+  {
+    "prompt": "Stimulus: an action sequence with rapid cuts and explosions in an urban alley\nDuration: 68.2 s, peak activity at t=24.1s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Vis_5: mean |z| = 0.702\n  - 7Networks_RH_Limbic_OFC_3: mean |z| = 0.689\n  - 7Networks_LH_SomMot_16: mean |z| = 0.641\n  - 7Networks_RH_SomMot_17: mean |z| = 0.681\n  - 7Networks_LH_Default_PFC_4: mean |z| = 0.495\n  - 7Networks_LH_DorsAttn_Post_2: mean |z| = 0.523\n  - 7Networks_RH_Cont_Par_1: mean |z| = 0.494\n  - 7Networks_RH_Cont_Par_7: mean |z| = 0.199\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.598530054092407
+  },
+  {
+    "prompt": "Stimulus: a lecturer explaining synaptic plasticity with a whiteboard diagram\nDuration: 21.5 s, peak activity at t=17.7s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Cont_Par_1: mean |z| = 0.575\n  - 7Networks_LH_SomMot_22: mean |z| = 0.546\n  - 7Networks_RH_Vis_20: mean |z| = 0.682\n  - 7Networks_LH_SalVentAttn_ParOper_3: mean |z| = 0.355\n  - 7Networks_RH_Vis_19: mean |z| = 0.654\n  - 7Networks_LH_Vis_29: mean |z| = 0.576\n  - 7Networks_RH_Vis_7: mean |z| = 0.301\n  - 7Networks_RH_DorsAttn_FEF_5: mean |z| = 0.304\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.607876777648926
+  },
+  {
+    "prompt": "Stimulus: a sports highlight reel of fast-break basketball plays\nDuration: 46.0 s, peak activity at t=11.4s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Vis_14: mean |z| = 0.699\n  - 7Networks_LH_Vis_12: mean |z| = 0.554\n  - 7Networks_RH_Vis_1: mean |z| = 0.421\n  - 7Networks_RH_Cont_pCun_2: mean |z| = 0.392\n  - 7Networks_RH_Default_Temp_7: mean |z| = 0.315\n  - 7Networks_RH_Cont_Par_7: mean |z| = 0.662\n  - 7Networks_LH_Cont_Par_7: mean |z| = 0.444\n  - 7Networks_LH_SomMot_17: mean |z| = 0.363\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.594085931777954
+  },
+  {
+    "prompt": "Stimulus: a cooking tutorial filmed in a home kitchen\nDuration: 28.7 s, peak activity at t=9.0s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Limbic_OFC_1: mean |z| = 0.596\n  - 7Networks_RH_Vis_13: mean |z| = 0.572\n  - 7Networks_RH_Vis_27: mean |z| = 0.552\n  - 7Networks_RH_SomMot_10: mean |z| = 0.467\n  - 7Networks_RH_Vis_1: mean |z| = 0.690\n  - 7Networks_LH_Cont_Par_6: mean |z| = 0.511\n  - 7Networks_LH_Default_PFC_7: mean |z| = 0.366\n  - 7Networks_LH_Cont_Par_4: mean |z| = 0.279\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.605929851531982
+  },
+  {
+    "prompt": "Stimulus: a printed paragraph describing the architecture of the visual cortex\nDuration: 51.6 s, peak activity at t=48.8s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_SalVentAttn_ParOper_4: mean |z| = 0.628\n  - 7Networks_RH_Default_Temp_2: mean |z| = 0.470\n  - 7Networks_LH_DorsAttn_Post_5: mean |z| = 0.548\n  - 7Networks_RH_Cont_Par_2: mean |z| = 0.493\n  - 7Networks_RH_DorsAttn_FEF_4: mean |z| = 0.545\n  - 7Networks_LH_SalVentAttn_ParOper_2: mean |z| = 0.320\n  - 7Networks_RH_Default_PFC_5: mean |z| = 0.523\n  - 7Networks_LH_Default_Temp_1: mean |z| = 0.454\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.628387451171875
+  },
+  {
+    "prompt": "Stimulus: a scene of a dog running through an open meadow toward its owner\nDuration: 43.0 s, peak activity at t=28.2s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Default_pCunPCC_4: mean |z| = 0.707\n  - 7Networks_LH_DorsAttn_Post_9: mean |z| = 0.558\n  - 7Networks_LH_Cont_Par_1: mean |z| = 0.567\n  - 7Networks_RH_Cont_Par_1: mean |z| = 0.473\n  - 7Networks_RH_Vis_13: mean |z| = 0.473\n  - 7Networks_LH_Cont_Par_6: mean |z| = 0.505\n  - 7Networks_LH_Vis_12: mean |z| = 0.427\n  - 7Networks_RH_Vis_10: mean |z| = 0.331\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.596068859100342
+  },
+  {
+    "prompt": "Stimulus: an action sequence with rapid cuts and explosions in an urban alley\nDuration: 27.1 s, peak activity at t=13.9s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Vis_21: mean |z| = 0.679\n  - 7Networks_RH_SalVentAttn_ParOper_4: mean |z| = 0.605\n  - 7Networks_RH_Vis_9: mean |z| = 0.609\n  - 7Networks_LH_Vis_27: mean |z| = 0.549\n  - 7Networks_RH_SalVentAttn_ParOper_5: mean |z| = 0.467\n  - 7Networks_LH_Vis_6: mean |z| = 0.433\n  - 7Networks_RH_SomMot_22: mean |z| = 0.355\n  - 7Networks_LH_DorsAttn_Post_6: mean |z| = 0.354\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.580524682998657
+  },
+  {
+    "prompt": "Stimulus: a city driving scene at dusk with headlights and neon signs\nDuration: 36.8 s, peak activity at t=28.3s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Vis_4: mean |z| = 0.607\n  - 7Networks_LH_DorsAttn_Post_2: mean |z| = 0.567\n  - 7Networks_LH_Vis_6: mean |z| = 0.706\n  - 7Networks_LH_DorsAttn_FEF_2: mean |z| = 0.625\n  - 7Networks_LH_Vis_3: mean |z| = 0.460\n  - 7Networks_LH_Vis_7: mean |z| = 0.549\n  - 7Networks_LH_SalVentAttn_TempOccPar_3: mean |z| = 0.427\n  - 7Networks_RH_SalVentAttn_TempOccPar_3: mean |z| = 0.490\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.55843710899353
+  },
+  {
+    "prompt": "Stimulus: a printed paragraph describing the architecture of the visual cortex\nDuration: 26.2 s, peak activity at t=3.5s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Cont_Par_2: mean |z| = 0.698\n  - 7Networks_LH_DorsAttn_Post_6: mean |z| = 0.815\n  - 7Networks_LH_Default_Temp_5: mean |z| = 0.672\n  - 7Networks_LH_Default_pCunPCC_1: mean |z| = 0.562\n  - 7Networks_LH_DorsAttn_FEF_4: mean |z| = 0.447\n  - 7Networks_LH_Cont_pCun_3: mean |z| = 0.403\n  - 7Networks_LH_Default_pCunPCC_3: mean |z| = 0.320\n  - 7Networks_RH_Cont_Par_5: mean |z| = 0.376\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.5511860847473145
+  },
+  {
+    "prompt": "Stimulus: a forest soundscape with birdsong and rustling leaves\nDuration: 62.8 s, peak activity at t=27.0s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Cont_Par_5: mean |z| = 0.748\n  - 7Networks_LH_DorsAttn_FEF_2: mean |z| = 0.609\n  - 7Networks_RH_SomMot_26: mean |z| = 0.760\n  - 7Networks_LH_Default_PFC_8: mean |z| = 0.541\n  - 7Networks_RH_DorsAttn_Post_2: mean |z| = 0.331\n  - 7Networks_RH_Limbic_TempPole_4: mean |z| = 0.621\n  - 7Networks_LH_Default_Temp_1: mean |z| = 0.476\n  - 7Networks_RH_SomMot_17: mean |z| = 0.287\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.5365684032440186
+  },
+  {
+    "prompt": "Stimulus: a written narrative about a lone astronaut repairing a satellite\nDuration: 21.0 s, peak activity at t=16.0s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Default_Temp_2: mean |z| = 0.780\n  - 7Networks_LH_DorsAttn_Post_8: mean |z| = 0.576\n  - 7Networks_LH_SalVentAttn_ParOper_5: mean |z| = 0.622\n  - 7Networks_RH_Default_Temp_6: mean |z| = 0.339\n  - 7Networks_RH_Default_PFC_9: mean |z| = 0.443\n  - 7Networks_LH_Cont_Par_7: mean |z| = 0.647\n  - 7Networks_LH_DorsAttn_FEF_3: mean |z| = 0.480\n  - 7Networks_LH_SomMot_21: mean |z| = 0.308\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.5516862869262695
+  },
+  {
+    "prompt": "Stimulus: a short silent sequence of abstract colored shapes moving on a plain background\nDuration: 25.3 s, peak activity at t=13.9s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_DorsAttn_FEF_3: mean |z| = 0.684\n  - 7Networks_LH_Cont_Par_7: mean |z| = 0.564\n  - 7Networks_RH_Vis_28: mean |z| = 0.670\n  - 7Networks_RH_Default_pCunPCC_2: mean |z| = 0.433\n  - 7Networks_LH_Default_Temp_3: mean |z| = 0.478\n  - 7Networks_RH_Vis_9: mean |z| = 0.529\n  - 7Networks_RH_DorsAttn_Post_2: mean |z| = 0.150\n  - 7Networks_LH_SomMot_4: mean |z| = 0.322\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.540429353713989
+  },
+  {
+    "prompt": "Stimulus: a surgical procedure explained step-by-step in third person\nDuration: 36.7 s, peak activity at t=2.2s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_DorsAttn_Post_10: mean |z| = 0.730\n  - 7Networks_LH_Vis_22: mean |z| = 0.547\n  - 7Networks_RH_SalVentAttn_ParOper_4: mean |z| = 0.565\n  - 7Networks_LH_SomMot_8: mean |z| = 0.686\n  - 7Networks_LH_DorsAttn_FEF_3: mean |z| = 0.476\n  - 7Networks_LH_DorsAttn_FEF_5: mean |z| = 0.519\n  - 7Networks_RH_Cont_Par_1: mean |z| = 0.565\n  - 7Networks_RH_Vis_20: mean |z| = 0.459\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.546726703643799
+  },
+  {
+    "prompt": "Stimulus: a printed paragraph describing the architecture of the visual cortex\nDuration: 49.1 s, peak activity at t=26.6s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Default_Temp_3: mean |z| = 0.628\n  - 7Networks_RH_SalVentAttn_ParOper_1: mean |z| = 0.785\n  - 7Networks_LH_Cont_pCun_3: mean |z| = 0.575\n  - 7Networks_RH_Cont_Par_1: mean |z| = 0.599\n  - 7Networks_LH_Cont_Par_5: mean |z| = 0.413\n  - 7Networks_LH_Default_Temp_6: mean |z| = 0.539\n  - 7Networks_LH_Vis_8: mean |z| = 0.302\n  - 7Networks_RH_Cont_pCun_2: mean |z| = 0.442\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.526597738265991
+  },
+  {
+    "prompt": "Stimulus: a city driving scene at dusk with headlights and neon signs\nDuration: 59.2 s, peak activity at t=49.1s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_SalVentAttn_ParOper_2: mean |z| = 0.683\n  - 7Networks_RH_Default_PFC_5: mean |z| = 0.649\n  - 7Networks_LH_SomMot_29: mean |z| = 0.626\n  - 7Networks_RH_Vis_8: mean |z| = 0.605\n  - 7Networks_LH_DorsAttn_Post_6: mean |z| = 0.522\n  - 7Networks_RH_SomMot_5: mean |z| = 0.512\n  - 7Networks_LH_Vis_10: mean |z| = 0.465\n  - 7Networks_LH_DorsAttn_FEF_1: mean |z| = 0.347\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.528325796127319
+  },
+  {
+    "prompt": "Stimulus: a scene of a dog running through an open meadow toward its owner\nDuration: 46.3 s, peak activity at t=12.6s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_DorsAttn_Post_8: mean |z| = 0.869\n  - 7Networks_RH_Vis_15: mean |z| = 0.727\n  - 7Networks_RH_SomMot_5: mean |z| = 0.728\n  - 7Networks_RH_Vis_7: mean |z| = 0.528\n  - 7Networks_LH_Vis_20: mean |z| = 0.361\n  - 7Networks_LH_DorsAttn_FEF_2: mean |z| = 0.481\n  - 7Networks_LH_SomMot_20: mean |z| = 0.337\n  - 7Networks_LH_Default_PFC_7: mean |z| = 0.293\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.53826379776001
+  },
+  {
+    "prompt": "Stimulus: a sports highlight reel of fast-break basketball plays\nDuration: 49.3 s, peak activity at t=14.3s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_RH_Vis_5: mean |z| = 0.565\n  - 7Networks_LH_Vis_4: mean |z| = 0.527\n  - 7Networks_RH_DorsAttn_Post_4: mean |z| = 0.691\n  - 7Networks_LH_SomMot_10: mean |z| = 0.628\n  - 7Networks_LH_DorsAttn_Post_3: mean |z| = 0.414\n  - 7Networks_LH_Default_pCunPCC_4: mean |z| = 0.399\n  - 7Networks_LH_Default_Temp_6: mean |z| = 0.537\n  - 7Networks_LH_Cont_Par_6: mean |z| = 0.405\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.554835081100464
+  },
+  {
+    "prompt": "Stimulus: a short animated clip of a cat chasing a laser pointer across a wooden floor\nDuration: 35.2 s, peak activity at t=20.0s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Default_PFC_1: mean |z| = 0.614\n  - 7Networks_LH_Cont_Par_7: mean |z| = 0.546\n  - 7Networks_LH_Vis_23: mean |z| = 0.575\n  - 7Networks_RH_Default_PFC_6: mean |z| = 0.496\n  - 7Networks_RH_Cont_pCun_2: mean |z| = 0.438\n  - 7Networks_LH_DorsAttn_Post_7: mean |z| = 0.386\n  - 7Networks_LH_DorsAttn_Post_6: mean |z| = 0.307\n  - 7Networks_LH_Default_PFC_6: mean |z| = 0.603\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.569252014160156
+  },
+  {
+    "prompt": "Stimulus: a nature documentary segment showing ocean waves crashing on a rocky coastline\nDuration: 19.8 s, peak activity at t=17.2s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Vis_8: mean |z| = 0.756\n  - 7Networks_RH_Limbic_OFC_3: mean |z| = 0.603\n  - 7Networks_RH_Vis_23: mean |z| = 0.725\n  - 7Networks_LH_Limbic_OFC_3: mean |z| = 0.600\n  - 7Networks_LH_Vis_12: mean |z| = 0.389\n  - 7Networks_LH_SalVentAttn_TempOccPar_1: mean |z| = 0.386\n  - 7Networks_LH_DorsAttn_Post_9: mean |z| = 0.422\n  - 7Networks_LH_SalVentAttn_ParOper_5: mean |z| = 0.565\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.546032428741455
+  },
+  {
+    "prompt": "Stimulus: a surgical procedure explained step-by-step in third person\nDuration: 26.8 s, peak activity at t=10.4s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_Default_pCunPCC_3: mean |z| = 0.514\n  - 7Networks_LH_Vis_29: mean |z| = 0.631\n  - 7Networks_LH_SalVentAttn_ParOper_1: mean |z| = 0.613\n  - 7Networks_LH_SomMot_2: mean |z| = 0.578\n  - 7Networks_LH_Default_Temp_4: mean |z| = 0.563\n  - 7Networks_RH_Vis_21: mean |z| = 0.430\n  - 7Networks_RH_Cont_Par_3: mean |z| = 0.310\n  - 7Networks_LH_Vis_10: mean |z| = 0.403\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.541499614715576
+  },
+  {
+    "prompt": "Stimulus: a city driving scene at dusk with headlights and neon signs\nDuration: 62.7 s, peak activity at t=30.6s.\nTop Schaefer-400 regions by mean |z|:\n  - 7Networks_LH_DorsAttn_Post_1: mean |z| = 0.529\n  - 7Networks_LH_Default_pCunPCC_4: mean |z| = 0.588\n  - 7Networks_RH_Vis_8: mean |z| = 0.575\n  - 7Networks_RH_Default_PFC_9: mean |z| = 0.498\n  - 7Networks_RH_Vis_7: mean |z| = 0.327\n  - 7Networks_LH_SomMot_20: mean |z| = 0.455\n  - 7Networks_RH_Default_Temp_5: mean |z| = 0.204\n  - 7Networks_RH_DorsAttn_Post_1: mean |z| = 0.429\n\nIn 3-5 sentences, explain what this activation pattern suggests the brain is doing, grouping regions into networks where possible.",
+    "completion": "",
+    "latency_s": 6.547020196914673
+  }
+]

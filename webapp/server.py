@@ -557,9 +557,9 @@ async def run_pipeline_task(job_id: str, media_path: Path):
         executor = ThreadPoolExecutor(max_workers=1)
 
         def _sync_pipeline():
-            import pipeline as _pipe
-            import analysis  as _ana
-            import tiers     as _tiers
+            from bot import pipeline as _pipe
+            from bot import analysis as _ana
+            from bot import tiers    as _tiers
 
             result = _pipe.run_inference(str(media_path))
             ba     = _ana.analyse(result, harvard_oxford=True, juelich=True)

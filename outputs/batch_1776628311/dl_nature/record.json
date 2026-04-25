@@ -1,0 +1,65 @@
+{
+  "media": "D:\\TRIBEV2\\assets\\dl_nature.mp4",
+  "slug": "dl_nature",
+  "stages": {
+    "gemma_vision": {
+      "duration_s": 4.76,
+      "gpu_vram_peak_gb": 15.66,
+      "gpu_vram_mean_gb": 11.56,
+      "gpu_util_peak_pct": 80,
+      "gpu_util_mean_pct": 24.1,
+      "gpu_temp_peak_c": 49,
+      "gpu_power_peak_w": 155.0,
+      "ram_peak_gb": 23.6,
+      "content_type": "video",
+      "modality": "visual"
+    },
+    "tribe_inference": {
+      "duration_s": 411.68,
+      "gpu_vram_peak_gb": 17.07,
+      "gpu_vram_mean_gb": 12.33,
+      "gpu_util_peak_pct": 99,
+      "gpu_util_mean_pct": 42.8,
+      "gpu_temp_peak_c": 67,
+      "gpu_power_peak_w": 540.0,
+      "ram_peak_gb": 33.2,
+      "timesteps": 77,
+      "vertices": 20484,
+      "peak_t_s": 38.0,
+      "top_rois": [
+        "7Networks_LH_Vis_18",
+        "7Networks_LH_Vis_8",
+        "7Networks_RH_Vis_17",
+        "7Networks_RH_Vis_4",
+        "7Networks_LH_Vis_4",
+        "7Networks_RH_Vis_20",
+        "7Networks_RH_Vis_5",
+        "7Networks_RH_Vis_25"
+      ]
+    },
+    "visualize_peak": {
+      "duration_s": 2.25,
+      "gpu_vram_peak_gb": 4.47,
+      "gpu_vram_mean_gb": 4.46,
+      "gpu_util_peak_pct": 36,
+      "gpu_util_mean_pct": 21.8,
+      "gpu_temp_peak_c": 36,
+      "gpu_power_peak_w": 66.0,
+      "ram_peak_gb": 22.4,
+      "path": "D:\\TRIBEV2\\outputs\\batch_1776628311\\dl_nature\\brain_peak.png"
+    },
+    "gemma_narration": {
+      "duration_s": 6.84,
+      "gpu_vram_peak_gb": 24.33,
+      "gpu_vram_mean_gb": 19.27,
+      "gpu_util_peak_pct": 87,
+      "gpu_util_mean_pct": 27.6,
+      "gpu_temp_peak_c": 43,
+      "gpu_power_peak_w": 288.0,
+      "ram_peak_gb": 24.1,
+      "narration_chars": 864
+    }
+  },
+  "vision_summary": "The sequence displays several distinct outdoor scenes. One shows a train station platform with people standing. Another features a bright, grassy field with a path winding through it. The final frames depict natural landscapes with roads and buildings.",
+  "narration": "The stimulus dl_nature consists of a 38.5-second sequence of diverse outdoor landscapes, including train stations, grassy fields, and roads, with peak activity recorded at 38.0 seconds. The observed activation pattern is concentrated within the visual networks of both the left and right hemispheres, specifically involving regions such as LH_Vis_18, LH_Vis_8, RH_Vis_17, and RH_Vis_4. This widespread engagement across multiple ventral and dorsal visual stream components suggests the processing of complex spatial hierarchies, chromatic information, and motion dynamics inherent in the changing natural scenes. The distribution of mean |z| values across these specific cortical areas indicates a coordinated sensory response to the visual features presented in the sequence. This analysis represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+}

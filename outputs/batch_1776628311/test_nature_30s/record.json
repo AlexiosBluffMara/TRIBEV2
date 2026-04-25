@@ -1,0 +1,65 @@
+{
+  "media": "D:\\TRIBEV2\\assets\\test_nature_30s.mp4",
+  "slug": "test_nature_30s",
+  "stages": {
+    "gemma_vision": {
+      "duration_s": 10.36,
+      "gpu_vram_peak_gb": 15.0,
+      "gpu_vram_mean_gb": 13.1,
+      "gpu_util_peak_pct": 86,
+      "gpu_util_mean_pct": 19.3,
+      "gpu_temp_peak_c": 44,
+      "gpu_power_peak_w": 327.0,
+      "ram_peak_gb": 26.6,
+      "content_type": "video",
+      "modality": "visual"
+    },
+    "tribe_inference": {
+      "duration_s": 185.04,
+      "gpu_vram_peak_gb": 17.5,
+      "gpu_vram_mean_gb": 8.7,
+      "gpu_util_peak_pct": 99,
+      "gpu_util_mean_pct": 41.3,
+      "gpu_temp_peak_c": 69,
+      "gpu_power_peak_w": 543.0,
+      "ram_peak_gb": 36.1,
+      "timesteps": 30,
+      "vertices": 20484,
+      "peak_t_s": 7.5,
+      "top_rois": [
+        "7Networks_LH_Vis_18",
+        "7Networks_RH_Vis_4",
+        "7Networks_LH_Vis_8",
+        "7Networks_RH_Vis_17",
+        "7Networks_LH_Vis_4",
+        "7Networks_RH_Vis_25",
+        "7Networks_LH_Vis_27",
+        "7Networks_RH_Vis_20"
+      ]
+    },
+    "visualize_peak": {
+      "duration_s": 2.16,
+      "gpu_vram_peak_gb": 4.29,
+      "gpu_vram_mean_gb": 4.29,
+      "gpu_util_peak_pct": 33,
+      "gpu_util_mean_pct": 13.5,
+      "gpu_temp_peak_c": 37,
+      "gpu_power_peak_w": 63.0,
+      "ram_peak_gb": 25.3,
+      "path": "D:\\TRIBEV2\\outputs\\batch_1776628311\\test_nature_30s\\brain_peak.png"
+    },
+    "gemma_narration": {
+      "duration_s": 7.12,
+      "gpu_vram_peak_gb": 23.58,
+      "gpu_vram_mean_gb": 18.95,
+      "gpu_util_peak_pct": 84,
+      "gpu_util_mean_pct": 22.8,
+      "gpu_temp_peak_c": 43,
+      "gpu_power_peak_w": 158.0,
+      "ram_peak_gb": 26.9,
+      "narration_chars": 761
+    }
+  },
+  "vision_summary": "The keyframes depict a view from high above the Earth, showing layers of clouds. Bright, straight streaks of light are visible across the sky in the frames.",
+  "narration": "The stimulus, consisting of high-altitude aerial footage with high-contrast light streaks, elicited peak neural activity at 7.5 seconds across several bilateral visual networks. The observed activation in the LH and RH Vis 4 and Vis 18 networks suggests heightened processing of luminance transitions and edge detection associated with the bright streaks against the cloud layers. Additionally, activity in the Vis 8, Vis 17, Vis 25, Vis 27, and Vis 20 networks indicates integrated processing of spatial features and motion within the visual field. This pattern reflects the cortical encoding of high-contrast luminance changes and structural depth within the presented naturalistic scene. This is a group-averaged TRIBE v2 prediction, not a diagnostic result."
+}

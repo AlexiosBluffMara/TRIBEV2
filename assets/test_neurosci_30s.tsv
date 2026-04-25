@@ -1,0 +1,60 @@
+text	start	duration	sequence_id	sentence
+human	0.151	0.28	0	 human brain.
+brain.	0.491	0.33999999999999997	0	 human brain.
+The	1.652	0.1200000000000001	1	The cerebrum enables sensory perception and controls voluntary motor actions.
+cerebrum	1.832	0.5599999999999998	1	The cerebrum enables sensory perception and controls voluntary motor actions.
+enables	2.492	0.5209999999999999	1	The cerebrum enables sensory perception and controls voluntary motor actions.
+sensory	3.113	0.48	1	The cerebrum enables sensory perception and controls voluntary motor actions.
+perception	3.673	0.5999999999999996	1	The cerebrum enables sensory perception and controls voluntary motor actions.
+and	4.573	0.09999999999999964	1	The cerebrum enables sensory perception and controls voluntary motor actions.
+controls	4.734	0.4800000000000004	1	The cerebrum enables sensory perception and controls voluntary motor actions.
+voluntary	5.314	0.5599999999999996	1	The cerebrum enables sensory perception and controls voluntary motor actions.
+motor	5.954	0.28000000000000025	1	The cerebrum enables sensory perception and controls voluntary motor actions.
+actions.	6.354	0.48099999999999987	1	The cerebrum enables sensory perception and controls voluntary motor actions.
+The	8.456	0.09999999999999964	2	The cerebellum.
+cerebellum.	8.616	0.7000000000000011	2	The cerebellum.
+The	10.216	0.10000000000000142	3	The cerebellum lies inferior to the cerebrum at the back of the head.
+cerebellum	10.377	0.6199999999999992	3	The cerebellum lies inferior to the cerebrum at the back of the head.
+lies	11.077	0.2599999999999998	3	The cerebellum lies inferior to the cerebrum at the back of the head.
+inferior	11.477	0.5600000000000005	3	The cerebellum lies inferior to the cerebrum at the back of the head.
+to	12.117	0.12099999999999866	3	The cerebellum lies inferior to the cerebrum at the back of the head.
+the	12.258	0.08000000000000007	3	The cerebellum lies inferior to the cerebrum at the back of the head.
+cerebrum	12.378	0.5999999999999996	3	The cerebellum lies inferior to the cerebrum at the back of the head.
+at	13.378	0.0600000000000005	3	The cerebellum lies inferior to the cerebrum at the back of the head.
+the	13.458	0.09999999999999964	3	The cerebellum lies inferior to the cerebrum at the back of the head.
+back	13.618	0.21999999999999886	3	The cerebellum lies inferior to the cerebrum at the back of the head.
+of	13.878	0.0600000000000005	3	The cerebellum lies inferior to the cerebrum at the back of the head.
+the	13.978	0.08000000000000007	3	The cerebellum lies inferior to the cerebrum at the back of the head.
+head.	14.119	0.20000000000000107	3	The cerebellum lies inferior to the cerebrum at the back of the head.
+It	15.239	0.05999999999999872	4	It is mostly involved in coordination of movements and fine-tuning of motor activities.
+is	15.359	0.0600000000000005	4	It is mostly involved in coordination of movements and fine-tuning of motor activities.
+mostly	15.519	0.40000000000000036	4	It is mostly involved in coordination of movements and fine-tuning of motor activities.
+involved	15.98	0.379999999999999	4	It is mostly involved in coordination of movements and fine-tuning of motor activities.
+in	16.4	0.08000000000000185	4	It is mostly involved in coordination of movements and fine-tuning of motor activities.
+coordination	16.52	0.740000000000002	4	It is mostly involved in coordination of movements and fine-tuning of motor activities.
+of	17.4	0.10000000000000142	4	It is mostly involved in coordination of movements and fine-tuning of motor activities.
+movements	17.6	0.4609999999999985	4	It is mostly involved in coordination of movements and fine-tuning of motor activities.
+and	18.541	0.09999999999999787	4	It is mostly involved in coordination of movements and fine-tuning of motor activities.
+fine-tuning	18.741	0.6999999999999993	4	It is mostly involved in coordination of movements and fine-tuning of motor activities.
+of	19.541	0.0799999999999983	4	It is mostly involved in coordination of movements and fine-tuning of motor activities.
+motor	19.682	0.28000000000000114	4	It is mostly involved in coordination of movements and fine-tuning of motor activities.
+activities.	20.042	0.5599999999999987	4	It is mostly involved in coordination of movements and fine-tuning of motor activities.
+The	22.403	0.10000000000000142	5	The brainstem.
+brainstem.	22.543	0.6400000000000006	5	The brainstem.
+The	24.304	0.10000000000000142	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+brainstem	24.464	0.6000000000000014	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+is	25.224	0.05999999999999872	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+located	25.385	0.4599999999999973	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+at	25.985	0.060000000000002274	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+the	26.065	0.0799999999999983	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+base	26.225	0.259999999999998	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+of	26.545	0.05999999999999872	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+the	26.625	0.0799999999999983	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+brain	26.765	0.3200000000000003	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+and	27.486	0.0799999999999983	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+is	27.626	0.0799999999999983	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+continuous	27.766	0.6000000000000014	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+to	28.426	0.10000000000000142	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+the	28.546	0.08000000000000185	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+spinal	28.666	0.3810000000000002	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.
+cord.	29.087	0.3200000000000003	6	The brainstem is located at the base of the brain and is continuous to the spinal cord.

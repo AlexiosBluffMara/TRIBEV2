@@ -1,0 +1,18 @@
+{
+  "v2": {
+    "run": "D:\\research\\weights\\gemma3-27b-brain-v2-r32-1776635086",
+    "n_steps": 75,
+    "start_loss": 2.6652528762817385,
+    "end_loss": 0.26137163639068606,
+    "min_loss": 0.2517751693725586,
+    "total_flos": 2.725726613680368e+17
+  },
+  "v3": {
+    "run": "D:\\research\\weights\\gemma3-27b-brain-v3-r64-1776642369",
+    "n_steps": 164,
+    "start_loss": 2.539384651184082,
+    "end_loss": 0.24040594100952148,
+    "min_loss": 0.23251645565032958,
+    "total_flos": 6.02989788812495e+17
+  }
+}

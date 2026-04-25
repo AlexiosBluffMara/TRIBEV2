@@ -1,0 +1,65 @@
+{
+  "media": "D:\\TRIBEV2\\assets\\dl_neurosci.mp4",
+  "slug": "dl_neurosci",
+  "stages": {
+    "gemma_vision": {
+      "duration_s": 4.74,
+      "gpu_vram_peak_gb": 15.97,
+      "gpu_vram_mean_gb": 11.66,
+      "gpu_util_peak_pct": 87,
+      "gpu_util_mean_pct": 29.7,
+      "gpu_temp_peak_c": 46,
+      "gpu_power_peak_w": 288.0,
+      "ram_peak_gb": 23.8,
+      "content_type": "image",
+      "modality": "visual"
+    },
+    "tribe_inference": {
+      "duration_s": 1086.28,
+      "gpu_vram_peak_gb": 17.23,
+      "gpu_vram_mean_gb": 12.76,
+      "gpu_util_peak_pct": 99,
+      "gpu_util_mean_pct": 65.7,
+      "gpu_temp_peak_c": 72,
+      "gpu_power_peak_w": 554.0,
+      "ram_peak_gb": 37.9,
+      "timesteps": 739,
+      "vertices": 20484,
+      "peak_t_s": 129.5,
+      "top_rois": [
+        "7Networks_LH_Default_Temp_7",
+        "7Networks_RH_SomMot_1",
+        "7Networks_LH_Default_Temp_5",
+        "7Networks_RH_Default_Temp_7",
+        "7Networks_RH_SomMot_6",
+        "7Networks_LH_Default_Temp_8",
+        "7Networks_LH_Default_Temp_9",
+        "7Networks_RH_Default_Temp_6"
+      ]
+    },
+    "visualize_peak": {
+      "duration_s": 2.04,
+      "gpu_vram_peak_gb": 4.78,
+      "gpu_vram_mean_gb": 4.78,
+      "gpu_util_peak_pct": 33,
+      "gpu_util_mean_pct": 11.8,
+      "gpu_temp_peak_c": 38,
+      "gpu_power_peak_w": 83.0,
+      "ram_peak_gb": 25.4,
+      "path": "D:\\TRIBEV2\\outputs\\batch_1776628311\\dl_neurosci\\brain_peak.png"
+    },
+    "gemma_narration": {
+      "duration_s": 9.28,
+      "gpu_vram_peak_gb": 23.93,
+      "gpu_vram_mean_gb": 20.2,
+      "gpu_util_peak_pct": 83,
+      "gpu_util_mean_pct": 19.1,
+      "gpu_temp_peak_c": 43,
+      "gpu_power_peak_w": 157.0,
+      "ram_peak_gb": 27.1,
+      "narration_chars": 752
+    }
+  },
+  "vision_summary": "The image displays a diagram of the human brain with various parts labeled. Text lists brainstem components, including the midbrain, pons, and medulla oblongata. The overall presentation appears to be for educational purposes regarding neuroscience.",
+  "narration": "The stimulus consists of an educational diagram detailing the anatomical components of the human brainstem. The observed activation pattern shows a distribution of activity across the left and right hemispheres, primarily concentrated within the temporal components of the Default Mode Network (DMN) and the Somatomotor Network. The increased activity in the temporal DMN regions suggests engagement in internal processing or semantic integration related to the educational content, while the simultaneous activation in the Somatomotor Network may reflect the cognitive effort associated with visual attention or the processing of structural anatomical information. This pattern represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+}

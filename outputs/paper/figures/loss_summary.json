@@ -1,0 +1,17 @@
+{
+  "n_steps": 75,
+  "start_loss": 2.6652528762817385,
+  "end_loss": 0.26137163639068606,
+  "min_loss": 0.2517751693725586,
+  "min_loss_step": 285,
+  "epoch1_end_loss": 0.3397857189178467,
+  "epoch2_end_loss": 0.29697964191436765,
+  "epoch3_end_loss": 0.26137163639068606,
+  "peak_lr": 0.00014995025324128443,
+  "lora_r": 32,
+  "lora_alpha": 64,
+  "epochs": 3,
+  "dataset_rows": 1000,
+  "base_model": "unsloth/gemma-3-27b-it-bnb-4bit",
+  "total_flos": 2.725726613680368e+17
+}

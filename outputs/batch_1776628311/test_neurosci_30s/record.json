@@ -1,0 +1,65 @@
+{
+  "media": "D:\\TRIBEV2\\assets\\test_neurosci_30s.mp4",
+  "slug": "test_neurosci_30s",
+  "stages": {
+    "gemma_vision": {
+      "duration_s": 9.99,
+      "gpu_vram_peak_gb": 14.98,
+      "gpu_vram_mean_gb": 12.82,
+      "gpu_util_peak_pct": 82,
+      "gpu_util_mean_pct": 17.6,
+      "gpu_temp_peak_c": 43,
+      "gpu_power_peak_w": 302.0,
+      "ram_peak_gb": 26.5,
+      "content_type": "image",
+      "modality": "visual"
+    },
+    "tribe_inference": {
+      "duration_s": 214.13,
+      "gpu_vram_peak_gb": 16.98,
+      "gpu_vram_mean_gb": 8.2,
+      "gpu_util_peak_pct": 99,
+      "gpu_util_mean_pct": 37.8,
+      "gpu_temp_peak_c": 68,
+      "gpu_power_peak_w": 538.0,
+      "ram_peak_gb": 37.5,
+      "timesteps": 30,
+      "vertices": 20484,
+      "peak_t_s": 0.0,
+      "top_rois": [
+        "7Networks_RH_SomMot_6",
+        "7Networks_RH_Vis_30",
+        "7Networks_RH_SomMot_1",
+        "7Networks_RH_SomMot_2",
+        "7Networks_LH_Default_Temp_7",
+        "7Networks_LH_SomMot_6",
+        "7Networks_RH_Cont_pCun_1",
+        "7Networks_RH_Default_Par_5"
+      ]
+    },
+    "visualize_peak": {
+      "duration_s": 2.13,
+      "gpu_vram_peak_gb": 5.35,
+      "gpu_vram_mean_gb": 4.7,
+      "gpu_util_peak_pct": 33,
+      "gpu_util_mean_pct": 20.0,
+      "gpu_temp_peak_c": 35,
+      "gpu_power_peak_w": 63.0,
+      "ram_peak_gb": 25.8,
+      "path": "D:\\TRIBEV2\\outputs\\batch_1776628311\\test_neurosci_30s\\brain_peak.png"
+    },
+    "gemma_narration": {
+      "duration_s": 8.61,
+      "gpu_vram_peak_gb": 23.63,
+      "gpu_vram_mean_gb": 20.06,
+      "gpu_util_peak_pct": 99,
+      "gpu_util_mean_pct": 30.9,
+      "gpu_temp_peak_c": 42,
+      "gpu_power_peak_w": 209.0,
+      "ram_peak_gb": 27.4,
+      "narration_chars": 796
+    }
+  },
+  "vision_summary": "The images display labeled diagrams of major brain structures. Specific parts shown include the cerebrum, cerebellum, and brainstem. Text labels accompany each corresponding anatomical illustration.",
+  "narration": "The stimulus consists of anatomical diagrams of brain structures accompanied by text labels, which elicited peak activity at the onset of the presentation. The observed activation pattern is characterized by increased mean |z| values in the right hemisphere somatomotor and visual networks, suggesting the processing of spatial and structural information presented visually. Additionally, activity within the left hemisphere temporal default mode network and right hemisphere cingulo-parietal control network indicates engagement in higher-order integration and attentional allocation to the labels. This pattern reflects the simultaneous processing of visual stimuli and the cognitive integration of anatomical nomenclature. This is a group-averaged TRIBE v2 prediction, not a diagnostic result."
+}

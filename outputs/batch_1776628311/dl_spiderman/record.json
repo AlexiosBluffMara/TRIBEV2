@@ -1,0 +1,65 @@
+{
+  "media": "D:\\TRIBEV2\\assets\\dl_spiderman.mp4",
+  "slug": "dl_spiderman",
+  "stages": {
+    "gemma_vision": {
+      "duration_s": 11.93,
+      "gpu_vram_peak_gb": 15.53,
+      "gpu_vram_mean_gb": 13.65,
+      "gpu_util_peak_pct": 86,
+      "gpu_util_mean_pct": 18.9,
+      "gpu_temp_peak_c": 44,
+      "gpu_power_peak_w": 289.0,
+      "ram_peak_gb": 26.9,
+      "content_type": "video",
+      "modality": "visual"
+    },
+    "tribe_inference": {
+      "duration_s": 708.28,
+      "gpu_vram_peak_gb": 17.25,
+      "gpu_vram_mean_gb": 12.75,
+      "gpu_util_peak_pct": 100,
+      "gpu_util_mean_pct": 58.7,
+      "gpu_temp_peak_c": 71,
+      "gpu_power_peak_w": 550.0,
+      "ram_peak_gb": 37.1,
+      "timesteps": 414,
+      "vertices": 20484,
+      "peak_t_s": 28.5,
+      "top_rois": [
+        "7Networks_LH_Default_Temp_7",
+        "7Networks_LH_Vis_18",
+        "7Networks_LH_Vis_26",
+        "7Networks_RH_Vis_21",
+        "7Networks_RH_Vis_17",
+        "7Networks_RH_Vis_15",
+        "7Networks_LH_Vis_7",
+        "7Networks_RH_Vis_25"
+      ]
+    },
+    "visualize_peak": {
+      "duration_s": 2.09,
+      "gpu_vram_peak_gb": 4.53,
+      "gpu_vram_mean_gb": 4.53,
+      "gpu_util_peak_pct": 33,
+      "gpu_util_mean_pct": 13.8,
+      "gpu_temp_peak_c": 37,
+      "gpu_power_peak_w": 62.0,
+      "ram_peak_gb": 25.3,
+      "path": "D:\\TRIBEV2\\outputs\\batch_1776628311\\dl_spiderman\\brain_peak.png"
+    },
+    "gemma_narration": {
+      "duration_s": 8.81,
+      "gpu_vram_peak_gb": 23.73,
+      "gpu_vram_mean_gb": 20.11,
+      "gpu_util_peak_pct": 87,
+      "gpu_util_mean_pct": 21.6,
+      "gpu_temp_peak_c": 43,
+      "gpu_power_peak_w": 244.0,
+      "ram_peak_gb": 27.0,
+      "narration_chars": 911
+    }
+  },
+  "vision_summary": "The first frame shows a man standing in a dimly lit, indoor-like setting. The second frame depicts large electrical transmission towers against a sunset over a landscape. The final frames show the man outdoors, appearing to move with an object, and a final abstract, dark scene.",
+  "narration": "The stimulus \"dl_spiderman\" consists of a 207-second sequence featuring indoor settings, electrical towers at sunset, and outdoor movement, with peak neural activity occurring at 28.5 seconds. The observed activation pattern shows a concentration of mean |z| values within the visual networks of both the left and right hemispheres, specifically involving regions such as LH_Vis_18, LH_Vis_26, RH_Vis_21, and RH_Vis_17. This widespread engagement of the visual cortex suggests the brain is processing the high-contrast transitions and spatial changes inherent in the video frames. Additionally, the involvement of the LH_Default_Temp_7 region indicates a secondary integration of these visual inputs within the default mode network, potentially reflecting internal processing or semantic integration of the observed scenes. This analysis represents a group-averaged TRIBE v2 prediction, not a diagnostic result."
+}
